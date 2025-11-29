@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #031439;
+  --color-primary-foreground: #ffffff;
+
+  --color-secondary: #00e4f8;
+  --color-secondary-foreground: #031439;
+
+  --color-accent: #0057E1;
+  --color-accent-foreground: #ffffff;
+
+  --color-background: #031439;
+  --color-foreground: #ffffff;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+@layer base {
+
+  html {
+    background-color: var(--color-background);
+    min-height: 100vh;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    min-height: 100vh;
+  }
+
+  /* Reset links to inherit color by default, matching Tailwind v3 preflight behavior if needed, 
+     but v4 preflight should handle this. 
+     Explicitly setting it to ensure 'text-white' works as expected on links. */
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
