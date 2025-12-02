@@ -15,6 +15,9 @@ export function GalleryCarousel() {
 
     return (
         <section className="relative py-0 bg-primary z-20">
+            {/* Top Border - 50% width, Left aligned */}
+            <div className="w-[50%] h-1 bg-tactical-gold" />
+
             {/* Infinite Scroll Carousel */}
             <div className="w-full overflow-hidden relative z-0">
                 <div className="flex animate-scroll min-w-full">
@@ -32,17 +35,11 @@ export function GalleryCarousel() {
                 </div>
             </div>
 
+            {/* Bottom Border - 50% width, Right aligned */}
+            <div className="w-[50%] h-1 bg-tactical-gold ml-auto" />
+
             {/* Button Overlay - Centered on the bottom edge */}
-            <div className="absolute bottom-0 left-0 right-0 z-20 flex justify-center translate-y-1/2 pointer-events-none">
-                <div className="container mx-auto px-4 text-center pointer-events-auto">
-                    <Button
-                        size="lg"
-                        className="bg-gradient-to-r from-[#01021c] via-[#020440] to-[#01021c] hover:from-[#01032e] hover:via-[#020440] hover:to-[#01032e] text-white font-extrabold text-lg md:text-xl py-8 px-12 rounded-xl shadow-[0_10px_40px_rgba(0,0,0,0.5)] hover:scale-105 transition-all duration-300 border border-white/10"
-                    >
-                        Baixe o Folder com a programação completa
-                    </Button>
-                </div>
-            </div>
+
 
             <style jsx global>{`
                 @keyframes scroll {

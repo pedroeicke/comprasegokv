@@ -77,9 +77,9 @@ export const Location: React.FC = () => {
                     <div className="hidden lg:block h-full min-h-[500px] relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl group">
                         {/* Imagem de Mapa Estilizado */}
                         <img
-                            src="https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=2674&auto=format&fit=crop"
+                            src="/fotolocal.jpg"
                             alt="Mapa de Localização"
-                            className="absolute inset-0 w-full h-full object-cover grayscale opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-700"
+                            className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-700"
                         />
                         <div className="absolute inset-0 bg-[#020440]/40 mix-blend-multiply"></div>
 
