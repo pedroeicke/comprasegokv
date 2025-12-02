@@ -34,18 +34,18 @@ export const TargetAudience: React.FC = () => {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="flex flex-col h-full bg-gradient-to-b from-tactical-dark/60 to-tactical-dark/40 border border-blue-900/30 rounded-2xl overflow-hidden hover:border-blue-400 group-hover:bg-blue-400/5 transition-all shadow-lg group"
+                        className="flex flex-col h-full bg-gradient-to-b from-tactical-dark/60 to-tactical-dark/40 border border-brand-gold/30 rounded-2xl overflow-hidden hover:border-brand-gold/60 transition-colors shadow-lg group"
                     >
-                        <div className="p-8 border-b border-white/5 bg-brand-blue/5 group-hover:bg-blue-400/10 transition-colors">
+                        <div className="p-8 border-b border-white/5 bg-brand-gold/5">
                             {/* Ícone removido conforme solicitado */}
                             <h3 className="text-2xl font-display font-bold text-white uppercase mb-4">Segurança Pública</h3>
 
                         </div>
-                        <div className="p-6 flex-1 bg-tactical-black/20">
+                        <div className="p-6 flex-1 bg-black/20">
                             <ul className="space-y-3">
                                 {SECURITY_ORGANS.map((org, i) => (
                                     <li key={i} className="flex items-center gap-3 text-tactical-metal group-hover:text-white transition-colors">
-                                        <div className="w-1.5 h-1.5 bg-blue-500 rounded-full group-hover:bg-blue-400 transition-colors"></div>
+                                        <div className="w-1.5 h-1.5 bg-tactical-gold rounded-full"></div>
                                         <span className="text-sm font-medium uppercase tracking-wide">{org.name}</span>
                                     </li>
                                 ))}
@@ -84,9 +84,9 @@ export const TargetAudience: React.FC = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.4 }}
-                        className="flex flex-col h-full bg-gradient-to-b from-tactical-dark/60 to-tactical-dark/40 border border-tactical-metal/30 rounded-2xl overflow-hidden hover:border-tactical-metal/60 transition-colors shadow-lg group"
+                        className="flex flex-col h-full bg-gradient-to-b from-tactical-dark/60 to-tactical-dark/40 border border-brand-gold/30 rounded-2xl overflow-hidden hover:border-brand-gold/60 transition-colors shadow-lg group"
                     >
-                        <div className="p-8 border-b border-white/5 bg-tactical-metal/5">
+                        <div className="p-8 border-b border-white/5 bg-brand-gold/5">
                             {/* Ícone removido conforme solicitado */}
                             <h3 className="text-2xl font-display font-bold text-white uppercase mb-4">Órgãos de natureza Policial</h3>
 
@@ -95,7 +95,7 @@ export const TargetAudience: React.FC = () => {
                             <ul className="space-y-3">
                                 {POLICE_NATURE_ORGANS.map((org, i) => (
                                     <li key={i} className="flex items-center gap-3 text-tactical-metal group-hover:text-white transition-colors">
-                                        <div className="w-1.5 h-1.5 bg-tactical-metal rounded-full"></div>
+                                        <div className="w-1.5 h-1.5 bg-tactical-gold rounded-full"></div>
                                         <span className="text-sm font-medium uppercase tracking-wide">{org.name}</span>
                                     </li>
                                 ))}
@@ -116,10 +116,7 @@ export const TargetAudience: React.FC = () => {
 
                     <div className="flex flex-col lg:flex-row gap-10 items-start relative z-10">
                         <div className="lg:w-1/4">
-                            <div className="flex items-center gap-3 mb-4">
-                                <Users className="w-6 h-6 text-tactical-gold" />
-                                <span className="text-tactical-gold font-bold tracking-widest uppercase text-xs">Público Alvo</span>
-                            </div>
+
                             <h3 className="text-3xl font-display font-bold text-white uppercase leading-none">
                                 Cargos &<br />Funções
                             </h3>
@@ -129,7 +126,7 @@ export const TargetAudience: React.FC = () => {
                             {AUDIENCE_ROLES.map((role, idx) => (
                                 <div key={idx} className="flex items-start gap-3 group">
                                     <Check className="w-4 h-4 text-tactical-gold mt-1 shrink-0 opacity-60 group-hover:opacity-100 transition-opacity" />
-                                    <span className="text-tactical-metal text-sm group-hover:text-white transition-colors">{role}</span>
+                                    <span className="text-tactical-metal text-[17px] group-hover:text-white transition-colors">{role}</span>
                                 </div>
                             ))}
                         </div>
