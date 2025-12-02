@@ -1,19 +1,33 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #031439;
+  --color-primary: #020440;
   --color-primary-foreground: #ffffff;
 
-  --color-secondary: #00e4f8;
-  --color-secondary-foreground: #031439;
+  --color-secondary: #f5dd29;
+  --color-secondary-foreground: #020440;
 
-  --color-accent: #0057E1;
-  --color-accent-foreground: #ffffff;
+  --color-accent: #f5dd29;
+  --color-accent-foreground: #020440;
 
-  --color-background: #031439;
+  --color-background: #01021c;
   --color-foreground: #ffffff;
 
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-display: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  --color-brand-blue: #020440;
+  --color-brand-glow: #01032e;
+  --color-tactical-midnight: #01032e;
+  --color-tactical-dark: #01021c;
+  --color-tactical-panel: #01032e;
+  --color-tactical-highlight: #282828;
+  --color-tactical-gold: #f5dd29;
+  --color-tactical-cyan: #f5dd29;
+  --color-brand-gold: #f5dd29;
+  --color-tactical-card: #01021c;
+  --color-tactical-black: #00010a;
+  --color-tactical-metal: #7c7c7c;
 }
 
 @layer base {
@@ -36,5 +50,13 @@
   a {
     color: inherit;
     text-decoration: none;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
   }
 }

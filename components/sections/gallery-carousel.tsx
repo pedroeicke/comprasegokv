@@ -14,7 +14,7 @@ export function GalleryCarousel() {
     ];
 
     return (
-        <section className="relative py-0 bg-primary z-10">
+        <section className="relative py-0 bg-primary z-20">
             {/* Infinite Scroll Carousel */}
             <div className="w-full overflow-hidden relative z-0">
                 <div className="flex animate-scroll min-w-full">
@@ -37,7 +37,7 @@ export function GalleryCarousel() {
                 <div className="container mx-auto px-4 text-center pointer-events-auto">
                     <Button
                         size="lg"
-                        className="bg-gradient-to-r from-[#001845] via-[#0044cc] to-[#001845] hover:from-[#00215E] hover:via-[#0055dd] hover:to-[#00215E] text-white font-extrabold text-lg md:text-xl py-8 px-12 rounded-xl shadow-[0_10px_40px_rgba(0,0,0,0.5)] hover:scale-105 transition-all duration-300 border border-white/10"
+                        className="bg-gradient-to-r from-[#01021c] via-[#020440] to-[#01021c] hover:from-[#01032e] hover:via-[#020440] hover:to-[#01032e] text-white font-extrabold text-lg md:text-xl py-8 px-12 rounded-xl shadow-[0_10px_40px_rgba(0,0,0,0.5)] hover:scale-105 transition-all duration-300 border border-white/10"
                     >
                         Baixe o Folder com a programação completa
                     </Button>

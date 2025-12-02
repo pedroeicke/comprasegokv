@@ -1,51 +1,93 @@
-import { Button } from "@/components/ui/button";
+"use client";
 
-export function About() {
+import React from 'react';
+import { motion } from 'framer-motion';
+import { BrandLogo } from "@/components/ui/brand-logo";
+
+export const About: React.FC = () => {
     return (
-        <section id="sobre" className="min-h-[711px] relative overflow-hidden flex items-center bg-primary bg-[url('/about-bg.png')] bg-cover bg-center bg-no-repeat">
-            {/* Dark overlay to ensure text readability if needed, matching the 'bgImage' class likely having some tint */}
-            <div className="absolute inset-0 bg-primary/80 mix-blend-multiply pointer-events-none" />
-            <div className="container mx-auto px-4 h-full">
-                <div className="flex flex-col lg:flex-row items-center justify-between h-full relative">
-                    {/* Text Content - Left Side */}
-                    <div className="order-1 lg:w-[500px] px-[30px] relative z-20">
-                        <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 leading-tight">
-                            Tudo começou com um desafio: <span className="text-secondary">modernizar as compras públicas.</span>
+        <section id="sobre" className="py-24 bg-transparent relative">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+                <div className="grid lg:grid-cols-2 gap-16 items-center">
+
+                    {/* Coluna de Texto */}
+                    <motion.div
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.6 }}
+                        viewport={{ once: true }}
+                        className="order-2 lg:order-1"
+                    >
+                        <span className="text-tactical-gold font-bold tracking-widest uppercase text-sm mb-2 block">O Contexto</span>
+                        <h2 className="text-4xl md:text-5xl font-display font-bold text-white uppercase mb-6 leading-tight">
+                            A Ideia do <br />
+                            <BrandLogo size="lg" className="text-tactical-gold" />
                         </h2>
+                        <div className="w-20 h-1 bg-tactical-gold mb-8"></div>
 
-                        <p className="text-white/80 text-lg mb-6 leading-relaxed">
-                            Contratações na Segurança Pública exigem alta complexidade técnica. Falhas em equipamentos podem comprometer operações críticas e vidas.
-                        </p>
+                        <div className="space-y-6 text-gray-200 text-lg leading-relaxed text-justify">
+                            <p>
+                                Contratações do setor de Segurança Pública caracterizam-se por alta complexidade técnica e aspectos sensíveis de tecnologia, qualidade e segurança, haja vista os efeitos drásticos que podem resultar de aquisições indesejáveis.
+                            </p>
 
-                        <p className="text-white/80 text-lg mb-8 leading-relaxed">
-                            O COMPRASEG nasce para capacitar gestores com conhecimento prático, garantindo aquisições eficientes, seguras e com respaldo jurídico. É mais que um evento: é um movimento de transformação.
-                        </p>
+                            <p>
+                                A qualidade insuficiente ou falhas de funcionamento em produtos como armas, munições e equipamentos de proteção podem resultar em fracassos de atividades policiais de patrulhamento, atendimento a ocorrências, controle de distúrbios, operações policiais especiais e operações de salvamento ou resgate.
+                            </p>
 
-                        <Button className="rounded-full bg-gradient-to-l from-[#00e4f8] to-[#002ccc] text-white hover:shadow-[0_0_30px_rgba(0,228,248,0.5)] font-bold py-6 px-8 text-lg border-0 transition-all duration-300 transform hover:-translate-y-1">
-                            FAÇA PARTE
-                        </Button>
-                    </div>
+                            <p>
+                                Por isso, o aperfeiçoamento do planejamento e execução dos processos de compras da segurança pública requer dos profissionais dedicados às atividades de capacitação não apenas habilidade em matéria de licitações e contratos, mas também o conhecimento sobre as rotinas, realidades diversas, condições de emprego e riscos enfrentados pelos profissionais da segurança pública.
+                            </p>
 
-                    {/* Video Placeholder - Right Side */}
-                    <div className="order-2 relative z-10 mt-10 lg:mt-0">
-                        <div className="w-full lg:w-[766px] h-[435px] rounded-2xl overflow-hidden bg-white/5 border border-white/10 relative group cursor-pointer shadow-2xl">
-                            {/* Video Thumbnail Placeholder */}
-                            <div className="absolute inset-0 bg-black/50 flex items-center justify-center group-hover:bg-black/40 transition-colors">
-                                <div className="w-20 h-20 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center border border-white/20 group-hover:scale-110 transition-transform">
-                                    <div className="w-0 h-0 border-t-[10px] border-t-transparent border-l-[20px] border-l-white border-b-[10px] border-b-transparent ml-1" />
-                                </div>
+                            <div className="glass-panel p-6 rounded-xl border-l border-t border-white/10 mt-4">
+                                <p className="text-white font-medium text-base">
+                                    A partir dessas premissas, o COMPRASEG tem por finalidade oferecer aos profissionais responsáveis pelas contratações dos órgãos de segurança públicas, desde a fase de planejamento até a execução e fiscalização dos contratos, os conhecimentos, habilidades e experiências necessários para a aquisição das melhores soluções existentes no mercado, com segurança jurídica e qualidade técnica.
+                                </p>
                             </div>
-                            <div className="absolute bottom-4 left-4 right-4">
-                                <p className="text-white font-medium text-sm">Assista ao vídeo manifesto</p>
+                        </div>
+                    </motion.div>
+
+                    {/* Coluna Visual (Imagens) */}
+                    <motion.div
+                        initial={{ opacity: 0, x: 20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.6, delay: 0.2 }}
+                        viewport={{ once: true }}
+                        className="order-1 lg:order-2 relative h-[500px] lg:h-[600px] w-full"
+                    >
+                        {/* Imagem de Fundo (Operacional) */}
+                        <div className="absolute top-0 right-0 w-4/5 h-3/5 rounded-2xl overflow-hidden border border-white/10 shadow-2xl z-10">
+                            <img
+                                src="https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?q=80&w=2669&auto=format&fit=crop"
+                                alt="Operação Policial Tática"
+                                className="w-full h-full object-cover opacity-80 hover:opacity-100 hover:scale-105 transition-all duration-700"
+                            />
+                            <div className="absolute inset-0 bg-brand-blue/20 mix-blend-overlay"></div>
+                        </div>
+
+                        {/* Imagem da Frente (Gestão/Reunião) */}
+                        <div className="absolute bottom-0 left-0 w-4/5 h-3/5 rounded-2xl overflow-hidden border border-white/10 shadow-[0_0_30px_rgba(0,0,0,0.5)] z-20 bg-tactical-midnight">
+                            <img
+                                src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2664&auto=format&fit=crop"
+                                alt="Gestão de Contratos"
+                                className="w-full h-full object-cover opacity-90 hover:opacity-100 hover:scale-105 transition-all duration-700"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-tactical-midnight via-transparent to-transparent"></div>
+                        </div>
+
+                        {/* Elemento Decorativo (Conector) */}
+                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 border-2 border-tactical-gold/30 rounded-full z-30 flex items-center justify-center backdrop-blur-sm">
+                            <div className="w-24 h-24 bg-tactical-midnight/80 rounded-full flex items-center justify-center border border-white/10">
+                                <span className="font-display font-bold text-tactical-gold text-xl text-center leading-none">
+                                    Foco<br />Total
+                                </span>
                             </div>
                         </div>
 
-                        {/* Background Glow Effects */}
-                        <div className="absolute -bottom-10 -right-10 w-64 h-64 bg-secondary/20 rounded-full blur-3xl -z-10" />
-                        <div className="absolute -top-10 -left-10 w-64 h-64 bg-accent/20 rounded-full blur-3xl -z-10" />
-                    </div>
+                    </motion.div>
+
                 </div>
             </div>
         </section>
     );
-}
+};

@@ -1,41 +1,107 @@
-import { MapPin } from "lucide-react";
+import React from 'react';
+import { MapPin, Calendar, Clock, Navigation } from 'lucide-react';
 
-export function Location() {
+export const Location: React.FC = () => {
     return (
-        <section id="local" className="py-24 bg-primary relative">
-            <div className="container mx-auto px-4">
-                <div className="grid lg:grid-cols-2 gap-12 items-center">
-                    <div>
-                        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/10 text-secondary text-sm font-medium mb-6">
-                            <MapPin className="w-4 h-4" />
-                            LOCALIZAÇÃO PRIVILEGIADA
-                        </div>
-                        <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-                            Florianópolis - SC
-                        </h2>
-                        <p className="text-white/70 text-lg mb-8 leading-relaxed">
-                            O evento será realizado em um dos melhores centros de eventos da região.
-                        </p>
+        <section id="local" className="relative py-24 w-full overflow-hidden bg-transparent">
 
-                        <div className="space-y-6">
-                            <div className="p-6 rounded-xl bg-white/5 border border-white/10">
-                                <h3 className="text-xl font-bold text-white mb-2">Auditório do Centro de Eventos Square SC</h3>
-                                <p className="text-white/60">
-                                    Rod. José Carlos Daux, 5500<br />
-                                    Florianópolis - SC, 88032-005
-                                </p>
+            {/* --- FULL WIDTH BACKGROUND LAYER REMOVED FOR SOLID COLOR --- */}
+            {/* <div className="absolute inset-0 z-0">
+                <img ... />
+            </div> */}
+
+            {/* --- CONTENT CONTAINER (Centralizado) --- */}
+            <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+                <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+
+                    {/* LADO ESQUERDO: Informações e Botões */}
+                    <div className="flex flex-col h-full justify-center">
+                        <div className="mb-10">
+                            <span className="text-white font-bold tracking-widest uppercase text-xs mb-2 block">Coordenadas</span>
+                            <h2 className="text-5xl md:text-6xl font-display font-bold text-white mb-6 uppercase tracking-tight leading-none">
+                                Data e <br />
+                                <span className="text-tactical-gold">Local</span>
+                            </h2>
+                        </div>
+
+                        {/* Lista de Informações (Cards Transparentes) */}
+                        <div className="space-y-4 mb-10">
+
+                            {/* Data */}
+                            <div className="flex items-center gap-6 p-5 rounded-xl bg-brand-blue border border-white/5 backdrop-blur-sm hover:bg-white/5 transition-colors group">
+                                <div className="p-3 bg-brand-blue/20 rounded-lg shrink-0 group-hover:bg-brand-blue/30 transition-colors">
+                                    <Calendar className="w-6 h-6 text-tactical-gold" />
+                                </div>
+                                <div>
+                                    <h4 className="text-xl font-display font-bold text-white uppercase">12 a 14 de Maio</h4>
+                                    <p className="text-sm text-tactical-metal">Três dias de imersão total</p>
+                                </div>
+                            </div>
+
+                            {/* Horário */}
+                            <div className="flex items-center gap-6 p-5 rounded-xl bg-brand-blue border border-white/5 backdrop-blur-sm hover:bg-white/5 transition-colors group">
+                                <div className="p-3 bg-brand-blue/20 rounded-lg shrink-0 group-hover:bg-brand-blue/30 transition-colors">
+                                    <Clock className="w-6 h-6 text-tactical-gold" />
+                                </div>
+                                <div>
+                                    <h4 className="text-xl font-display font-bold text-white uppercase">08h às 18h</h4>
+                                    <p className="text-sm text-tactical-metal">Intervalo de almoço: 12h às 14h</p>
+                                </div>
+                            </div>
+
+                            {/* Local */}
+                            <div className="flex items-center gap-6 p-5 rounded-xl bg-brand-blue border border-white/5 backdrop-blur-sm hover:bg-white/5 transition-colors group">
+                                <div className="p-3 bg-brand-blue/20 rounded-lg shrink-0 group-hover:bg-brand-blue/30 transition-colors">
+                                    <MapPin className="w-6 h-6 text-tactical-gold" />
+                                </div>
+                                <div>
+                                    <h4 className="text-xl font-display font-bold text-white uppercase">Auditório do Centro de Eventos Square SC</h4>
+                                    <p className="text-sm text-tactical-metal">Rod. José Carlos Daux, 5500 - Florianópolis, SC, 88032-005</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div className="flex gap-4">
+                            <a href="https://waze.com/ul" target="_blank" rel="noopener noreferrer" className="flex-1 py-4 bg-tactical-gold hover:bg-tactical-gold/90 text-tactical-midnight rounded-lg text-center font-bold uppercase text-sm tracking-wide transition-all shadow-lg flex items-center justify-center gap-2">
+                                <Navigation className="w-4 h-4" /> Waze
+                            </a>
+                            <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" className="flex-1 py-4 bg-white text-tactical-midnight hover:bg-gray-200 rounded-lg text-center font-bold uppercase text-sm tracking-wide transition-all shadow-lg flex items-center justify-center gap-2">
+                                <MapPin className="w-4 h-4" /> Maps
+                            </a>
+                        </div>
+                    </div>
+
+                    {/* LADO DIREITO: Mapa Visual (Estático) */}
+                    <div className="hidden lg:block h-full min-h-[500px] relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl group">
+                        {/* Imagem de Mapa Estilizado */}
+                        <img
+                            src="https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=2674&auto=format&fit=crop"
+                            alt="Mapa de Localização"
+                            className="absolute inset-0 w-full h-full object-cover grayscale opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-700"
+                        />
+                        <div className="absolute inset-0 bg-[#020440]/40 mix-blend-multiply"></div>
+
+                        {/* Pin Centralizado no Mapa */}
+                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                            <div className="relative">
+                                <div className="w-4 h-4 bg-brand-blue rounded-full animate-ping absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
+                                <div className="w-8 h-8 bg-brand-blue/20 rounded-full flex items-center justify-center backdrop-blur-sm border border-brand-blue text-white shadow-[0_0_20px_rgba(37,99,235,0.6)]">
+                                    <MapPin className="w-4 h-4" />
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div className="h-[400px] rounded-2xl overflow-hidden bg-white/5 border border-white/10 relative">
-                        {/* Map Placeholder */}
-                        <div className="absolute inset-0 flex items-center justify-center text-white/20">
-                            Mapa Interativo
+                        {/* Etiqueta Flutuante */}
+                        <div className="absolute bottom-6 left-6 right-6 bg-tactical-midnight/90 backdrop-blur-md p-4 rounded-xl border border-white/10">
+                            <p className="text-white font-bold text-sm uppercase">Complexo Square SC</p>
+                            <p className="text-xs text-tactical-metal mt-1">Florianópolis - Santa Catarina</p>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
     );
-}
+};

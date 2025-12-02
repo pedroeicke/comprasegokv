@@ -1,13 +1,25 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { BrandLogo } from "@/components/ui/brand-logo";
 
 export function Hero() {
     return (
-        <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-primary pt-20">
+        <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
             {/* Background Effects */}
             <div className="absolute inset-0 z-0 overflow-hidden">
-                <div className="absolute inset-0 bg-[url('/hero-bg.jpg')] bg-cover bg-center opacity-10" />
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--color-primary)_0%,_#000000_100%)] opacity-90" />
+                <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="absolute inset-0 w-full h-full object-cover opacity-10"
+                >
+                    <source src="/videobg.mp4" type="video/mp4" />
+                </video>
+
+                {/* Spotlight Effects */}
+                <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-brand-blue/20 rounded-full blur-[120px] mix-blend-screen animate-pulse" />
+                <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-tactical-gold/10 rounded-full blur-[120px] mix-blend-screen animate-pulse delay-1000" />
 
                 {/* Watermark Text Effect */}
                 <div className="absolute top-1/2 left-0 -translate-y-1/2 -translate-x-1/4 select-none pointer-events-none">
@@ -24,8 +36,8 @@ export function Hero() {
                 <div className="mb-8 flex flex-col items-center">
                     {/* Logo Placeholder - replicating the 'wing' shape if possible or just using text for now */}
                     <h1 className="text-6xl md:text-8xl lg:text-9xl font-black text-white tracking-tighter leading-none flex flex-col md:flex-row items-center gap-4">
-                        <span className="tracking-tight">COMPRASEG</span>
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00e4f8] to-[#0057E1]">
+                        <BrandLogo size="xl" />
+                        <span className="text-tactical-gold">
                             2026
                         </span>
                     </h1>
@@ -40,18 +52,8 @@ export function Hero() {
                         12 A 14 DE MAIO DE 2026
                     </p>
                     <p className="text-sm md:text-base font-bold text-white/80 tracking-widest uppercase">
-                        FLORIANÓPOLIS - SC • CENTRO DE EVENTOS SQUARE SC
+                        FLORIANÓPOLIS - SC
                     </p>
-                </div>
-
-                {/* Buttons */}
-                <div className="flex flex-col sm:flex-row gap-6 w-full max-w-2xl justify-center">
-                    <button className="flex-1 px-8 py-4 rounded-full bg-gradient-to-r from-[#0057E1] to-[#00e4f8] text-white font-black text-sm md:text-base uppercase tracking-wider hover:shadow-[0_0_30px_rgba(0,228,248,0.4)] transition-all duration-300 transform hover:-translate-y-1">
-                        GARANTA SUA INSCRIÇÃO!
-                    </button>
-                    <button className="flex-1 px-8 py-4 rounded-full bg-gradient-to-r from-[#0057E1] to-[#00e4f8] text-white font-black text-sm md:text-base uppercase tracking-wider hover:shadow-[0_0_30px_rgba(0,228,248,0.4)] transition-all duration-300 transform hover:-translate-y-1">
-                        BAIXE A PROGRAMAÇÃO!
-                    </button>
                 </div>
             </div>
         </section>

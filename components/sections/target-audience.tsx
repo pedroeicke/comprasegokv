@@ -1,90 +1,142 @@
-import { Shield, Users, Scale, Anchor } from "lucide-react";
+"use client";
 
-export function TargetAudience() {
-    const cards = [
-        {
-            icon: Shield,
-            title: "Órgãos de Segurança Pública",
-            description: "Direcionado às instituições do Art. 144 da Constituição: Polícia Federal, PRF, Polícias Civil, Militar e Penal, e Corpos de Bombeiros.",
-            tags: ["PF", "PRF", "PM", "PC", "Bombeiros"]
-        },
-        {
-            icon: Anchor,
-            title: "Forças Armadas & Defesa",
-            description: "Essencial para Marinha, Exército e Aeronáutica, que compartilham demandas complexas de armamentos, viaturas e equipamentos de proteção.",
-            tags: ["Marinha", "Exército", "Aeronáutica"]
-        },
-        {
-            icon: Scale,
-            title: "Legislativo, Judiciário & Guardas",
-            description: "Para Polícias Legislativas, Guardas Municipais e órgãos de segurança do MP e Judiciário que realizam contratações de natureza policial.",
-            tags: ["Guardas", "Polícia Legislativa", "MP", "Tribunais"]
-        },
-        {
-            icon: Users,
-            title: "Quem Faz Acontecer",
-            description: "O evento definitivo para Agentes de Contratação, Gestores, Fiscais, Assessores Jurídicos e Advogados que atuam na ponta da lança.",
-            tags: ["Gestores", "Fiscais", "Jurídico", "Agentes"]
-        }
-    ];
+import React from 'react';
+import { motion } from 'framer-motion';
+import { Check, Users } from 'lucide-react';
+import { SECURITY_ORGANS, ARMED_FORCES, POLICE_NATURE_ORGANS, AUDIENCE_ROLES } from '../constants';
 
+export const TargetAudience: React.FC = () => {
     return (
-        <section className="py-24 bg-primary relative overflow-hidden">
-            <div className="container mx-auto px-4 relative z-10">
+        // Removido border-t para evitar linha duplicada visual
+        // Mantido bg-transparent para o MouseGlow funcionar
+        <section id="publico" className="w-full relative bg-transparent pt-24 pb-24 overflow-hidden">
+
+            {/* Background Subtle Elements */}
+            <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-[0.03]"></div>
+            <div className="absolute top-0 right-0 w-1/2 h-1/2 bg-brand-blue/5 blur-[150px] pointer-events-none"></div>
+
+            <div className="max-w-[1800px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+                {/* Header */}
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
-                        Para quem é o <span className="text-secondary">COMPRASEG?</span>
+                    <span className="text-tactical-gold font-bold tracking-widest uppercase text-[18px] mb-2 block">Público Alvo</span>
+                    <h2 className="text-4xl md:text-5xl font-display font-bold text-white uppercase mb-6">
+                        Para quem é o COMPRASEG?
                     </h2>
-                    <p className="text-white/60 text-lg max-w-2xl mx-auto">
-                        Um encontro estratégico para todos os atores que movem as contratações de segurança pública no Brasil.
-                    </p>
+                    <div className="w-24 h-1 bg-gradient-to-r from-transparent via-brand-blue to-transparent mx-auto"></div>
                 </div>
 
-                <div className="grid gap-6 max-w-5xl mx-auto">
-                    {cards.map((card, index) => (
-                        <div
-                            key={index}
-                            className="group relative bg-white rounded-2xl p-1 overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_40px_rgba(0,228,248,0.15)]"
-                        >
-                            <div className="absolute inset-0 bg-gradient-to-r from-secondary/20 to-accent/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                {/* --- GRID PRINCIPAL (3 COLUNAS) --- */}
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
 
-                            <div className="relative bg-white h-full rounded-xl p-8 md:p-10 flex flex-col md:flex-row gap-8 items-center md:items-start">
-                                {/* Icon/Image Area */}
-                                <div className="shrink-0 w-24 h-24 rounded-2xl bg-gradient-to-br from-primary to-[#031647] flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-500">
-                                    <card.icon className="w-10 h-10 text-secondary" />
-                                </div>
+                    {/* CARD 1: SEGURANÇA PÚBLICA (AZUL) */}
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        className="flex flex-col h-full bg-gradient-to-b from-tactical-dark/60 to-tactical-dark/40 border border-blue-900/30 rounded-2xl overflow-hidden hover:border-blue-400 group-hover:bg-blue-400/5 transition-all shadow-lg group"
+                    >
+                        <div className="p-8 border-b border-white/5 bg-brand-blue/5 group-hover:bg-blue-400/10 transition-colors">
+                            {/* Ícone removido conforme solicitado */}
+                            <h3 className="text-2xl font-display font-bold text-white uppercase mb-4">Segurança Pública</h3>
 
-                                {/* Content */}
-                                <div className="flex-1 text-center md:text-left">
-                                    <h3 className="text-2xl font-bold text-primary mb-3 group-hover:text-accent transition-colors">
-                                        {card.title}
-                                    </h3>
-                                    <p className="text-primary/70 text-lg leading-relaxed mb-6">
-                                        {card.description}
-                                    </p>
-
-                                    {/* Tags */}
-                                    <div className="flex flex-wrap gap-2 justify-center md:justify-start">
-                                        {card.tags.map((tag, i) => (
-                                            <span key={i} className="px-3 py-1 rounded-full bg-primary/5 text-primary/60 text-xs font-bold uppercase tracking-wider border border-primary/10 group-hover:border-secondary/50 group-hover:text-primary transition-colors">
-                                                {tag}
-                                            </span>
-                                        ))}
-                                    </div>
-                                </div>
-
-                                {/* Arrow Indicator */}
-                                <div className="hidden md:flex items-center justify-center w-12 h-12 rounded-full border-2 border-primary/10 text-primary/30 group-hover:border-secondary group-hover:text-secondary transition-all duration-300 group-hover:rotate-45">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                        <path d="M7 17L17 7" />
-                                        <path d="M7 7h10v10" />
-                                    </svg>
-                                </div>
-                            </div>
                         </div>
-                    ))}
+                        <div className="p-6 flex-1 bg-tactical-black/20">
+                            <ul className="space-y-3">
+                                {SECURITY_ORGANS.map((org, i) => (
+                                    <li key={i} className="flex items-center gap-3 text-tactical-metal group-hover:text-white transition-colors">
+                                        <div className="w-1.5 h-1.5 bg-blue-500 rounded-full group-hover:bg-blue-400 transition-colors"></div>
+                                        <span className="text-sm font-medium uppercase tracking-wide">{org.name}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    </motion.div>
+
+                    {/* CARD 2: FORÇAS ARMADAS (DOURADO) */}
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 0.2 }}
+                        className="flex flex-col h-full bg-gradient-to-b from-tactical-dark/60 to-tactical-dark/40 border border-brand-gold/30 rounded-2xl overflow-hidden hover:border-brand-gold/60 transition-colors shadow-lg group"
+                    >
+                        <div className="p-8 border-b border-white/5 bg-brand-gold/5">
+                            {/* Ícone removido conforme solicitado */}
+                            <h3 className="text-2xl font-display font-bold text-white uppercase mb-4">Forças Armadas</h3>
+
+                        </div>
+                        <div className="p-6 flex-1 bg-black/20">
+                            <ul className="space-y-3">
+                                {ARMED_FORCES.map((org, i) => (
+                                    <li key={i} className="flex items-center gap-3 text-tactical-metal group-hover:text-white transition-colors">
+                                        <div className="w-1.5 h-1.5 bg-tactical-gold rounded-full"></div>
+                                        <span className="text-sm font-medium uppercase tracking-wide">{org.name}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    </motion.div>
+
+                    {/* CARD 3: NATUREZA POLICIAL (PRATA/CINZA) */}
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 0.4 }}
+                        className="flex flex-col h-full bg-gradient-to-b from-tactical-dark/60 to-tactical-dark/40 border border-tactical-metal/30 rounded-2xl overflow-hidden hover:border-tactical-metal/60 transition-colors shadow-lg group"
+                    >
+                        <div className="p-8 border-b border-white/5 bg-tactical-metal/5">
+                            {/* Ícone removido conforme solicitado */}
+                            <h3 className="text-2xl font-display font-bold text-white uppercase mb-4">Órgãos de natureza Policial</h3>
+
+                        </div>
+                        <div className="p-6 flex-1 bg-black/20">
+                            <ul className="space-y-3">
+                                {POLICE_NATURE_ORGANS.map((org, i) => (
+                                    <li key={i} className="flex items-center gap-3 text-tactical-metal group-hover:text-white transition-colors">
+                                        <div className="w-1.5 h-1.5 bg-tactical-metal rounded-full"></div>
+                                        <span className="text-sm font-medium uppercase tracking-wide">{org.name}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    </motion.div>
+
                 </div>
+
+                {/* --- FAIXA DE CARGOS --- */}
+                <motion.div
+                    initial={{ opacity: 0, scale: 0.98 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
+                    className="w-full bg-gradient-to-r from-tactical-dark to-tactical-midnight border border-white/10 rounded-2xl p-8 md:p-12 relative overflow-hidden"
+                >
+                    <div className="absolute top-0 left-0 w-1 h-full bg-brand-blue"></div>
+
+                    <div className="flex flex-col lg:flex-row gap-10 items-start relative z-10">
+                        <div className="lg:w-1/4">
+                            <div className="flex items-center gap-3 mb-4">
+                                <Users className="w-6 h-6 text-tactical-gold" />
+                                <span className="text-tactical-gold font-bold tracking-widest uppercase text-xs">Público Alvo</span>
+                            </div>
+                            <h3 className="text-3xl font-display font-bold text-white uppercase leading-none">
+                                Cargos &<br />Funções
+                            </h3>
+                        </div>
+
+                        <div className="lg:w-3/4 grid md:grid-cols-2 gap-x-8 gap-y-3 w-full">
+                            {AUDIENCE_ROLES.map((role, idx) => (
+                                <div key={idx} className="flex items-start gap-3 group">
+                                    <Check className="w-4 h-4 text-tactical-gold mt-1 shrink-0 opacity-60 group-hover:opacity-100 transition-opacity" />
+                                    <span className="text-tactical-metal text-sm group-hover:text-white transition-colors">{role}</span>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </motion.div>
+
             </div>
         </section>
     );
-}
+};

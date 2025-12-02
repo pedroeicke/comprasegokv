@@ -4,27 +4,33 @@ import { About } from "@/components/sections/about";
 import { TargetAudience } from "@/components/sections/target-audience";
 import { GalleryCarousel } from "@/components/sections/gallery-carousel";
 import { Reasons } from "@/components/sections/reasons";
-import { TechnicalCoordination } from "@/components/sections/technical-coordination";
-import { Speakers } from "@/components/sections/speakers";
+import Experts from "@/components/sections/experts";
 import { Schedule } from "@/components/sections/schedule";
-import { Registration } from "@/components/sections/registration";
+
 import { Location } from "@/components/sections/location";
+import { Pricing } from "@/components/sections/pricing";
+import { Contact } from "@/components/sections/contact";
 import { Footer } from "@/components/layout/footer";
+import { MouseGlow } from "@/components/ui/mouse-glow";
+import { BackgroundElements } from "@/components/ui/background-elements";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-primary">
+    <main className="min-h-screen relative overflow-hidden">
+      <BackgroundElements />
+      <MouseGlow />
       <Header />
       <Hero />
       <About />
       <TargetAudience />
       <GalleryCarousel />
       <Reasons />
-      <TechnicalCoordination />
-      <Speakers />
+      <Experts />
       <Schedule />
-      <Registration />
+
       <Location />
+      <Pricing />
+      <Contact />
       <Footer />
     </main>
   );
