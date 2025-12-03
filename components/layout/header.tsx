@@ -12,16 +12,10 @@ export function Header() {
 
                 <nav className="hidden md:flex items-center gap-6">
                     <Link href="#sobre" className="text-sm font-medium text-white/80 hover:text-tactical-gold transition-colors">
-                        O Evento
-                    </Link>
-                    <Link href="#publico" className="text-sm font-medium text-white/80 hover:text-tactical-gold transition-colors">
-                        Público Alvo
-                    </Link>
-                    <Link href="#motivos" className="text-sm font-medium text-white/80 hover:text-tactical-gold transition-colors">
-                        Motivos
+                        Sobre COMPRASEG 2026
                     </Link>
                     <Link href="#coordenacao" className="text-sm font-medium text-white/80 hover:text-tactical-gold transition-colors">
-                        Coordenação
+                        Coordenação Técnica
                     </Link>
                     <Link href="#palestrantes" className="text-sm font-medium text-white/80 hover:text-tactical-gold transition-colors">
                         Palestrantes
@@ -30,13 +24,13 @@ export function Header() {
                         Programação
                     </Link>
                     <Link href="#local" className="text-sm font-medium text-white/80 hover:text-tactical-gold transition-colors">
-                        Local
+                        Data local
                     </Link>
                     <Link href="#contato" className="text-sm font-medium text-white/80 hover:text-tactical-gold transition-colors">
                         Contato
                     </Link>
                     <Button className="rounded-full bg-tactical-gold text-tactical-midnight hover:bg-tactical-gold/90 font-bold border-0" size="sm" asChild>
-                        <Link href="#inscricao">Inscreva-se</Link>
+                        <Link href="#inscricao">Inscrever-se</Link>
                     </Button>
                 </nav>
             </div>

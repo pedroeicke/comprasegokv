@@ -30,7 +30,7 @@ export const Pricing: React.FC = () => {
                                 <div className="flex items-baseline gap-1">
                                     <span className="text-lg text-tactical-metal font-medium">R$</span>
                                     <span className="text-5xl font-bold text-white tracking-tight">5.400</span>
-                                    <span className="text-lg text-tactical-metal font-bold">,00</span>
+                                    <span className="text-lg text-white font-bold">,00</span>
                                 </div>
                             </div>
 

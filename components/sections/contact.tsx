@@ -12,7 +12,7 @@ export const Contact: React.FC = () => {
                             Fale Conosco
                         </h2>
                         <p className="text-tactical-metal mb-10 text-lg">
-                            Precisa de ajuda com a inscrição, empenho ou dúvidas técnicas? Nossa equipe está pronta para atender.
+                            Precisa de ajuda com a inscrição, nota de empenho ou dúvidas técnicas?<br />Nossa equipe está pronta para atender.
                         </p>
 
                         <div className="space-y-4">
