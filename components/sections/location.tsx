@@ -18,7 +18,7 @@ export const Location: React.FC = () => {
                     {/* LADO ESQUERDO: Informações e Botões */}
                     <div className="flex flex-col h-full justify-center">
                         <div className="mb-10">
-                            <span className="text-white font-bold tracking-widest uppercase text-xs mb-2 block">Coordenadas</span>
+
                             <h2 className="text-5xl md:text-6xl font-display font-bold text-white mb-6 uppercase tracking-tight leading-none">
                                 Data e <br />
                                 <span className="text-tactical-gold">Local</span>
@@ -56,7 +56,7 @@ export const Location: React.FC = () => {
                                     <MapPin className="w-6 h-6 text-tactical-gold" />
                                 </div>
                                 <div>
-                                    <h4 className="text-xl font-display font-bold text-white uppercase">Auditório do Centro de Eventos Square SC</h4>
+                                    <h4 className="text-lg font-display font-bold text-white uppercase">Auditório do Centro de Eventos Square SC</h4>
                                     <p className="text-sm text-tactical-metal">Rod. José Carlos Daux, 5500 - Florianópolis, SC, 88032-005</p>
                                 </div>
                             </div>
@@ -79,24 +79,16 @@ export const Location: React.FC = () => {
                         <img
                             src="/fotolocal.jpg"
                             alt="Mapa de Localização"
-                            className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-700"
+                            className="absolute inset-0 w-full h-full object-cover transition-all duration-700"
                         />
-                        <div className="absolute inset-0 bg-[#020440]/40 mix-blend-multiply"></div>
 
                         {/* Pin Centralizado no Mapa */}
-                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                            <div className="relative">
-                                <div className="w-4 h-4 bg-brand-blue rounded-full animate-ping absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
-                                <div className="w-8 h-8 bg-brand-blue/20 rounded-full flex items-center justify-center backdrop-blur-sm border border-brand-blue text-white shadow-[0_0_20px_rgba(37,99,235,0.6)]">
-                                    <MapPin className="w-4 h-4" />
-                                </div>
-                            </div>
-                        </div>
+
 
                         {/* Etiqueta Flutuante */}
-                        <div className="absolute bottom-6 left-6 right-6 bg-tactical-midnight/90 backdrop-blur-md p-4 rounded-xl border border-white/10">
+                        <div className="absolute bottom-6 left-6 right-6 bg-tactical-midnight/90 backdrop-blur-md py-2 px-4 rounded-xl border border-white/10">
                             <p className="text-white font-bold text-sm uppercase">Complexo Square SC</p>
-                            <p className="text-xs text-tactical-metal mt-1">Florianópolis - Santa Catarina</p>
+                            <p className="text-xs text-tactical-metal mt-0.5">Florianópolis - Santa Catarina</p>
                         </div>
                     </div>
 

@@ -131,7 +131,8 @@ export default function Experts() {
 
                                 {/* Conteúdo Overlay */}
                                 <div className="absolute inset-0 flex flex-col justify-end p-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                                    <h3 className="text-2xl font-bold text-white mb-2 transform transition-all duration-300">{coord.name}</h3>
+                                    <h3 className="text-2xl font-bold text-white mb-1 transform transition-all duration-300">{coord.name}</h3>
+                                    <p className="text-tactical-gold text-sm font-medium mb-2 opacity-90">{coord.shortRole}</p>
 
                                     <div className="overflow-hidden max-h-0 group-hover:max-h-20 transition-all duration-500 ease-in-out opacity-0 group-hover:opacity-100">
                                         <button
@@ -180,7 +181,8 @@ export default function Experts() {
 
                                 {/* Conteúdo Overlay */}
                                 <div className="absolute inset-0 flex flex-col justify-end p-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                                    <h3 className="text-xl font-bold text-white mb-1 transform transition-all duration-300">{speaker.name}</h3>
+                                    <h3 className="text-xl font-bold text-white mb-0.5 transform transition-all duration-300">{speaker.name}</h3>
+                                    <p className="text-tactical-gold text-xs font-medium mb-1 opacity-90">{speaker.shortRole}</p>
 
                                     <div className="overflow-hidden max-h-0 group-hover:max-h-20 transition-all duration-500 ease-in-out opacity-0 group-hover:opacity-100">
                                         <button

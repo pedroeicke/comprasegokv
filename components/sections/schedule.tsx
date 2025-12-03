@@ -11,10 +11,10 @@ export const Schedule: React.FC = () => {
                 </h2>
 
                 <div className="glass-panel rounded-xl p-12 border border-dashed border-white/10 flex flex-col items-center justify-center bg-black/40">
-                    <div className="p-6 bg-tactical-midnight/80 rounded-full mb-6 border border-white/5 shadow-inner">
-                        <Lock className="w-10 h-10 text-tactical-metal" />
+                    <div className="p-6 bg-tactical-midnight/80 rounded-full mb-6 border-2 border-tactical-gold shadow-[0_0_15px_rgba(255,215,0,0.2)]">
+                        <Lock className="w-10 h-10 text-tactical-gold" />
                     </div>
-                    <h3 className="text-2xl font-bold text-white mb-2 uppercase tracking-wide">Em breve</h3>
+                    <h3 className="text-2xl font-bold text-tactical-gold mb-2 uppercase tracking-wide">Em breve</h3>
                     <p className="text-tactical-metal max-w-md">
                         Estamos finalizando os detalhes da grade de conteúdo para garantir a melhor experiência técnica e operacional.
                     </p>

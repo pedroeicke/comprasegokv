@@ -1,4 +1,4 @@
-import { Search, Gavel, Radar, ShieldCheck } from "lucide-react";
+import { Target, Gavel, Eye, Shield } from "lucide-react";
 
 export const SECURITY_ORGANS = [
     { name: "Polícia Federal" },
@@ -33,7 +33,7 @@ export const AUDIENCE_ROLES = [
 
 export const REASONS = [
     {
-        icon: Search,
+        icon: Target,
         title: "ESPECIFICAR",
         description: "Os melhores produtos e serviços disponíveis no mercado e as soluções tecnológicas mais adequadas para as demandas da Segurança Pública."
     },
@@ -43,12 +43,12 @@ export const REASONS = [
         description: "Questões técnicas e jurídicas e casos práticos sobre contratações da Segurança Pública."
     },
     {
-        icon: Radar,
+        icon: Eye,
         title: "ANTECIPAR",
         description: "A identificação de riscos às contratações da Segurança Pública e desenhar previamente as medidas eficazes para a solução."
     },
     {
-        icon: ShieldCheck,
+        icon: Shield,
         title: "PROTEGER",
         description: "Os gestores da Segurança Pública, evitando-se a responsabilização por falhas evitáveis."
     }
