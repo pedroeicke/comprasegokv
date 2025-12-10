@@ -13,7 +13,6 @@ import { Contact } from "@/components/sections/contact";
 import { Footer } from "@/components/layout/footer";
 import { MouseGlow } from "@/components/ui/mouse-glow";
 import { BackgroundElements } from "@/components/ui/background-elements";
-import { GeometricMesh } from "@/components/ui/geometric-mesh";
 
 export default function Home() {
   return (
