@@ -22,7 +22,7 @@ export const Reasons: React.FC = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: idx * 0.1 }}
-                            className="group relative bg-black/40 p-8 rounded-2xl border border-white/5 hover:border-tactical-gold transition-all duration-300 overflow-hidden flex flex-col backdrop-blur-sm"
+                            className="group relative bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-900/30 via-black/80 to-black/90 p-8 rounded-2xl border border-[#00C1FF]/50 hover:border-[#00C1FF] hover:shadow-[0_0_20px_rgba(0,193,255,0.3)] transition-all duration-300 overflow-hidden flex flex-col backdrop-blur-sm"
                         >
                             <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity transform group-hover:scale-110 duration-500">
                                 <reason.icon className="w-24 h-24 text-white" />

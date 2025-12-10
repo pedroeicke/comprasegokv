@@ -1,4 +1,4 @@
-import React from 'react';
+import Image from "next/image";
 import { cn } from '@/lib/utils';
 
 interface BrandLogoProps {
@@ -7,16 +7,24 @@ interface BrandLogoProps {
 }
 
 export const BrandLogo: React.FC<BrandLogoProps> = ({ className, size = 'md' }) => {
+    // Map sizes to height relative to text sizes
     const sizeClasses = {
-        sm: 'text-xl',
-        md: 'text-2xl',
-        lg: 'text-4xl',
-        xl: 'text-6xl md:text-8xl lg:text-9xl',
+        sm: 'h-6',
+        md: 'h-8',
+        lg: 'h-12',
+        xl: 'h-16',
     };
 
     return (
-        <span className={cn("font-black tracking-tight text-white uppercase font-display", sizeClasses[size], className)}>
-            COMPRASEG
-        </span>
+        <div className={cn("relative", sizeClasses[size], className)}>
+            <Image
+                src="/herocompras.png"
+                alt="COMPRASEG"
+                width={300} // Aspect ratio base
+                height={100}
+                className="w-auto h-full object-contain"
+                priority
+            />
+        </div>
     );
 };

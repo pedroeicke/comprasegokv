@@ -2,7 +2,6 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { BrandLogo } from "@/components/ui/brand-logo";
 
 export const About: React.FC = () => {
     return (
@@ -19,12 +18,12 @@ export const About: React.FC = () => {
                         viewport={{ once: true }}
                         className="order-2 lg:order-1"
                     >
-                        <span className="text-tactical-gold font-bold tracking-widest uppercase text-sm mb-2 block">O Contexto</span>
-                        <h2 className="text-4xl md:text-5xl font-display font-bold text-white uppercase mb-6 leading-tight">
-                            A Ideia do <br />
-                            <BrandLogo size="lg" className="text-tactical-gold" />
-                        </h2>
-                        <div className="w-20 h-1 bg-tactical-gold mb-8"></div>
+                        <div className="mb-8">
+                            <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-6">
+                                A IDEIA DO COMPRASEG
+                            </h2>
+                            <div className="w-20 h-1 bg-[#00C1FF] mt-6"></div>
+                        </div>
 
                         <div className="space-y-6 text-gray-200 text-lg leading-relaxed text-justify">
                             <p>

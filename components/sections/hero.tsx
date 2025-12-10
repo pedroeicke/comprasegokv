@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import Image from "next/image";
 import { BrandLogo } from "@/components/ui/brand-logo";
 
 export function Hero() {
@@ -30,28 +31,27 @@ export function Hero() {
                 </div>
             </div>
 
-            <div className="container mx-auto px-4 relative z-10 flex flex-col items-center justify-center text-center h-full">
+            <div className="container mx-auto px-4 relative z-10 flex flex-col items-center justify-center text-center h-full -mt-16">
 
                 {/* Title Section */}
-                <div className="mb-8 flex flex-col items-center">
-                    {/* Logo Placeholder - replicating the 'wing' shape if possible or just using text for now */}
-                    <h1 className="text-6xl md:text-8xl lg:text-9xl font-black text-white tracking-tighter leading-none flex flex-col md:flex-row items-center gap-4">
-                        <BrandLogo size="xl" />
-                        <span className="text-tactical-gold">
-                            2026
-                        </span>
-                    </h1>
-                    <p className="text-xl md:text-2xl text-white/90 font-medium mt-4 tracking-wide uppercase">
-                        Congresso Nacional de Compras da Segurança Pública
-                    </p>
+                <div className="mb-12 flex flex-col items-center">
+                    <Image
+                        src="/herocompras.png"
+                        alt="COMPRASEG 2026 CONGRESSO NACIONAL DE COMPRAS DA SEGURANÇA PÚBLICA"
+                        width={900}
+                        height={300}
+                        className="w-full max-w-5xl h-auto"
+                        priority
+                    />
                 </div>
 
                 {/* Date and Location */}
-                <div className="mb-12 space-y-2">
-                    <p className="text-2xl md:text-3xl font-bold text-white tracking-wide">
+                {/* Date and Location */}
+                <div className="mb-12 flex flex-col items-center gap-[37px]">
+                    <p className="text-3xl md:text-5xl font-bold text-white tracking-wide font-display text-center">
                         12 A 14 DE MAIO DE 2026
                     </p>
-                    <p className="text-sm md:text-base font-bold text-white/80 tracking-widest uppercase">
+                    <p className="text-[14px] md:text-[25px] font-bold text-white tracking-[0.35em] uppercase font-display text-center">
                         FLORIANÓPOLIS - SC
                     </p>
                 </div>

@@ -3,10 +3,10 @@ import { Target, Gavel, Eye, Shield } from "lucide-react";
 export const SECURITY_ORGANS = [
     { name: "Polícia Federal" },
     { name: "Polícia Rodoviária Federal" },
-    { name: "Polícias Civis" },
-    { name: "Polícias Militares" },
-    { name: "Polícias Penais" },
-    { name: "Corpos de Bombeiros" }
+    { name: "Polícia Civil" },
+    { name: "Polícia Militar" },
+    { name: "Polícia Penal" },
+    { name: "Corpo de Bombeiros" }
 ];
 
 export const ARMED_FORCES = [
@@ -16,9 +16,8 @@ export const ARMED_FORCES = [
 ];
 
 export const POLICE_NATURE_ORGANS = [
-    { name: "Polícias Legislativas" },
-    { name: "Guardas Municipais" },
-    { name: "Agentes de Trânsito" },
+    { name: "Polícia Legislativa" },
+    { name: "Guarda Municipal" },
     { name: "Segurança Institucional (MP/Judiciário)" }
 ];
 

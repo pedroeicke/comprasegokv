@@ -108,9 +108,7 @@ export default function Experts() {
             <section id="coordenacao" className="py-20 bg-transparent">
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-16">
-                        <span className="text-tactical-gold font-bold uppercase tracking-widest text-sm block mb-2">
-                            Liderança Técnica
-                        </span>
+
                         <h2 className="text-3xl md:text-5xl font-display font-bold text-white">
                             Coordenação Técnica
                         </h2>
@@ -118,7 +116,7 @@ export default function Experts() {
 
                     <div className="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
                         {COORDINATORS.map((coord) => (
-                            <div key={coord.id} className="group relative h-[400px] rounded-lg overflow-hidden shadow-lg">
+                            <div key={coord.id} className="group relative h-[400px] rounded-2xl overflow-hidden shadow-lg border border-[#00C1FF]/50 hover:border-[#00C1FF] hover:shadow-[0_0_20px_rgba(0,193,255,0.3)] transition-all">
                                 {/* Imagem Full Color */}
                                 <img
                                     src={coord.image}
@@ -132,14 +130,14 @@ export default function Experts() {
                                 {/* Conteúdo Overlay */}
                                 <div className="absolute inset-0 flex flex-col justify-end p-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
                                     <h3 className="text-2xl font-bold text-white mb-1 transform transition-all duration-300">{coord.name}</h3>
-                                    <p className="text-tactical-gold text-sm font-medium mb-2 opacity-90">{coord.shortRole}</p>
+                                    <p className="text-white text-sm font-medium mb-2 opacity-90">{coord.shortRole}</p>
 
                                     <div className="overflow-hidden max-h-0 group-hover:max-h-20 transition-all duration-500 ease-in-out opacity-0 group-hover:opacity-100">
                                         <button
                                             onClick={() => setActiveBio(coord.id)}
-                                            className="text-tactical-gold hover:text-white text-sm font-bold flex items-center gap-2 uppercase tracking-widest mt-4"
+                                            className="text-white hover:text-white/80 text-sm font-bold flex items-center gap-2 uppercase tracking-widest mt-4"
                                         >
-                                            <ArrowRight size={16} className="text-tactical-gold" />
+                                            <ArrowRight size={16} className="text-white" />
                                             VER CURRÍCULO
                                         </button>
                                     </div>
@@ -157,7 +155,7 @@ export default function Experts() {
                         <h2 className="text-3xl md:text-5xl font-display font-bold text-white mb-4">
                             Palestrantes Confirmados
                         </h2>
-                        <div className="h-1 w-24 bg-tactical-gold mx-auto"></div>
+
                         <p className="text-tactical-metal mt-6 max-w-2xl mx-auto">
                             Grandes autoridades e especialistas da segurança pública reunidos.
                         </p>
@@ -167,7 +165,7 @@ export default function Experts() {
                         {SPEAKERS.map((speaker) => (
                             <div
                                 key={speaker.id}
-                                className="group relative aspect-square rounded-lg overflow-hidden shadow-lg"
+                                className="group relative aspect-square rounded-2xl overflow-hidden shadow-lg border border-[#00C1FF]/50 hover:border-[#00C1FF] hover:shadow-[0_0_20px_rgba(0,193,255,0.3)] transition-all"
                             >
                                 {/* Imagem Full Color */}
                                 <img
@@ -182,14 +180,14 @@ export default function Experts() {
                                 {/* Conteúdo Overlay */}
                                 <div className="absolute inset-0 flex flex-col justify-end p-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
                                     <h3 className="text-xl font-bold text-white mb-0.5 transform transition-all duration-300">{speaker.name}</h3>
-                                    <p className="text-tactical-gold text-xs font-medium mb-1 opacity-90">{speaker.shortRole}</p>
+                                    <p className="text-white text-xs font-medium mb-1 opacity-90">{speaker.shortRole}</p>
 
                                     <div className="overflow-hidden max-h-0 group-hover:max-h-20 transition-all duration-500 ease-in-out opacity-0 group-hover:opacity-100">
                                         <button
                                             onClick={() => setActiveBio(speaker.id)}
-                                            className="text-tactical-gold hover:text-white text-xs font-bold flex items-center gap-2 uppercase tracking-widest mt-3"
+                                            className="text-white hover:text-white/80 text-xs font-bold flex items-center gap-2 uppercase tracking-widest mt-3"
                                         >
-                                            <ArrowRight size={14} className="text-tactical-gold" />
+                                            <ArrowRight size={14} className="text-white" />
                                             VER CURRÍCULO
                                         </button>
                                     </div>
@@ -233,10 +231,10 @@ export default function Experts() {
                                         <img src={c.image} alt={c.name} className="w-full h-full object-cover" />
                                     </div>
                                     <h3 className="text-3xl font-display font-bold text-white mb-2">{c.name}</h3>
-                                    <p className="text-tactical-cyan text-lg font-medium mb-6 border-b border-white/10 pb-4 inline-block">
+                                    <p className="text-white text-lg font-medium mb-6 border-b border-white/10 pb-4 inline-block">
                                         {c.shortRole}
                                     </p>
-                                    <div className="prose prose-invert prose-p:text-tactical-metal prose-p:leading-relaxed text-justify">
+                                    <div className="prose prose-invert prose-p:text-white prose-p:leading-relaxed text-justify">
                                         {c.fullBio.split('\n\n').map((paragraph, idx) => (
                                             <p key={idx} className="mb-4 text-base font-light">
                                                 {paragraph}

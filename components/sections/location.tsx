@@ -21,7 +21,7 @@ export const Location: React.FC = () => {
 
                             <h2 className="text-5xl md:text-6xl font-display font-bold text-white mb-6 uppercase tracking-tight leading-none">
                                 Data e <br />
-                                <span className="text-tactical-gold">Local</span>
+                                <span className="text-white">Local</span>
                             </h2>
                         </div>
 
@@ -45,7 +45,7 @@ export const Location: React.FC = () => {
                                     <Clock className="w-6 h-6 text-tactical-gold" />
                                 </div>
                                 <div>
-                                    <h4 className="text-xl font-display font-bold text-white uppercase">08h às 18h</h4>
+                                    <h4 className="text-xl font-display font-bold text-white">8h às 18h</h4>
                                     <p className="text-sm text-tactical-metal">Intervalo de almoço: 12h às 14h</p>
                                 </div>
                             </div>
@@ -64,7 +64,7 @@ export const Location: React.FC = () => {
                         </div>
 
                         <div className="flex gap-4">
-                            <a href="https://waze.com/ul" target="_blank" rel="noopener noreferrer" className="flex-1 py-4 bg-tactical-gold hover:bg-tactical-gold/90 text-tactical-midnight rounded-lg text-center font-bold uppercase text-sm tracking-wide transition-all shadow-lg flex items-center justify-center gap-2">
+                            <a href="https://waze.com/ul" target="_blank" rel="noopener noreferrer" className="flex-1 py-4 bg-[#f5dd29] hover:bg-[#f5dd29]/90 text-tactical-midnight rounded-lg text-center font-bold uppercase text-sm tracking-wide transition-all shadow-lg flex items-center justify-center gap-2">
                                 <Navigation className="w-4 h-4" /> Waze
                             </a>
                             <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" className="flex-1 py-4 bg-white text-tactical-midnight hover:bg-gray-200 rounded-lg text-center font-bold uppercase text-sm tracking-wide transition-all shadow-lg flex items-center justify-center gap-2">

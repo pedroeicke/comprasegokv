@@ -4,17 +4,17 @@
   --color-primary: #020440;
   --color-primary-foreground: #ffffff;
 
-  --color-secondary: #f5dd29;
+  --color-secondary: #00C1FF;
   --color-secondary-foreground: #020440;
 
-  --color-accent: #f5dd29;
+  --color-accent: #00C1FF;
   --color-accent-foreground: #020440;
 
   --color-background: #01021c;
   --color-foreground: #ffffff;
 
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-display: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Abtera", var(--font-inter), ui-sans-serif, system-ui, sans-serif;
 
   --color-brand-blue: #020440;
   --color-brand-glow: #01032e;
@@ -22,9 +22,9 @@
   --color-tactical-dark: #01021c;
   --color-tactical-panel: #01032e;
   --color-tactical-highlight: #282828;
-  --color-tactical-gold: #f5dd29;
-  --color-tactical-cyan: #f5dd29;
-  --color-brand-gold: #f5dd29;
+  --color-tactical-gold: #00C1FF;
+  --color-tactical-cyan: #00C1FF;
+  --color-brand-gold: #00C1FF;
   --color-tactical-card: #01021c;
   --color-tactical-black: #00010a;
   --color-tactical-metal: #7c7c7c;

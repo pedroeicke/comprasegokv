@@ -21,47 +21,41 @@ export const Contact: React.FC = () => {
                                 <span className="text-white font-medium">(11) 97736-3640</span>
                             </a>
 
-                            <a href="mailto:contato@licitainteligente.com.br" className="flex items-center gap-4 p-4 rounded-lg bg-white/5 hover:bg-white/10 transition-colors border border-white/5">
+                            <a href="mailto:congresso@compraseg.com.br" className="flex items-center gap-4 p-4 rounded-lg bg-white/5 hover:bg-white/10 transition-colors border border-white/5">
                                 <Mail className="w-6 h-6 text-tactical-gold" />
-                                <span className="text-white font-medium">contato@licitainteligente.com.br</span>
+                                <span className="text-white font-medium">congresso@compraseg.com.br</span>
                             </a>
 
-                            <a href="https://instagram.com/compraseg_segurancapublica" target="_blank" rel="noreferrer" className="flex items-center gap-4 p-4 rounded-lg bg-white/5 hover:bg-white/10 transition-colors border border-white/5">
+                            <a href="https://instagram.com/congressocompraseg" target="_blank" rel="noreferrer" className="flex items-center gap-4 p-4 rounded-lg bg-white/5 hover:bg-white/10 transition-colors border border-white/5">
                                 <Instagram className="w-6 h-6 text-tactical-gold" />
-                                <span className="text-white font-medium">@compraseg_segurancapublica</span>
+                                <span className="text-white font-medium">@congressocompraseg</span>
                             </a>
                         </div>
                     </div>
 
-                    <div id="contact-form" className="glass-panel p-8 rounded-2xl border border-white/10 shadow-2xl bg-tactical-dark/50">
+                    <div id="contact-form" className="p-8 rounded-2xl border border-white/10 shadow-2xl bg-white/5">
                         <h3 className="text-xl font-bold text-white mb-6 uppercase">Envie sua mensagem</h3>
                         <form className="space-y-5">
                             <div>
-                                <input type="text" className="w-full bg-tactical-midnight border border-tactical-highlight rounded-lg p-4 text-white placeholder-tactical-metal focus:border-brand-blue focus:ring-1 focus:ring-brand-blue outline-none transition-all" placeholder="Nome Completo" />
+                                <input type="text" className="w-full bg-white/5 border border-white/10 rounded-lg p-4 text-white placeholder-tactical-metal focus:border-[#00C1FF] focus:ring-1 focus:ring-[#00C1FF] outline-none transition-all" placeholder="Nome Completo" />
                             </div>
 
                             <div className="grid grid-cols-2 gap-5">
                                 <div>
-                                    <input type="email" className="w-full bg-tactical-midnight border border-tactical-highlight rounded-lg p-4 text-white placeholder-tactical-metal focus:border-brand-blue focus:ring-1 focus:ring-brand-blue outline-none transition-all" placeholder="E-mail" />
+                                    <input type="email" className="w-full bg-white/5 border border-white/10 rounded-lg p-4 text-white placeholder-tactical-metal focus:border-[#00C1FF] focus:ring-1 focus:ring-[#00C1FF] outline-none transition-all" placeholder="E-mail" />
                                 </div>
                                 <div>
-                                    <input type="tel" className="w-full bg-tactical-midnight border border-tactical-highlight rounded-lg p-4 text-white placeholder-tactical-metal focus:border-brand-blue focus:ring-1 focus:ring-brand-blue outline-none transition-all" placeholder="Telefone" />
+                                    <input type="tel" className="w-full bg-white/5 border border-white/10 rounded-lg p-4 text-white placeholder-tactical-metal focus:border-[#00C1FF] focus:ring-1 focus:ring-[#00C1FF] outline-none transition-all" placeholder="Telefone" />
                                 </div>
                             </div>
 
                             <div>
-                                <input type="text" className="w-full bg-tactical-midnight border border-tactical-highlight rounded-lg p-4 text-white placeholder-tactical-metal focus:border-brand-blue focus:ring-1 focus:ring-brand-blue outline-none transition-all" placeholder="Órgão / Instituição" />
+                                <input type="text" className="w-full bg-white/5 border border-white/10 rounded-lg p-4 text-white placeholder-tactical-metal focus:border-[#00C1FF] focus:ring-1 focus:ring-[#00C1FF] outline-none transition-all" placeholder="Órgão / Instituição" />
                             </div>
 
-                            <div className="flex items-center gap-3 px-1">
-                                <input type="checkbox" id="empenho" className="w-5 h-5 rounded border-tactical-highlight bg-tactical-midnight text-brand-blue focus:ring-brand-blue focus:ring-offset-0 accent-brand-blue" />
-                                <label htmlFor="empenho" className="text-tactical-metal text-sm cursor-pointer select-none">
-                                    Solicitar Nota de Empenho
-                                </label>
-                            </div>
 
                             <div>
-                                <textarea rows={4} className="w-full bg-tactical-midnight border border-tactical-highlight rounded-lg p-4 text-white placeholder-tactical-metal focus:border-brand-blue focus:ring-1 focus:ring-brand-blue outline-none transition-all" placeholder="Mensagem"></textarea>
+                                <textarea rows={4} className="w-full bg-white/5 border border-white/10 rounded-lg p-4 text-white placeholder-tactical-metal focus:border-[#00C1FF] focus:ring-1 focus:ring-[#00C1FF] outline-none transition-all" placeholder="Mensagem"></textarea>
                             </div>
 
                             <button type="button" className="w-full py-4 bg-white text-tactical-black hover:bg-white/90 font-bold uppercase tracking-wider rounded-lg transition-all flex items-center justify-center gap-2">

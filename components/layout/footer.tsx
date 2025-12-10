@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BrandLogo } from "@/components/ui/brand-logo";
 
 export function Footer() {
     return (
@@ -6,10 +7,9 @@ export function Footer() {
             <div className="container mx-auto px-4">
                 <div className="grid md:grid-cols-3 gap-8 mb-8">
                     <div>
-                        <h3 className="text-xl font-bold mb-4">COMPRASEG</h3>
-                        <p className="text-white/60 text-sm">
-                            Congresso Nacional de Compras da Segurança Pública.
-                        </p>
+                        <div className="mb-4">
+                            <BrandLogo size="xl" />
+                        </div>
                     </div>
                     <div>
                         <h4 className="font-bold mb-4">Links Rápidos</h4>
