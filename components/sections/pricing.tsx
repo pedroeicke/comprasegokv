@@ -49,7 +49,7 @@ export const Pricing: React.FC = () => {
                                 ))}
                             </div>
 
-                            <Button size="lg" asChild className="w-full bg-[#e3db39] text-tactical-black hover:bg-[#e3db39]/90 font-bold tracking-wide">
+                            <Button size="lg" asChild className="w-full bg-[#00C1FF] text-tactical-black hover:bg-[#00C1FF]/90 font-bold tracking-wide">
                                 <Link href="/inscricao">Inscrever-se Agora</Link>
                             </Button>
                         </div>
@@ -61,7 +61,7 @@ export const Pricing: React.FC = () => {
                                     <FileText className="text-white w-6 h-6" />
                                     <h4 className="text-lg font-bold text-white">Nota de Empenho</h4>
                                 </div>
-                                <Button size="sm" asChild className="w-full bg-transparent border border-white text-white hover:bg-[#e3db39] hover:text-tactical-black hover:border-[#e3db39] font-bold">
+                                <Button size="sm" asChild className="w-full bg-transparent border border-white text-white hover:bg-[#00C1FF] hover:text-tactical-black hover:border-[#00C1FF] font-bold">
                                     <a href="mailto:congresso@compraseg.com.br">Envie sua Nota de Empenho</a>
                                 </Button>
                             </div>

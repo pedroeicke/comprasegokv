@@ -64,7 +64,7 @@ export const Location: React.FC = () => {
                         </div>
 
                         <div className="flex gap-4">
-                            <a href="https://waze.com/ul" target="_blank" rel="noopener noreferrer" className="flex-1 py-4 bg-[#e3db39] hover:bg-[#e3db39]/90 text-tactical-midnight rounded-lg text-center font-bold uppercase text-sm tracking-wide transition-all shadow-lg flex items-center justify-center gap-2">
+                            <a href="https://waze.com/ul" target="_blank" rel="noopener noreferrer" className="flex-1 py-4 bg-[#00C1FF] hover:bg-[#00C1FF]/90 text-tactical-midnight rounded-lg text-center font-bold uppercase text-sm tracking-wide transition-all shadow-lg flex items-center justify-center gap-2">
                                 <Navigation className="w-4 h-4" /> Waze
                             </a>
                             <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" className="flex-1 py-4 bg-white text-tactical-midnight hover:bg-gray-200 rounded-lg text-center font-bold uppercase text-sm tracking-wide transition-all shadow-lg flex items-center justify-center gap-2">

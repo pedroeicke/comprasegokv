@@ -47,7 +47,7 @@ export function Header() {
                     <Link href="#contato" className="text-sm font-medium text-white/80 hover:text-tactical-gold transition-colors">
                         Contato
                     </Link>
-                    <Button className="rounded-full bg-[#e3db39] text-tactical-midnight hover:bg-[#e3db39]/90 font-bold border-0" size="sm" asChild>
+                    <Button className="rounded-full bg-[#00C1FF] text-tactical-midnight hover:bg-[#00C1FF]/90 font-bold border-0" size="sm" asChild>
                         <Link href="/inscricao">Inscrever-se</Link>
                     </Button>
                 </nav>
