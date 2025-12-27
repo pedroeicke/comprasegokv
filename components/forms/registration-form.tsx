@@ -58,7 +58,7 @@ export const RegistrationForm: React.FC = () => {
             {/* Nome Completo */}
             <div>
                 <label className="block text-white font-medium mb-2">
-                    Nome Completo <span className="text-[#00C1FF]">*</span>
+                    Nome Completo <span className="text-[#f5dd29]">*</span>
                 </label>
                 <input
                     type="text"
@@ -73,7 +73,7 @@ export const RegistrationForm: React.FC = () => {
             {/* E-mail */}
             <div>
                 <label className="block text-white font-medium mb-2">
-                    E-mail do Responsável da Inscrição <span className="text-[#00C1FF]">*</span>
+                    E-mail do Responsável da Inscrição <span className="text-[#f5dd29]">*</span>
                 </label>
                 <input
                     type="email"
@@ -88,7 +88,7 @@ export const RegistrationForm: React.FC = () => {
             {/* Telefone/Whatsapp */}
             <div>
                 <label className="block text-white font-medium mb-2">
-                    Telefone/Whatsapp <span className="text-[#00C1FF]">*</span>
+                    Telefone/Whatsapp <span className="text-[#f5dd29]">*</span>
                 </label>
                 <input
                     type="tel"
@@ -103,7 +103,7 @@ export const RegistrationForm: React.FC = () => {
             {/* Órgão Público */}
             <div>
                 <label className="block text-white font-medium mb-2">
-                    Qual seu órgão público? <span className="text-[#00C1FF]">*</span>
+                    Qual seu órgão público? <span className="text-[#f5dd29]">*</span>
                 </label>
                 <select
                     required
@@ -121,7 +121,7 @@ export const RegistrationForm: React.FC = () => {
             {/* Estado */}
             <div>
                 <label className="block text-white font-medium mb-2">
-                    Qual seu estado? <span className="text-[#00C1FF]">*</span>
+                    Qual seu estado? <span className="text-[#f5dd29]">*</span>
                 </label>
                 <select
                     required
@@ -139,7 +139,7 @@ export const RegistrationForm: React.FC = () => {
             {/* Município */}
             <div>
                 <label className="block text-white font-medium mb-2">
-                    Qual o seu município? <span className="text-[#00C1FF]">*</span>
+                    Qual o seu município? <span className="text-[#f5dd29]">*</span>
                 </label>
                 <input
                     type="text"
@@ -266,7 +266,7 @@ export const RegistrationForm: React.FC = () => {
             <Button
                 type="submit"
                 size="lg"
-                className="w-full bg-[#f5dd29] text-tactical-black hover:bg-[#f5dd29]/90 font-bold tracking-wide"
+                className="w-full bg-[#00C1FF] text-tactical-black hover:bg-[#00C1FF]/90 font-bold tracking-wide"
             >
                 Enviar
             </Button>
