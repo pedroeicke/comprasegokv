@@ -38,7 +38,7 @@ export const TargetAudience: React.FC = () => {
                     >
                         <div className="p-8 border-b border-white/5 bg-brand-gold/5">
                             {/* Ícone removido conforme solicitado */}
-                            <h3 className="text-2xl font-display font-bold text-white uppercase mb-4">Âmbito Federal</h3>
+                            <h3 className="text-2xl font-display font-bold text-white uppercase mb-4">Segurança Pública</h3>
 
                         </div>
                         <div className="p-6 flex-1 bg-black/20">
@@ -63,7 +63,7 @@ export const TargetAudience: React.FC = () => {
                     >
                         <div className="p-8 border-b border-white/5 bg-brand-gold/5">
                             {/* Ícone removido conforme solicitado */}
-                            <h3 className="text-2xl font-display font-bold text-white uppercase mb-4">Âmbito Estadual</h3>
+                            <h3 className="text-2xl font-display font-bold text-white uppercase mb-4">Forças Armadas</h3>
 
                         </div>
                         <div className="p-6 flex-1 bg-black/20">
@@ -83,12 +83,12 @@ export const TargetAudience: React.FC = () => {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        transition={{ delay: 0.4 }}
+                        transition={{ delay: 0.2 }}
                         className="flex flex-col h-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-900/30 via-tactical-dark to-tactical-dark border border-[#00C1FF] rounded-2xl overflow-hidden hover:shadow-[0_0_20px_rgba(0,193,255,0.4)] transition-all shadow-lg group"
                     >
                         <div className="p-8 border-b border-[#00C1FF]/20 bg-[#00C1FF]/5">
                             {/* Ícone removido conforme solicitado */}
-                            <h3 className="text-2xl font-display font-bold text-white uppercase mb-4">Municípios e Instituições</h3>
+                            <h3 className="text-2xl font-display font-bold text-white uppercase mb-4">Órgãos de Natureza Policial</h3>
 
                         </div>
                         <div className="p-6 flex-1 bg-black/20">

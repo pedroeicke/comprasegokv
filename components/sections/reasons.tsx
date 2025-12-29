@@ -6,11 +6,11 @@ import { REASONS } from '../constants';
 
 export const Reasons: React.FC = () => {
     return (
-        <section id="motivos" className="py-24 bg-transparent relative z-10">
+        <section id="motivos" className="py-12 md:py-24 bg-transparent relative z-10">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <motion.div className="text-center mb-16">
                     <h2 className="text-4xl font-display font-bold text-white uppercase tracking-tight">
-                        Por que <span className="text-brand-gold">Participar?</span>
+                        Por que Participar?
                     </h2>
                 </motion.div>
 
@@ -29,9 +29,6 @@ export const Reasons: React.FC = () => {
                             </div>
 
                             <div className="relative z-10 flex-1">
-                                <div className="w-12 h-12 bg-brand-blue/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-tactical-gold group-hover:text-tactical-black transition-all text-tactical-gold">
-                                    <reason.icon className="w-6 h-6" />
-                                </div>
 
                                 <h3 className="text-2xl font-display font-bold text-white mb-4 uppercase tracking-wide">{reason.title}</h3>
                                 <p className="text-tactical-metal text-sm leading-relaxed">

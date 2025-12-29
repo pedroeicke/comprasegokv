@@ -5,10 +5,10 @@ import { Button } from '@/components/ui/button';
 
 export const Pricing: React.FC = () => {
     return (
-        <section id="inscricao" className="py-24 bg-transparent relative z-10">
+        <section id="inscricao" className="py-12 md:py-24 bg-transparent relative z-10">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-12">
-                    <h2 className="text-4xl font-display font-bold text-white uppercase mb-4">
+                    <h2 className="text-3xl md:text-4xl font-display font-bold text-white uppercase mb-4">
                         Inscrição
                     </h2>
                     <p className="text-tactical-metal text-lg max-w-4xl mx-auto">
@@ -30,7 +30,7 @@ export const Pricing: React.FC = () => {
                                 <span className="text-sm text-tactical-metal block mb-1">Valor por inscrição</span>
                                 <div className="flex items-baseline gap-1">
                                     <span className="text-lg text-tactical-metal font-medium">R$</span>
-                                    <span className="text-5xl font-bold text-white tracking-tight">5.400</span>
+                                    <span className="text-4xl md:text-5xl font-bold text-white tracking-tight">5.400</span>
                                     <span className="text-lg text-white font-bold">,00</span>
                                 </div>
                             </div>
@@ -49,7 +49,7 @@ export const Pricing: React.FC = () => {
                                 ))}
                             </div>
 
-                            <Button size="lg" asChild className="w-full bg-[#00C1FF] text-tactical-black hover:bg-[#00C1FF]/90 font-bold tracking-wide">
+                            <Button size="lg" asChild className="w-full bg-[#f8f27c] text-tactical-midnight hover:bg-[#f8f27c]/90 font-bold tracking-wide border-0">
                                 <Link href="/inscricao">Inscrever-se Agora</Link>
                             </Button>
                         </div>

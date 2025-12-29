@@ -47,11 +47,11 @@ export function Hero() {
 
                 {/* Date and Location */}
                 {/* Date and Location */}
-                <div className="mb-12 flex flex-col items-center gap-[37px]">
-                    <p className="text-3xl md:text-5xl font-bold text-white tracking-wide font-display text-center">
+                <div className="mb-8 md:mb-12 flex flex-col items-center gap-[20px] md:gap-[37px]">
+                    <p className="text-2xl md:text-5xl font-bold text-white tracking-wide font-display text-center">
                         12 A 14 DE MAIO DE 2026
                     </p>
-                    <p className="text-[14px] md:text-[25px] font-bold text-white tracking-[0.35em] uppercase font-display text-center">
+                    <p className="text-[14px] md:text-[25px] font-bold text-white tracking-[0.2em] md:tracking-[0.35em] uppercase font-display text-center">
                         FLORIANÓPOLIS - SC
                     </p>
                 </div>

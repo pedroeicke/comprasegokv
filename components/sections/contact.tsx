@@ -3,7 +3,7 @@ import { Mail, Instagram, Send } from 'lucide-react';
 
 export const Contact: React.FC = () => {
     return (
-        <section id="contato" className="py-24 bg-transparent relative z-10">
+        <section id="contato" className="py-12 md:py-24 bg-transparent relative z-10">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid md:grid-cols-2 gap-16 items-center">
 
@@ -57,7 +57,7 @@ export const Contact: React.FC = () => {
                             </div>
 
                             <div>
-                                <input type="text" className="w-full bg-white/5 border border-white/10 rounded-lg p-4 text-white placeholder-tactical-metal focus:border-[#00C1FF] focus:ring-1 focus:ring-[#00C1FF] outline-none transition-all" placeholder="Órgão / Instituição" />
+                                <input type="text" className="w-full bg-white/5 border border-white/10 rounded-lg p-4 text-white placeholder-tactical-metal focus:border-[#00C1FF] focus:ring-1 focus:ring-[#00C1FF] outline-none transition-all" placeholder="Instituição" />
                             </div>
 
 

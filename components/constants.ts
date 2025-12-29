@@ -4,23 +4,26 @@ export const SECURITY_ORGANS = [
     { name: "Polícia Federal" },
     { name: "Polícia Rodoviária Federal" },
     { name: "Polícia Ferroviária Federal" },
-    { name: "Polícia da Câmara dos Deputados" },
-    { name: "Polícia do Senado Federal" }
-];
-
-export const ARMED_FORCES = [
-    { name: "Polícia Militar" },
     { name: "Polícia Civil" },
-    { name: "Polícia Penal" },
     { name: "Polícia Científica" },
-    { name: "Polícias Legislativas Estaduais" },
+    { name: "Polícia Militar" },
+    { name: "Polícia Penal" },
     { name: "Corpo de Bombeiros Militar" }
 ];
 
+export const ARMED_FORCES = [
+    { name: "Marinha do Brasil" },
+    { name: "Exército Brasileiro" },
+    { name: "Força Aérea Brasileira" }
+];
+
 export const POLICE_NATURE_ORGANS = [
-    { name: "Guardas Municipais" },
+    { name: "Polícia da Câmara dos Deputados" },
+    { name: "Polícia do Senado Federal" },
+    { name: "Polícias Legislativas Estaduais" },
     { name: "Órgãos de segurança institucional do Poder Judiciário" },
-    { name: "Órgãos de segurança institucional do Ministério Público" }
+    { name: "Órgãos de segurança institucional do Ministério Público" },
+    { name: "Guardas Municipais" }
 ];
 
 export const DEFENSE_COMPANIES = [

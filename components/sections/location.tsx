@@ -3,7 +3,7 @@ import { MapPin, Calendar, Clock, Navigation } from 'lucide-react';
 
 export const Location: React.FC = () => {
     return (
-        <section id="local" className="relative py-24 w-full overflow-hidden bg-transparent">
+        <section id="local" className="relative py-12 md:py-24 w-full overflow-hidden bg-transparent">
 
             {/* --- FULL WIDTH BACKGROUND LAYER REMOVED FOR SOLID COLOR --- */}
             {/* <div className="absolute inset-0 z-0">
@@ -64,7 +64,7 @@ export const Location: React.FC = () => {
                         </div>
 
                         <div className="flex gap-4">
-                            <a href="https://waze.com/ul" target="_blank" rel="noopener noreferrer" className="flex-1 py-4 bg-[#00C1FF] hover:bg-[#00C1FF]/90 text-tactical-midnight rounded-lg text-center font-bold uppercase text-sm tracking-wide transition-all shadow-lg flex items-center justify-center gap-2">
+                            <a href="https://waze.com/ul" target="_blank" rel="noopener noreferrer" className="flex-1 py-4 bg-[#f8f27c] hover:bg-[#f8f27c]/90 text-tactical-midnight rounded-lg text-center font-bold uppercase text-sm tracking-wide transition-all shadow-lg flex items-center justify-center gap-2">
                                 <Navigation className="w-4 h-4" /> Waze
                             </a>
                             <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" className="flex-1 py-4 bg-white text-tactical-midnight hover:bg-gray-200 rounded-lg text-center font-bold uppercase text-sm tracking-wide transition-all shadow-lg flex items-center justify-center gap-2">
@@ -87,8 +87,8 @@ export const Location: React.FC = () => {
 
                         {/* Etiqueta Flutuante */}
                         <div className="absolute bottom-6 left-6 right-6 bg-tactical-midnight/90 backdrop-blur-md py-2 px-4 rounded-xl border border-white/10">
-                            <p className="text-white font-bold text-sm uppercase">Complexo Square SC</p>
-                            <p className="text-xs text-tactical-metal mt-0.5">Florianópolis - Santa Catarina</p>
+                            <p className="text-white font-bold text-xs uppercase">Complexo Square SC</p>
+                            <p className="text-[10px] text-tactical-metal mt-0.5">Florianópolis - Santa Catarina</p>
                         </div>
                     </div>
 
