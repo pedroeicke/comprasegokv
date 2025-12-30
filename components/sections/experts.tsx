@@ -164,7 +164,7 @@ export default function Experts() {
                                 <img
                                     src={coord.image}
                                     alt={coord.name}
-                                    className="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-110"
+                                    className={`absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 ${coord.name === 'Noel Baratieri' ? 'object-center' : 'object-top'}`}
                                 />
 
                                 {/* Overlay Darkening on Hover */}
