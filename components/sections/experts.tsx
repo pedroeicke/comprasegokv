@@ -166,7 +166,9 @@ export default function Experts() {
                                     alt={coord.name}
                                     className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                                     style={{
-                                        objectPosition: coord.name === 'Noel Baratieri' ? '50% 12%' : '50% 0%'
+                                        objectPosition:
+                                            coord.name === 'Murilo Frigeri' ? '50% 10%' :
+                                                coord.name === 'Noel Baratieri' ? '50% 15%' : '50% 5%'
                                     }}
                                 />
 
