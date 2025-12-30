@@ -164,11 +164,12 @@ export default function Experts() {
                                 <img
                                     src={coord.image}
                                     alt={coord.name}
-                                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-125"
                                     style={{
                                         objectPosition:
                                             coord.name === 'Murilo Frigeri' ? '50% 28%' :
-                                                coord.name === 'Noel Baratieri' ? '50% 22%' : '50% 10%'
+                                                coord.name === 'Noel Baratieri' ? '50% 22%' : '50% 15%',
+                                        transform: coord.name === 'Álvaro Capagio' ? 'scale(1.15)' : 'none'
                                     }}
                                 />
 
