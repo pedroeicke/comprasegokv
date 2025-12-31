@@ -9,7 +9,11 @@ export const TargetAudience: React.FC = () => {
     const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
-        const checkMobile = () => setIsMobile(window.innerWidth < 1024); // Consider tablet/mobile
+        const checkMobile = () => {
+            const isTouch = window.matchMedia('(pointer: coarse)').matches;
+            const isSmall = window.innerWidth < 1024;
+            setIsMobile(isTouch || isSmall);
+        };
         checkMobile();
         window.addEventListener('resize', checkMobile);
         return () => window.removeEventListener('resize', checkMobile);
@@ -49,6 +53,12 @@ export const TargetAudience: React.FC = () => {
         return {
             initial: { opacity: 0, y: 20 },
             whileInView: { opacity: 1, y: 0 },
+            whileHover: {
+                scale: 1.02,
+                boxShadow: "0px 0px 30px rgba(0, 193, 255, 0.4)",
+                borderColor: "#00C1FF",
+                transition: { duration: 0.3 }
+            },
             viewport: { once: true },
             transition: { delay }
         };
