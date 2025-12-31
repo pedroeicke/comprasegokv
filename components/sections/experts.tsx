@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight, X } from 'lucide-react';
@@ -144,6 +144,18 @@ const SPEAKERS = [
 
 export default function Experts() {
     const [activeBio, setActiveBio] = useState<string | null>(null);
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const checkMobile = () => {
+            const isTouch = window.matchMedia('(pointer: coarse)').matches;
+            const isSmall = window.innerWidth < 1024;
+            setIsMobile(isTouch || isSmall);
+        };
+        checkMobile();
+        window.addEventListener('resize', checkMobile);
+        return () => window.removeEventListener('resize', checkMobile);
+    }, []);
 
     return (
         <div className="bg-transparent text-white relative z-10">
@@ -184,7 +196,7 @@ export default function Experts() {
                                     <h3 className="text-2xl font-bold text-white mb-1 transform transition-all duration-300">{coord.name}</h3>
                                     <p className="text-white text-xs font-bold mb-2">{coord.shortRole}</p>
 
-                                    <div className="overflow-hidden max-h-0 group-hover:max-h-20 transition-all duration-500 ease-in-out opacity-0 group-hover:opacity-100">
+                                    <div className={`overflow-hidden transition-all duration-500 ease-in-out ${isMobile ? 'max-h-20 opacity-100' : 'max-h-0 group-hover:max-h-20 opacity-0 group-hover:opacity-100'}`}>
                                         <button
                                             onClick={() => setActiveBio(coord.id)}
                                             className="text-white hover:text-white/80 text-xs font-bold flex items-center gap-2 uppercase tracking-widest mt-2"
@@ -234,7 +246,7 @@ export default function Experts() {
                                     <h3 className="text-2xl font-bold text-white mb-1 transform transition-all duration-300">{speaker.name}</h3>
                                     <p className="text-white text-xs font-bold mb-1">{speaker.shortRole}</p>
 
-                                    <div className="overflow-hidden max-h-0 group-hover:max-h-20 transition-all duration-500 ease-in-out opacity-0 group-hover:opacity-100">
+                                    <div className={`overflow-hidden transition-all duration-500 ease-in-out ${isMobile ? 'max-h-20 opacity-100' : 'max-h-0 group-hover:max-h-20 opacity-0 group-hover:opacity-100'}`}>
                                         <button
                                             onClick={() => setActiveBio(speaker.id)}
                                             className="text-white hover:text-white/80 text-xs font-bold flex items-center gap-2 uppercase tracking-widest mt-2"
