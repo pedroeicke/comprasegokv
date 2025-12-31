@@ -172,7 +172,7 @@ export default function Experts() {
 
                     <div className="flex flex-wrap justify-center gap-8 max-w-7xl mx-auto">
                         {COORDINATORS.map((coord) => (
-                            <div key={coord.id} className="group relative aspect-[3/4] w-full max-w-sm rounded-2xl overflow-hidden shadow-lg border border-[#00C1FF]/50 hover:border-[#00C1FF] hover:shadow-[0_0_20px_rgba(0,193,255,0.3)] transition-all">
+                            <div key={coord.id} className="group relative aspect-[3/5] md:aspect-[3/4] w-full max-w-sm rounded-2xl overflow-hidden shadow-lg border border-[#00C1FF]/50 hover:border-[#00C1FF] hover:shadow-[0_0_20px_rgba(0,193,255,0.3)] transition-all">
                                 {/* Imagem Full Color */}
                                 <img
                                     src={coord.image}
@@ -192,8 +192,8 @@ export default function Experts() {
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-60 group-hover:opacity-90 group-hover:bg-black/60 transition-all duration-500"></div>
 
                                 {/* Conteúdo Overlay */}
-                                <div className="absolute inset-0 flex flex-col justify-end p-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                                    <h3 className="text-2xl font-bold text-white mb-1 transform transition-all duration-300">{coord.name}</h3>
+                                <div className={`absolute inset-0 flex flex-col justify-end ${isMobile ? 'p-4 translate-y-0' : 'p-6 translate-y-4 group-hover:translate-y-0'} transition-transform duration-500`}>
+                                    <h3 className={`${isMobile ? 'text-xl' : 'text-2xl'} font-bold text-white mb-1 transform transition-all duration-300`}>{coord.name}</h3>
                                     <p className="text-white text-xs font-bold mb-2">{coord.shortRole}</p>
 
                                     <div className={`overflow-hidden transition-all duration-500 ease-in-out ${isMobile ? 'max-h-20 opacity-100' : 'max-h-0 group-hover:max-h-20 opacity-0 group-hover:opacity-100'}`}>
@@ -229,7 +229,7 @@ export default function Experts() {
                         {SPEAKERS.map((speaker) => (
                             <div
                                 key={speaker.id}
-                                className="group relative aspect-[3/4] rounded-2xl overflow-hidden shadow-lg border border-[#00C1FF]/50 hover:border-[#00C1FF] hover:shadow-[0_0_20px_rgba(0,193,255,0.3)] transition-all"
+                                className="group relative aspect-[3/5] md:aspect-[3/4] rounded-2xl overflow-hidden shadow-lg border border-[#00C1FF]/50 hover:border-[#00C1FF] hover:shadow-[0_0_20px_rgba(0,193,255,0.3)] transition-all"
                             >
                                 {/* Imagem Full Color */}
                                 <img
@@ -242,8 +242,8 @@ export default function Experts() {
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-60 group-hover:opacity-90 group-hover:bg-black/60 transition-all duration-500"></div>
 
                                 {/* Conteúdo Overlay */}
-                                <div className="absolute inset-0 flex flex-col justify-end p-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                                    <h3 className="text-2xl font-bold text-white mb-1 transform transition-all duration-300">{speaker.name}</h3>
+                                <div className={`absolute inset-0 flex flex-col justify-end ${isMobile ? 'p-4 translate-y-0' : 'p-6 translate-y-4 group-hover:translate-y-0'} transition-transform duration-500`}>
+                                    <h3 className={`${isMobile ? 'text-xl' : 'text-2xl'} font-bold text-white mb-1 transform transition-all duration-300`}>{speaker.name}</h3>
                                     <p className="text-white text-xs font-bold mb-1">{speaker.shortRole}</p>
 
                                     <div className={`overflow-hidden transition-all duration-500 ease-in-out ${isMobile ? 'max-h-20 opacity-100' : 'max-h-0 group-hover:max-h-20 opacity-0 group-hover:opacity-100'}`}>
