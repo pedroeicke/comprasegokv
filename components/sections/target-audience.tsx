@@ -31,8 +31,7 @@ export const TargetAudience: React.FC = () => {
                 y: { duration: 0.5 },
                 boxShadow: {
                     duration: 1.5,
-                    times: [0, 0.5, 1],
-                    ease: "easeInOut"
+                    times: [0, 0.5, 1]
                 }
             }
         }
