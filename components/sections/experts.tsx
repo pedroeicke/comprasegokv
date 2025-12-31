@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
+import { createPortal } from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight, X } from 'lucide-react';
 
@@ -249,58 +250,61 @@ export default function Experts() {
                 </div>
             </section>
 
-            {/* MODAL DE CURRÍCULO (Compartilhado) */}
-            <AnimatePresence>
-                {activeBio && (
-                    <div className="fixed inset-0 z-[100] flex items-center justify-center px-4">
-                        {/* Backdrop */}
-                        <motion.div
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            exit={{ opacity: 0 }}
-                            onClick={() => setActiveBio(null)}
-                            className="absolute inset-0 bg-tactical-black/90 backdrop-blur-sm"
-                        />
-
-                        {/* Janela Modal */}
-                        <motion.div
-                            initial={{ scale: 0.95, opacity: 0, y: 20 }}
-                            animate={{ scale: 1, opacity: 1, y: 0 }}
-                            exit={{ scale: 0.95, opacity: 0, y: 20 }}
-                            className="bg-tactical-panel border border-tactical-cyan/50 w-full max-w-2xl max-h-[85vh] overflow-y-auto rounded-sm relative z-10 p-8 shadow-[0_0_50px_rgba(0,0,0,0.8)]"
-                        >
-                            <button
+            {/* MODAL DE CURRÍCULO (Compartilhado) - Renderizado via Portal para evitar conflitos de z-index */}
+            {typeof window !== 'undefined' && createPortal(
+                <AnimatePresence>
+                    {activeBio && (
+                        <div className="fixed inset-0 z-[9999] flex items-center justify-center px-4">
+                            {/* Backdrop */}
+                            <motion.div
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                exit={{ opacity: 0 }}
                                 onClick={() => setActiveBio(null)}
-                                className="absolute top-4 right-4 text-tactical-metal hover:text-white transition-colors bg-tactical-black/20 p-2 rounded-full"
-                            >
-                                <X size={20} />
-                            </button>
+                                className="absolute inset-0 bg-tactical-black/90 backdrop-blur-sm"
+                            />
 
-                            {[...COORDINATORS, ...SPEAKERS].filter(c => c.id === activeBio).map(c => (
-                                <div key={c.id} className="flex flex-col items-center text-center">
-                                    <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-tactical-cyan mb-6">
-                                        <img src={c.image} alt={c.name} className="w-full h-full object-cover" />
+                            {/* Janela Modal */}
+                            <motion.div
+                                initial={{ scale: 0.95, opacity: 0, y: 20 }}
+                                animate={{ scale: 1, opacity: 1, y: 0 }}
+                                exit={{ scale: 0.95, opacity: 0, y: 20 }}
+                                className="bg-tactical-panel border border-tactical-cyan/50 w-full max-w-2xl max-h-[85vh] overflow-y-auto rounded-sm relative z-10 p-4 md:p-8 shadow-[0_0_50px_rgba(0,0,0,0.8)]"
+                            >
+                                <button
+                                    onClick={() => setActiveBio(null)}
+                                    className="absolute top-3 right-3 md:top-4 md:right-4 text-tactical-metal hover:text-white transition-colors bg-tactical-black/20 p-2 rounded-full"
+                                >
+                                    <X size={20} />
+                                </button>
+
+                                {[...COORDINATORS, ...SPEAKERS].filter(c => c.id === activeBio).map(c => (
+                                    <div key={c.id} className="flex flex-col items-center text-center">
+                                        <div className="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden border-2 border-tactical-cyan mb-4 md:mb-6">
+                                            <img src={c.image} alt={c.name} className="w-full h-full object-cover" />
+                                        </div>
+                                        <h3 className="text-2xl md:text-3xl font-display font-bold text-white mb-2">{c.name}</h3>
+                                        <p className="text-white text-base md:text-lg font-medium mb-4 md:mb-6 border-b border-white/10 pb-4 inline-block">
+                                            {c.shortRole}
+                                        </p>
+                                        <div className="prose prose-invert prose-p:text-white prose-p:leading-relaxed text-justify text-sm md:text-base">
+                                            {c.fullBio.split('\n\n').map((paragraph, idx) => (
+                                                <p
+                                                    key={idx}
+                                                    className={`mb-4 ${paragraph.startsWith('Tema:') ? 'font-bold text-white' : 'font-light'}`}
+                                                >
+                                                    {paragraph}
+                                                </p>
+                                            ))}
+                                        </div>
                                     </div>
-                                    <h3 className="text-3xl font-display font-bold text-white mb-2">{c.name}</h3>
-                                    <p className="text-white text-lg font-medium mb-6 border-b border-white/10 pb-4 inline-block">
-                                        {c.shortRole}
-                                    </p>
-                                    <div className="prose prose-invert prose-p:text-white prose-p:leading-relaxed text-justify">
-                                        {c.fullBio.split('\n\n').map((paragraph, idx) => (
-                                            <p
-                                                key={idx}
-                                                className={`mb-4 text-base ${paragraph.startsWith('Tema:') ? 'font-bold text-white' : 'font-light'}`}
-                                            >
-                                                {paragraph}
-                                            </p>
-                                        ))}
-                                    </div>
-                                </div>
-                            ))}
-                        </motion.div>
-                    </div>
-                )}
-            </AnimatePresence>
+                                ))}
+                            </motion.div>
+                        </div>
+                    )}
+                </AnimatePresence>,
+                document.body
+            )}
 
         </div>
     );

@@ -25,6 +25,21 @@ export const Location: React.FC = () => {
                             </h2>
                         </div>
 
+                        {/* FOTO MOBILE - Entre Título e Cards */}
+                        <div className="block lg:hidden w-full h-64 md:h-80 mb-10 relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl group">
+                            {/* Imagem de Mapa Estilizado */}
+                            <img
+                                src="/fotolocal.jpg"
+                                alt="Mapa de Localização"
+                                className="absolute inset-0 w-full h-full object-cover transition-all duration-700"
+                            />
+                            {/* Etiqueta Flutuante */}
+                            <div className="absolute bottom-3 left-6 bg-tactical-midnight/90 backdrop-blur-md py-2 px-4 rounded-xl border border-white/10">
+                                <p className="text-white font-bold text-xs uppercase">Complexo Square SC</p>
+                                <p className="text-[10px] text-tactical-metal mt-0.5">Florianópolis - Santa Catarina</p>
+                            </div>
+                        </div>
+
                         {/* Lista de Informações (Cards Transparentes) */}
                         <div className="space-y-4 mb-10">
 
@@ -73,7 +88,7 @@ export const Location: React.FC = () => {
                         </div>
                     </div>
 
-                    {/* LADO DIREITO: Mapa Visual (Estático) */}
+                    {/* LADO DIREITO: Mapa Visual (Estático - Apenas Desktop) */}
                     <div className="hidden lg:block h-full min-h-[500px] relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl group">
                         {/* Imagem de Mapa Estilizado */}
                         <img

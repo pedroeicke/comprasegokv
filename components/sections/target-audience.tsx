@@ -1,11 +1,60 @@
 "use client";
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Check, Users } from 'lucide-react';
 import { SECURITY_ORGANS, ARMED_FORCES, POLICE_NATURE_ORGANS, DEFENSE_COMPANIES, AUDIENCE_ROLES } from '../constants';
 
 export const TargetAudience: React.FC = () => {
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const checkMobile = () => setIsMobile(window.innerWidth < 1024); // Consider tablet/mobile
+        checkMobile();
+        window.addEventListener('resize', checkMobile);
+        return () => window.removeEventListener('resize', checkMobile);
+    }, []);
+
+    const mobileGlowVariant = {
+        hidden: { opacity: 0, y: 20 },
+        visible: {
+            opacity: 1,
+            y: 0,
+            transition: { duration: 0.5 }
+        },
+        glow: {
+            opacity: 1,
+            y: 0,
+            boxShadow: ["0px 0px 0px rgba(0,0,0,0)", "0px 0px 30px rgba(0, 193, 255, 0.6)", "0px 0px 0px rgba(0,0,0,0)"],
+            transition: {
+                opacity: { duration: 0.5 },
+                y: { duration: 0.5 },
+                boxShadow: {
+                    duration: 1.5,
+                    times: [0, 0.5, 1],
+                    ease: "easeInOut"
+                }
+            }
+        }
+    };
+
+    const getAnimationProps = (delay: number = 0) => {
+        if (isMobile) {
+            return {
+                initial: "hidden",
+                whileInView: "glow",
+                viewport: { once: true, margin: "-20%" } as any,
+                variants: mobileGlowVariant
+            };
+        }
+        return {
+            initial: { opacity: 0, y: 20 },
+            whileInView: { opacity: 1, y: 0 },
+            viewport: { once: true },
+            transition: { delay }
+        };
+    };
+
     return (
         // Removido border-t para evitar linha duplicada visual
         // Mantido bg-transparent para o MouseGlow funcionar
@@ -31,9 +80,7 @@ export const TargetAudience: React.FC = () => {
 
                     {/* CARD 1: SEGURANÇA PÚBLICA (AZUL) */}
                     <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
+                        {...getAnimationProps(0)}
                         className="flex flex-col h-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-900/30 via-tactical-dark to-tactical-dark border border-[#00C1FF] rounded-2xl overflow-hidden hover:shadow-[0_0_20px_rgba(0,193,255,0.4)] transition-all shadow-lg group"
                     >
                         <div className="p-8 border-b border-white/5 bg-brand-gold/5 min-h-[160px] flex items-center">
@@ -55,10 +102,7 @@ export const TargetAudience: React.FC = () => {
 
                     {/* CARD 2: FORÇAS ARMADAS (DOURADO) */}
                     <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: 0.2 }}
+                        {...getAnimationProps(0.2)}
                         className="flex flex-col h-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-900/30 via-tactical-dark to-tactical-dark border border-[#00C1FF] rounded-2xl overflow-hidden hover:shadow-[0_0_20px_rgba(0,193,255,0.4)] transition-all shadow-lg group"
                     >
                         <div className="p-8 border-b border-white/5 bg-brand-gold/5 min-h-[160px] flex items-center">
@@ -80,10 +124,7 @@ export const TargetAudience: React.FC = () => {
 
                     {/* CARD 3: NATUREZA POLICIAL (PRATA/CINZA) */}
                     <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: 0.4 }}
+                        {...getAnimationProps(0.4)}
                         className="flex flex-col h-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-900/30 via-tactical-dark to-tactical-dark border border-[#00C1FF] rounded-2xl overflow-hidden hover:shadow-[0_0_20px_rgba(0,193,255,0.4)] transition-all shadow-lg group"
                     >
                         <div className="p-8 border-b border-[#00C1FF]/20 bg-[#00C1FF]/5 min-h-[160px] flex items-center">
@@ -105,10 +146,7 @@ export const TargetAudience: React.FC = () => {
 
                     {/* CARD 4: EMPRESAS DE DEFESA (VERDE/MILITAR) */}
                     <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: 0.6 }}
+                        {...getAnimationProps(0.6)}
                         className="flex flex-col h-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-900/30 via-tactical-dark to-tactical-dark border border-[#00C1FF] rounded-2xl overflow-hidden hover:shadow-[0_0_20px_rgba(0,193,255,0.4)] transition-all shadow-lg group"
                     >
                         <div className="p-8 border-b border-white/5 bg-brand-gold/5 min-h-[160px] flex items-center">
