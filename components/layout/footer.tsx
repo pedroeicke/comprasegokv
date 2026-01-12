@@ -49,7 +49,7 @@ export function Footer() {
                         <h4 className="font-bold mb-4">Contato</h4>
                         <ul className="space-y-2 text-sm text-white/60">
                             <li>(11) 97736-3640</li>
-                            <li>congresso@compraseg.com.br</li>
+                            <li>contato@compraseg.com.br</li>
                             <li>@congressocompraseg</li>
                         </ul>
                     </div>
