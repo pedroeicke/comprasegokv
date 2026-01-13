@@ -25,6 +25,7 @@ const ORGAO_OPTIONS = [
 ];
 
 export const RegistrationForm: React.FC = () => {
+    const [loading, setLoading] = useState(false);
     const [formData, setFormData] = useState({
         nome: '',
         email: '',
@@ -40,11 +41,53 @@ export const RegistrationForm: React.FC = () => {
         empenho: null as File | null
     });
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        // TODO: Handle form submission
-        console.log('Form submitted:', formData);
-        alert('Inscrição enviada com sucesso! Entraremos em contato em breve.');
+        setLoading(true);
+
+        try {
+            const payload = new FormData();
+            Object.entries(formData).forEach(([key, value]) => {
+                if (value instanceof File) {
+                    payload.append(key, value);
+                } else if (value !== null && value !== undefined) {
+                    payload.append(key, String(value));
+                }
+            });
+
+            const response = await fetch('/api/register', {
+                method: 'POST',
+                body: payload,
+            });
+
+            const result = await response.json();
+
+            if (!response.ok) {
+                throw new Error(result.error || 'Erro ao enviar inscrição');
+            }
+
+            alert('Inscrição enviada com sucesso! Entraremos em contato em breve.');
+            // Reset form (optional, but good UX)
+            setFormData({
+                nome: '',
+                email: '',
+                telefone: '',
+                orgao: '',
+                estado: '',
+                municipio: '',
+                quantidade: '',
+                nomeInscritos: '',
+                cnpj: '',
+                endereco: '',
+                pagamento: 'pix',
+                empenho: null
+            });
+        } catch (error) {
+            console.error('Erro no envio:', error);
+            alert('Erro ao enviar inscrição. Por favor, tente novamente.');
+        } finally {
+            setLoading(false);
+        }
     };
 
     const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -111,9 +154,9 @@ export const RegistrationForm: React.FC = () => {
                     onChange={(e) => setFormData({ ...formData, orgao: e.target.value })}
                     className="w-full bg-white/5 border border-white/10 rounded-lg p-4 text-white focus:border-[#00C1FF] focus:ring-1 focus:ring-[#00C1FF] outline-none transition-all"
                 >
-                    <option value="">- Select -</option>
+                    <option value="" className="bg-tactical-black text-white">- Select -</option>
                     {ORGAO_OPTIONS.map((orgao) => (
-                        <option key={orgao} value={orgao}>{orgao}</option>
+                        <option key={orgao} value={orgao} className="bg-tactical-black text-white">{orgao}</option>
                     ))}
                 </select>
             </div>
@@ -129,9 +172,9 @@ export const RegistrationForm: React.FC = () => {
                     onChange={(e) => setFormData({ ...formData, estado: e.target.value })}
                     className="w-full bg-white/5 border border-white/10 rounded-lg p-4 text-white focus:border-[#00C1FF] focus:ring-1 focus:ring-[#00C1FF] outline-none transition-all"
                 >
-                    <option value="">- Select -</option>
+                    <option value="" className="bg-tactical-black text-white">- Select -</option>
                     {BRAZILIAN_STATES.map((state) => (
-                        <option key={state} value={state}>{state}</option>
+                        <option key={state} value={state} className="bg-tactical-black text-white">{state}</option>
                     ))}
                 </select>
             </div>
@@ -162,11 +205,11 @@ export const RegistrationForm: React.FC = () => {
                     onChange={(e) => setFormData({ ...formData, quantidade: e.target.value })}
                     className="w-full bg-white/5 border border-white/10 rounded-lg p-4 text-white focus:border-[#00C1FF] focus:ring-1 focus:ring-[#00C1FF] outline-none transition-all"
                 >
-                    <option value="">- Select -</option>
+                    <option value="" className="bg-tactical-black text-white">- Select -</option>
                     {[...Array(10)].map((_, i) => (
-                        <option key={i + 1} value={i + 1}>{i + 1}</option>
+                        <option key={i + 1} value={i + 1} className="bg-tactical-black text-white">{i + 1}</option>
                     ))}
-                    <option value="10+">10+</option>
+                    <option value="10+" className="bg-tactical-black text-white">10+</option>
                 </select>
             </div>
 
@@ -266,9 +309,10 @@ export const RegistrationForm: React.FC = () => {
             <Button
                 type="submit"
                 size="lg"
-                className="w-full bg-[#f5dd29] text-tactical-black hover:bg-[#f5dd29]/90 font-bold tracking-wide"
+                disabled={loading}
+                className="w-full bg-[#f5dd29] text-tactical-black hover:bg-[#f5dd29]/90 font-bold tracking-wide disabled:opacity-70 disabled:cursor-not-allowed"
             >
-                Enviar
+                {loading ? 'Enviando Inscrição...' : 'Enviar Inscrição'}
             </Button>
         </form>
     );
