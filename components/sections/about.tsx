@@ -59,7 +59,7 @@ export const About: React.FC = () => {
                             <img
                                 src="/ideia1.png"
                                 alt="Operação Policial Tática"
-                                className="w-full h-full object-cover opacity-80 hover:opacity-100 hover:scale-105 transition-all duration-700"
+                                className="w-full h-full object-cover object-top opacity-80 hover:opacity-100 hover:scale-105 transition-all duration-700"
                             />
                             <div className="absolute inset-0 bg-brand-blue/20 mix-blend-overlay"></div>
                         </div>
