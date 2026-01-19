@@ -265,8 +265,8 @@ export default function Experts() {
                                     alt={speaker.name}
                                     className="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-102"
                                     style={{
-                                        transform: speaker.name === 'Ana Luiza Jacoby' ? 'scale(1.25) translateY(5%)' : 'none',
-                                        objectPosition: speaker.name === 'Ana Luiza Jacoby' ? 'center 20%' : 'center top'
+                                        objectPosition: speaker.name === 'Ana Luiza Jacoby' ? '50% 0%' : 'canter top',
+                                        transform: speaker.name === 'Ana Luiza Jacoby' ? 'scale(0.9)' : 'none'
                                     }}
                                 />
 
