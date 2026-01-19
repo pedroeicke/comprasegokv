@@ -264,6 +264,10 @@ export default function Experts() {
                                     src={speaker.image}
                                     alt={speaker.name}
                                     className="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-102"
+                                    style={{
+                                        transform: speaker.name === 'Ana Luiza Jacoby' ? 'scale(1.5)' : 'none',
+                                        objectPosition: speaker.name === 'Ana Luiza Jacoby' ? 'center 20%' : 'center top'
+                                    }}
                                 />
 
                                 {/* Overlay Darkening on Hover */}
