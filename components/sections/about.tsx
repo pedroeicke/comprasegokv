@@ -46,43 +46,25 @@ export const About: React.FC = () => {
                         </div>
                     </motion.div>
 
-                    {/* Coluna Visual (Imagens) */}
+                    {/* Coluna Visual (Vídeo) */}
                     <motion.div
                         initial={{ opacity: 0, x: 20 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.6, delay: 0.2 }}
                         viewport={{ once: true }}
-                        className="order-1 lg:order-2 relative h-[500px] lg:h-[600px] w-full"
+                        className="order-1 lg:order-2 relative w-full flex items-center justify-center p-4 lg:p-0"
                     >
-                        {/* Imagem de Fundo (Operacional) */}
-                        <div className="absolute top-0 right-0 w-4/5 h-3/5 rounded-2xl overflow-hidden border border-white/10 shadow-2xl z-10">
-                            <img
-                                src="/ideia1.png"
-                                alt="Operação Policial Tática"
-                                className="w-full h-full object-cover object-top opacity-80 hover:opacity-100 hover:scale-105 transition-all duration-700"
+                        <div className="w-full rounded-2xl overflow-hidden border border-white/10 shadow-2xl relative z-10 bg-black/50 backdrop-blur-sm">
+                            <video
+                                src="/V6COMPRASSEG.mp4"
+                                className="w-full h-auto object-contain"
+                                controls
+                                autoPlay
+                                loop
+                                muted
+                                playsInline
                             />
-                            <div className="absolute inset-0 bg-brand-blue/20 mix-blend-overlay"></div>
                         </div>
-
-                        {/* Imagem da Frente (Gestão/Reunião) */}
-                        <div className="absolute bottom-0 left-0 w-4/5 h-3/5 rounded-2xl overflow-hidden border border-white/10 shadow-[0_0_30px_rgba(0,0,0,0.5)] z-20 bg-tactical-midnight">
-                            <img
-                                src="/ideia2.png"
-                                alt="Gestão de Contratos"
-                                className="w-full h-full object-cover opacity-90 hover:opacity-100 hover:scale-105 transition-all duration-700"
-                            />
-                            <div className="absolute inset-0 bg-gradient-to-t from-tactical-midnight via-transparent to-transparent"></div>
-                        </div>
-
-                        {/* Elemento Decorativo (Conector) */}
-                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 border-2 border-tactical-gold/30 rounded-full z-30 flex items-center justify-center backdrop-blur-sm">
-                            <div className="w-24 h-24 bg-tactical-midnight/80 rounded-full flex items-center justify-center border border-white/10">
-                                <span className="font-display font-bold text-tactical-gold text-xl text-center leading-none">
-                                    Foco<br />Total
-                                </span>
-                            </div>
-                        </div>
-
                     </motion.div>
 
                 </div>

@@ -18,7 +18,7 @@ const COORDINATORS = [
     {
         id: 'c2',
         name: 'Murilo Frigeri',
-        shortRole: 'Chefe de Pesquisa do Centro de Material Bélico da PMESP',
+        shortRole: 'Chefe de Pesquisa do Centro de Material Bélico da Polícia Militar do Estado de São Paulo',
         image: '/profok/murilo.jpeg',
         fullBio: `Tema: Requisitos de qualidade e aspectos de mercado nas compras de materiais bélicos\n\n• Chefe da Seção de Desenvolvimento e Pesquisa do Centro de Material Bélico da Polícia Militar do Estado de São Paulo\n\n• Capitão de Polícia Militar\n\n• Graduado em Ciências Policiais de Segurança e Ordem Pública pela Academia de Polícia Militar do Barro Branco\n\n• Graduando em Engenharia Mecânica pela Faculdade Estácio de São Paulo\n\n• Atuação profissional: Pesquisa, especificação, criação de Termo de Referência e métodos de controle de qualidade para compras institucionais e renovação de equipamentos da Polícia Militar do Estado de São Paulo\n\n• Atuação em grupos de trabalho: atualização da legislação de material bélico; suportes de armamentos em viaturas policiais; estudo técnico para adoção de normas para capacete balístico; adoção de veículos blindados; normas para emprego de equipamentos não letais; desenvolvimento de protocolos de teste para produtos controlados; inovação de pistolas; inovação de coletes balísticos; inovação de fuzis.`
     },
@@ -42,7 +42,7 @@ const SPEAKERS = [
     {
         id: 's2',
         name: 'Cláudio Cardoso',
-        shortRole: 'Coronel Aviador R1 da FAB',
+        shortRole: 'Coronel Aviador R1 da Força Aérea Brasileira',
         image: '/images/palestrantes/claudio.jpeg',
         fullBio: `Tema: Projetos de equipamentos de defesa e segurança pública: dilemas entre desenvolvimento e aquisição.\n\n• Graduado em Ciências Aeronáuticas com habilitação em Aviação Militar pela Academia da Força Aérea\n\n• Pós-graduado em Estado-Maior pela Escola de Comando e Estado-Maior da Aeronáutica\n\n• Especialista em Política e Estratégia de Defesa pelo Curso de Altos Estudos de Política e Estratégia da Escola Superior de Guerra\n\n• Diplomado pelo Curso Superior de Defesa da Escola Superior de Guerra\n\n• Ex-gerente executivo do projeto do helicóptero H-60L Black Hawk e dos projetos estratégicos KC-X e KC-390\n\n• Ex-gerente adjunto do projeto estratégico F-X2\n\n• Algumas funções exercidas na Força Aérea Brasileira: Adjunto da Assessoria de Logística, Patrimônio e Finanças do Gabinete do Comandante da Aeronáutica; Coordenador-Geral das negociações de readequação da frota de aeronaves KC-390 Millennium; Chefe da Subdivisão de Planejamento e Controle; Chefe do Escritório Brasileiro de Ligação, na Base Aérea de Wright Patterson, em Dayton-OH, EUA; Chefe do Setor FMS (Foreign Military Sales).`
     },
@@ -50,7 +50,7 @@ const SPEAKERS = [
     {
         id: 's4',
         name: 'Felipe Dalenogare',
-        shortRole: 'Chefe de Divisão da Coordenação-Geral Jurídica de Licitações do MD',
+        shortRole: 'Chefe de Divisão da Coordenação-Geral Jurídica de Licitações do Ministério da Defesa',
         image: '/images/palestrantes/felipe.jpeg',
         fullBio: `Tema: Obtenções por aquisições complexas de produtos de defesa e segurança\n\n• Chefe de Divisão na Coordenação-Geral Jurídica de Licitações, Contratos, Convênios e Parcerias da Consultoria Jurídica do Ministério da Defesa\n\n• Pós-doutor em Direito pela Università di Bologna\n\n• Doutor e Mestre em Direito pela Universidade de Santa Cruz do Sul\n\n• Especialista em Direito Público pela Universidade Cândido Mendes\n\n• Especialista em Direito Administrativo pela Faculdade Dom Alberto\n\n• Especialista em Direito Militar pela Faculdade Futura\n\n• Coordenador do Curso de Pós-Graduação em Direito Militar e da Pós-Graduação em Direito Constitucional e Administrativo da Universidade de Santa Cruz do Sul\n\n• Coordenador do Curso de Pós-Graduação em Licitações e Contratos e da Pós-Graduação em Gestão Pública e Direito Administrativo da Escola Mineira de Direito\n\n• Autor de livros jurídicos, dentre eles: Manual de Licitações e Contratos Administrativos, editora Saraiva; Manual de Direito Administrativo, editora Saraiva.`
     },
@@ -71,21 +71,21 @@ const SPEAKERS = [
     {
         id: 's7',
         name: 'Juliana Mendonça',
-        shortRole: 'Coronel Intendente da FAB',
+        shortRole: 'Coronel Intendente da Força Aérea Brasileira',
         image: '/images/palestrantes/juliana.png',
         fullBio: `Tema: Ciclo de vida de materiais bélicos\n\n• Chefe da Divisão de Convênios e Instrumentos de Parceria da Diretoria de Economia e Finanças da Força Aérea Brasileira\n\n• Bacharel em Ciências da Logística pela Academia da Força Aérea\n\n• Especialista em Gestão Pública pela Universidade da Força Aérea\n\n• Especialista em Auditoria Interna em Organizações do Setor Público pela UniLeya\n\n• Curso de Comando e Estado Maior da United States Air Force: Air Command and Staff College\n\n• Cargos anteriores: Chefe da Seção de Estruturação de Operações de Crédito; Consultora de Normas Legais; Diretora de Licitações da Base Aérea de Florianópolis; Diretora de Licitações da Base Aérea de Boa Vista; Auditora Interna; Pregoeira.`
     },
     {
         id: 's8',
         name: 'Júlio Tavares',
-        shortRole: 'Coronel Aviador R1 da FAB',
+        shortRole: 'Coronel Aviador R1 da Força Aérea Brasileira',
         image: '/images/palestrantes/julio.jpeg',
         fullBio: `Tema: Inovação e transferência de tecnologia em contratos de fornecimento de materiais bélicos\n\n• Graduado em Ciências Aeronáuticas pela Academia da Força Aérea\n\n• Especialista em Política e Estratégia de Defesa pelo Curso de Altos Estudos de Política e Estratégia da Escola Superior de Guerra\n\n• Diplomado pelo Curso Superior de Defesa da Escola Superior de Guerra\n\n• Especialista em Engenharia de Produção pela Universidade Federal de Pernambuco\n\n• MBA em Gerenciamento de Projetos e Gestão Executiva pela Fundação Getúlio Vargas\n\n• Certificação como Fleks Hybrid Manager e Profissional em Gerenciamento de Projetos (Project Management Professional) PMP®\n\n• Principais funções estratégicas exercidas: Gerente do projeto estratégico FX-2 (Gripen NG); Secretário de Pesquisa e Desenvolvimento da Secretária Especial de Modernização do Estado, da Secretaria-Geral da Presidência da República.`
     },
     {
         id: 's9',
         name: 'Lara Brainer',
-        shortRole: 'Coordenadora Geral de Governança Estratégica da AGU',
+        shortRole: 'Coordenadora Geral de Governança Estratégica da Advocacia-Geral da União',
         image: '/images/palestrantes/lara.png',
         fullBio: `Tema: Pressupostos necessários para a centralização de compras da segurança pública\n\n• Pós-graduada em Direito Administrativo, com ênfase em terceirização no serviço público e em Relações entre Empresas e Poder Público pela Faculdade Única​\n\n• Diplomada pelo Curso de Altos Estudos em Defesa da Escola Superior de Defesa\n\n• Consultora do Banco Mundial\n\n• Ex-Diretora da Central de Compras do Ministério da Gestão e da Inovação em Serviços Públicos.`
     },
@@ -99,14 +99,14 @@ const SPEAKERS = [
     {
         id: 's11',
         name: 'Michelle Silveira',
-        shortRole: 'Coordenadora-Geral de Transferências Fundo a Fundo da SENASP',
+        shortRole: 'Coordenadora-Geral de Transferências Fundo a Fundo da Secretaria Nacional de Segurança Pública',
         image: '/images/palestrantes/michelle.jpeg',
         fullBio: `Tema: Prestação de contas de transferência fundo a fundo\n\n• Bacharela em Direito pela Universidade Federal do Pará\n\n• Especialista em Direito Público pelo Instituto Processus\n\n• Especialista em Direito Penal pelo Instituto Processus\n\n• Cargos anteriores: Coordenadora-Geral de Gestão de Instrumentos de Repasse do Fundo Penitenciário Nacional; Coordenadora de Elaboração e Consolidação de Atos Normativos do Departamento Penitenciário Nacional; Coordenadora de Análise e Acompanhamento de Convênios do Departamento Penitenciário Nacional.`
     },
     {
         id: 's12',
         name: 'Murilo Frigeri',
-        shortRole: 'Chefe de Pesquisa do Centro de Material Bélico da PMESP',
+        shortRole: 'Chefe de Pesquisa do Centro de Material Bélico da Polícia Militar do Estado de São Paulo',
         image: '/profok/murilo.jpeg',
         fullBio: `Tema: Requisitos de qualidade e aspectos de mercado nas compras de materiais bélicos\n\n• Chefe da Seção de Desenvolvimento e Pesquisa do Centro de Material Bélico da Polícia Militar do Estado de São Paulo\n\n• Capitão de Polícia Militar\n\n• Graduado em Ciências Policiais de Segurança e Ordem Pública pela Academia de Polícia Militar do Barro Branco\n\n• Graduando em Engenharia Mecânica pela Faculdade Estácio de São Paulo\n\n• Atuação profissional: Pesquisa, especificação, criação de Termo de Referência e métodos de controle de qualidade para compras institucionais e renovação de equipamentos da Polícia Militar do Estado de São Paulo\n\n• Atuação em grupos de trabalho: atualização da legislação de material bélico; suportes de armamentos em viaturas policiais; estudo técnico para adoção de normas para capacete balístico; adoção de veículos blindados; normas para emprego de equipamentos não letais; desenvolvimento de protocolos de teste para produtos controlados; inovação de pistolas; inovação de coletes balísticos; inovação de fuzis.`
     },
@@ -122,7 +122,7 @@ const SPEAKERS = [
         name: 'Renata Monteiro',
         shortRole: 'Coordenadora de Projetos de Defesa e Segurança do SENAI CETIQT',
         image: '/images/palestrantes/renata.jpg',
-        fullBio: `Tema: Normas técnicas de fardamento: qualidade, segurança e efetividade.\n\n• Curadora da Rede de Institutos de Tecnologia Têxtil e Vestuário do Serviço Nacional de Aprendizagem Idustrial – SENAI\n\n• Graduada em Engenharia Industrial Têxtil pelo Centro de Tecnologia da Indústria Química e Têxtil - SENAI CETIQT\n\n• MBA em Gestão Empresarial e de Finanças pela Universidade Tiradentes\n\n• MBA em Gestão de Projetos pelo Centro Universitário IBMR\n\n• Pós-graduanda em Política, Estratégia, Defesa Nacional e Segurança Pública pelo Instituto Venturo\n\n• Atuação profissional: desenvolvimento de produtos; programação e planejamento de produção; melhoria de processos.`
+        fullBio: `Tema: Normas técnicas de fardamento: qualidade, segurança e efetividade.\n\n• Curadora da Rede de Institutos de Tecnologia Têxtil e Vestuário do Serviço Nacional de Aprendizagem Industrial – SENAI\n\n• Graduada em Engenharia Industrial Têxtil pelo Centro de Tecnologia da Indústria Química e Têxtil - SENAI CETIQT\n\n• MBA em Gestão Empresarial e de Finanças pela Universidade Tiradentes\n\n• MBA em Gestão de Projetos pelo Centro Universitário IBMR\n\n• Pós-graduanda em Política, Estratégia, Defesa Nacional e Segurança Pública pelo Instituto Venturo\n\n• Atuação profissional: desenvolvimento de produtos; programação e planejamento de produção; melhoria de processos.`
     },
     {
         id: 's15',
@@ -144,6 +144,27 @@ const SPEAKERS = [
         shortRole: 'Delegado de Polícia Civil',
         image: '/profok/mario.png',
         fullBio: `Tema: Estudos para aquisições de veículos blindados de uso policial.\n\n• Responsável pelo setor de material bélico da Polícia Civil do Estado de São Paulo\n\n• Mestre em Segurança Pública pela University of Virginia, Estados Unidos da América\n\n• Diplomado em Justiça Criminal pela FBI Nacional Academy, Estados Unidos da América\n\n• Especialista em Polícia Judiciária e Sistema de Justiça Criminal pela Academia de Polícia Dr. Coriolano Nogueira Cobra\n\n• Docente concursado de Armamento e Tiro da Academia de Polícia Dr. Coriolano Nogueira Cobra\n\n• Bacharel em Direito pela Pontifícia Universidade Católica de São Paulo`
+    },
+    {
+        id: 's18',
+        name: 'Fabiano Renê',
+        shortRole: 'Tenente-Coronel de Polícia Militar',
+        image: '/profok/Fabiano.png',
+        fullBio: `Tema: Credenciamento de estandes de tiro\n\n▪ Tenente-Coronel da Polícia Militar do Estado de Santa Catarina\n\n▪ Pregoeiro\n\n▪ Especialista em Gestão em Logística pela Pontifícia Universidade Católica de Minas Gerais\n\n▪ Especialista em Segurança, Planejamento e Resposta de Emergência em Eventos de Grande Porte pela UniLeya\n\n▪ Especialista em Gestão da Ordem Pública pela Polícia Militar do Estado de Santa Catarina\n\n▪ Graduado em Segurança Pública pela Universidade do Vale do Itajaí\n\n▪ Atuação em mobilizações nacionais de segurança pública: Subcomandante da Operação Belo Monte da Força Nacional em Altamira/PA; Subcomandante da Operação Cerrado da Força Nacional em Luziânia/GO; Subcomandante da Operação Jamari da Força Nacional em Ariquemes/RO; Membro do Grupo de Trabalho Rio 2016 do Departamento da Força Nacional de Segurança Pública no Rio de Janeiro/RJ; Observador de Segurança nos Primeiros Jogos Mundiais dos Povos Indígenas em Palmas/TO; Representante da Força Nacional no "Venue Integration Security Operation" - Jogos Olímpicos e Paralímpicos Rio 2016; Representante Institucional da Força Nacional no Centro Integrado de Comando e Controle Setorial - Jogos Olímpicos e Paralímpicos Rio 2016.`
+    },
+    {
+        id: 's19',
+        name: 'Syllas Jadach',
+        shortRole: 'Tenente-Coronel de Polícia Militar',
+        image: '/profok/SYLLAS.png',
+        fullBio: `Tema: Estudos para aquisição de equinos para a polícia montada\n\n▪ Comandante do 2º Batalhão de Policiamento de Choque da Polícia Militar do Estado de São Paulo\n\n▪ Doutor em Ciências Policiais de Segurança e Ordem Pública pelo Centro de Altos Estudos de Segurança da Academia de Polícia Militar do Barro Branco\n\n▪ Mestre em Ciências Policiais de Segurança e Ordem Pública pelo Centro de Altos Estudos de Segurança da Academia de Polícia Militar do Barro Branco\n\n▪ Função de comando anterior: Chefe da Divisão de Finanças e Logística, responsável pelas licitações nacionais e internacionais, aquisição de cães, trajes antibomba, robôs, acessórios para snipers, embarcações, fardamentos e equipamentos de proteção individual para o Batalhão de Operações Especiais\n\n▪ Atuação em comissão técnica: Comissão Permanente de Remonta, responsável pela aprovação dos cavalos adquiridos pela Polícia Militar do Estado de São Paulo`
+    },
+    {
+        id: 's20',
+        name: 'Ana Luiza Jacoby',
+        shortRole: 'Advogada',
+        image: '/profok/analuiza.png',
+        fullBio: `Tema: Responsabilização perante os tribunais de contas\n\n▪ Doutoranda em Direito Administrativo pela Pontifícia Universidade Católica de São Paulo\n\n▪ Mestre em Direito Administrativo pela Pontifícia Universidade Católica de São Paulo\n\n▪ Especialista em Direito Administartivo pelo Instituto Brasileiro de Ensino, Desenvolvimento e Pesquisa\n\n▪ Especialista em Gestão de Empresas pela Fundação Getúlio Vargas\n\n▪ Diretora do Instituto de Direito Administrativo Sancionador Brasileiro\n\n▪ Diretora do Instituto Nacional da Contratação Pública\n\n▪ Diretora Executiva do Instituto Protege\n\n▪ Autora de livros jurídicos, dentre eles: Tribunais de Contas da União e a nova Lei de Licitações e Contratos, 1ª edição, 2024; Tratado de Licitações e Contratos Administrativos, 1ª edição, 2024; Contratação Direta sem Licitação, 11ª edição, 2021, todos publicados pela editora Fórum; As Implicações da Covid-19 no Direito Administrativo, editora Revista dos Tribunais; Contratação de Treinamento: Doutrina e Prática, 2ª edição, 2015, editora Negócios Públicos.`
     }
 ];
 
