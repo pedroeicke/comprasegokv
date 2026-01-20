@@ -40,13 +40,26 @@ const SPEAKERS = [
         fullBio: `Tema: Certificações de materiais bélicos\n\n• Doutorando em Direito da Regulação pela Universidade de Brasília\n\n• Mestre em Direito Internacional pela Universidade Federal de Santa Catarina\n\n• Especialista em Direito Público pela Escola Paulista da Magistratura\n\n• Especialista em Política e Estratégia de Defesa pelo Curso de Altos Estudos de Política e Estratégia da Escola Superior de Guerra\n\n• Diplomado pelo Curso Superior de Defesa da Escola Superior de Guerra\n\n• Professor de Direito do Instituto Internacional de Inovação em Políticas Públicas e Soluções, do Instituto Brasileiro de Ensino, Desenvolvimento e Pesquisa e da Escola Mineira de Direito\n\n• Avaliador líder ISO/IEC 17020 certificado pela Sociedade Brasileira de Metrologia\n\n• Atuação em colegiados oficiais de infraestrutura da qualidade: Membro titular do Comitê Brasileiro de Normalização e do Comitê Brasileiro de Avaliação da Conformidade (2015-2020)\n\n• Autor de livros jurídicos, dentre eles: Nova Lei de Licitações e Contratos, editora Saraiva; Curso de Direito Administrativo, editora Saraiva; Aspectos polêmicos da nova lei de licitações e contratos, editora Fórum.`
     },
     {
+        id: 's20',
+        name: 'Ana Luiza Jacoby',
+        shortRole: 'Advogada',
+        image: '/profok/analuiza.png',
+        fullBio: `Tema: Responsabilização perante os tribunais de contas\n\n▪ Doutoranda em Direito Administrativo pela Pontifícia Universidade Católica de São Paulo\n\n▪ Mestre em Direito Administrativo pela Pontifícia Universidade Católica de São Paulo\n\n▪ Especialista em Direito Administartivo pelo Instituto Brasileiro de Ensino, Desenvolvimento e Pesquisa\n\n▪ Especialista em Gestão de Empresas pela Fundação Getúlio Vargas\n\n▪ Diretora do Instituto de Direito Administrativo Sancionador Brasileiro\n\n▪ Diretora do Instituto Nacional da Contratação Pública\n\n▪ Diretora Executiva do Instituto Protege\n\n▪ Autora de livros jurídicos, dentre eles: Tribunais de Contas da União e a nova Lei de Licitações e Contratos, 1ª edição, 2024; Tratado de Licitações e Contratos Administrativos, 1ª edição, 2024; Contratação Direta sem Licitação, 11ª edição, 2021, todos publicados pela editora Fórum; As Implicações da Covid-19 no Direito Administrativo, editora Revista dos Tribunais; Contratação de Treinamento: Doutrina e Prática, 2ª edição, 2015, editora Negócios Públicos.`
+    },
+    {
         id: 's2',
         name: 'Cláudio Cardoso',
         shortRole: 'Coronel Aviador R1 da Força Aérea Brasileira',
         image: '/images/palestrantes/claudio.jpeg',
         fullBio: `Tema: Projetos de equipamentos de defesa e segurança pública: dilemas entre desenvolvimento e aquisição.\n\n• Graduado em Ciências Aeronáuticas com habilitação em Aviação Militar pela Academia da Força Aérea\n\n• Pós-graduado em Estado-Maior pela Escola de Comando e Estado-Maior da Aeronáutica\n\n• Especialista em Política e Estratégia de Defesa pelo Curso de Altos Estudos de Política e Estratégia da Escola Superior de Guerra\n\n• Diplomado pelo Curso Superior de Defesa da Escola Superior de Guerra\n\n• Ex-gerente executivo do projeto do helicóptero H-60L Black Hawk e dos projetos estratégicos KC-X e KC-390\n\n• Ex-gerente adjunto do projeto estratégico F-X2\n\n• Algumas funções exercidas na Força Aérea Brasileira: Adjunto da Assessoria de Logística, Patrimônio e Finanças do Gabinete do Comandante da Aeronáutica; Coordenador-Geral das negociações de readequação da frota de aeronaves KC-390 Millennium; Chefe da Subdivisão de Planejamento e Controle; Chefe do Escritório Brasileiro de Ligação, na Base Aérea de Wright Patterson, em Dayton-OH, EUA; Chefe do Setor FMS (Foreign Military Sales).`
     },
-
+    {
+        id: 's18',
+        name: 'Fabiano Renê',
+        shortRole: 'Tenente-Coronel de Polícia Militar',
+        image: '/profok/Fabiano.png',
+        fullBio: `Tema: Credenciamento de estandes de tiro\n\n▪ Tenente-Coronel da Polícia Militar do Estado de Santa Catarina\n\n▪ Pregoeiro\n\n▪ Especialista em Gestão em Logística pela Pontifícia Universidade Católica de Minas Gerais\n\n▪ Especialista em Segurança, Planejamento e Resposta de Emergência em Eventos de Grande Porte pela UniLeya\n\n▪ Especialista em Gestão da Ordem Pública pela Polícia Militar do Estado de Santa Catarina\n\n▪ Graduado em Segurança Pública pela Universidade do Vale do Itajaí\n\n▪ Atuação em mobilizações nacionais de segurança pública: Subcomandante da Operação Belo Monte da Força Nacional em Altamira/PA; Subcomandante da Operação Cerrado da Força Nacional em Luziânia/GO; Subcomandante da Operação Jamari da Força Nacional em Ariquemes/RO; Membro do Grupo de Trabalho Rio 2016 do Departamento da Força Nacional de Segurança Pública no Rio de Janeiro/RJ; Observador de Segurança nos Primeiros Jogos Mundiais dos Povos Indígenas em Palmas/TO; Representante da Força Nacional no "Venue Integration Security Operation" - Jogos Olímpicos e Paralímpicos Rio 2016; Representante Institucional da Força Nacional no Centro Integrado de Comando e Controle Setorial - Jogos Olímpicos e Paralímpicos Rio 2016.`
+    },
     {
         id: 's4',
         name: 'Felipe Dalenogare',
@@ -86,7 +99,7 @@ const SPEAKERS = [
         id: 's9',
         name: 'Lara Brainer',
         shortRole: 'Coordenadora Geral de Governança Estratégica da Advocacia-Geral da União',
-        image: '/images/palestrantes/lara.png',
+        image: '/profok/lara.png',
         fullBio: `Tema: Pressupostos necessários para a centralização de compras da segurança pública\n\n• Pós-graduada em Direito Administrativo, com ênfase em terceirização no serviço público e em Relações entre Empresas e Poder Público pela Faculdade Única​\n\n• Diplomada pelo Curso de Altos Estudos em Defesa da Escola Superior de Defesa\n\n• Consultora do Banco Mundial\n\n• Ex-Diretora da Central de Compras do Ministério da Gestão e da Inovação em Serviços Públicos.`
     },
     {
@@ -95,6 +108,13 @@ const SPEAKERS = [
         shortRole: 'Perito Criminal Federal',
         image: '/images/palestrantes/lucian.jpeg',
         fullBio: `Tema: Estratégias em licitações internacionais: O disruptivo processo de aquisição de fuzis da Polícia Federal\n\n• Coordenador de Planejamento e Controle da Logística Policial do Departamento de Polícia Federal\n\n• Especialista em Gestão Pública pela Faculdade Fortium\n\n• Engenheiro Agrônomo pela Universidade de Brasília\n\n• Cargos exercidos no Departamento de Polícia Federal: Chefe da Divisão de Gestão Estratégica, Chefe da Divisão de Material; Chefe do Serviço de Controle da Logística Policial; Chefe do Setor de Administração e Logística da Superintendência Regional do Maranhão\n\n• Atuação na gestão de projetos estratégicos e aquisições internacionais: pistolas, fuzis, metralhadoras, coletes, placas balísticas, plate carriers, veículos blindados nível IIIA, munições, uniformes, armas de incapacitação neuromuscular, granadas e espargidores\n\n• Atuação em grupos de trabalho e normatização: controle e gestão de armas e munições; padronização de pistolas; definição do quadro de dotação de produto controlado na Polícia Federal; planejamento estratégico institucional de produto controlado.`
+    },
+    {
+        id: 's17',
+        name: 'Mario Sergio',
+        shortRole: 'Delegado de Polícia Civil',
+        image: '/profok/mario.png',
+        fullBio: `Tema: Estudos para aquisições de veículos blindados de uso policial.\n\n• Responsável pelo setor de material bélico da Polícia Civil do Estado de São Paulo\n\n• Mestre em Segurança Pública pela University of Virginia, Estados Unidos da América\n\n• Diplomado em Justiça Criminal pela FBI Nacional Academy, Estados Unidos da América\n\n• Especialista em Polícia Judiciária e Sistema de Justiça Criminal pela Academia de Polícia Dr. Coriolano Nogueira Cobra\n\n• Docente concursado de Armamento e Tiro da Academia de Polícia Dr. Coriolano Nogueira Cobra\n\n• Bacharel em Direito pela Pontifícia Universidade Católica de São Paulo`
     },
     {
         id: 's11',
@@ -125,6 +145,13 @@ const SPEAKERS = [
         fullBio: `Tema: Normas técnicas de fardamento: qualidade, segurança e efetividade.\n\n• Curadora da Rede de Institutos de Tecnologia Têxtil e Vestuário do Serviço Nacional de Aprendizagem Industrial – SENAI\n\n• Graduada em Engenharia Industrial Têxtil pelo Centro de Tecnologia da Indústria Química e Têxtil - SENAI CETIQT\n\n• MBA em Gestão Empresarial e de Finanças pela Universidade Tiradentes\n\n• MBA em Gestão de Projetos pelo Centro Universitário IBMR\n\n• Pós-graduanda em Política, Estratégia, Defesa Nacional e Segurança Pública pelo Instituto Venturo\n\n• Atuação profissional: desenvolvimento de produtos; programação e planejamento de produção; melhoria de processos.`
     },
     {
+        id: 's19',
+        name: 'Syllas Jadach',
+        shortRole: 'Tenente-Coronel de Polícia Militar',
+        image: '/profok/SYLLAS.png',
+        fullBio: `Tema: Estudos para aquisição de equinos para a polícia montada\n\n▪ Comandante do 2º Batalhão de Policiamento de Choque da Polícia Militar do Estado de São Paulo\n\n▪ Doutor em Ciências Policiais de Segurança e Ordem Pública pelo Centro de Altos Estudos de Segurança da Academia de Polícia Militar do Barro Branco\n\n▪ Mestre em Ciências Policiais de Segurança e Ordem Pública pelo Centro de Altos Estudos de Segurança da Academia de Polícia Militar do Barro Branco\n\n▪ Função de comando anterior: Chefe da Divisão de Finanças e Logística, responsável pelas licitações nacionais e internacionais, aquisição de cães, trajes antibomba, robôs, acessórios para snipers, embarcações, fardamentos e equipamentos de proteção individual para o Batalhão de Operações Especiais\n\n▪ Atuação em comissão técnica: Comissão Permanente de Remonta, responsável pela aprovação dos cavalos adquiridos pela Polícia Militar do Estado de São Paulo`
+    },
+    {
         id: 's15',
         name: 'Thiago Carvalho',
         shortRole: 'Coordenador do Curso Técnico de Manutenção Aeronáutica do SENAI',
@@ -137,34 +164,6 @@ const SPEAKERS = [
         shortRole: 'Coronel de Polícia Militar',
         image: '/images/palestrantes/vitor.jpeg',
         fullBio: `Tema: Aquisição de cães policiais\n\n• Chefe de Inspeções do Estado-Maior da Polícia Militar do Estado do Rio de Janeiro\n\n• Coronel da Polícia Militar do Estado do Rio de Janeiro\n\n• Mestre em Ciências Criminais e Segurança Interna pela Université Jean Moulin Lyon 3, França\n\n• Mestre em Ciências Policiais de Segurança e Ordem Pública pelo Centro de Altos Estudos de Segurança Coronel PM Nelson Freire Terra\n\n• Especialização em Oficial de Polícia Estrangeiro/Comissário de Polícia pela École Nationale Supérieure de la Police, França\n\n• Bacharel em Direito pela Universidade Gama Filho\n\n• Graduado pelo Curso de Formação de Oficiais da Academia de Polícia Militar D. João VI\n\n• Funções de comando exercidas: Comandante da Academia de Polícia Militar D. João VI; Subcomandante do Batalhão de Polícia de Choque; Comandante da Escola Superior de Polícia Militar; Comandante do Batalhão de Policiamento em Áreas Turísticas; Chefe do Escritório de Gestão Estratégica da Coordenadoria de Assuntos Estratégicos; Chefe da Seção de Planejamento e Operações do Comando de Operações Especiais; Subcomandante do Batalhão de Ações com Cães da Polícia Militar do Estado do Rio de Janeiro.`
-    },
-    {
-        id: 's17',
-        name: 'Mario Sergio',
-        shortRole: 'Delegado de Polícia Civil',
-        image: '/profok/mario.png',
-        fullBio: `Tema: Estudos para aquisições de veículos blindados de uso policial.\n\n• Responsável pelo setor de material bélico da Polícia Civil do Estado de São Paulo\n\n• Mestre em Segurança Pública pela University of Virginia, Estados Unidos da América\n\n• Diplomado em Justiça Criminal pela FBI Nacional Academy, Estados Unidos da América\n\n• Especialista em Polícia Judiciária e Sistema de Justiça Criminal pela Academia de Polícia Dr. Coriolano Nogueira Cobra\n\n• Docente concursado de Armamento e Tiro da Academia de Polícia Dr. Coriolano Nogueira Cobra\n\n• Bacharel em Direito pela Pontifícia Universidade Católica de São Paulo`
-    },
-    {
-        id: 's18',
-        name: 'Fabiano Renê',
-        shortRole: 'Tenente-Coronel de Polícia Militar',
-        image: '/profok/Fabiano.png',
-        fullBio: `Tema: Credenciamento de estandes de tiro\n\n▪ Tenente-Coronel da Polícia Militar do Estado de Santa Catarina\n\n▪ Pregoeiro\n\n▪ Especialista em Gestão em Logística pela Pontifícia Universidade Católica de Minas Gerais\n\n▪ Especialista em Segurança, Planejamento e Resposta de Emergência em Eventos de Grande Porte pela UniLeya\n\n▪ Especialista em Gestão da Ordem Pública pela Polícia Militar do Estado de Santa Catarina\n\n▪ Graduado em Segurança Pública pela Universidade do Vale do Itajaí\n\n▪ Atuação em mobilizações nacionais de segurança pública: Subcomandante da Operação Belo Monte da Força Nacional em Altamira/PA; Subcomandante da Operação Cerrado da Força Nacional em Luziânia/GO; Subcomandante da Operação Jamari da Força Nacional em Ariquemes/RO; Membro do Grupo de Trabalho Rio 2016 do Departamento da Força Nacional de Segurança Pública no Rio de Janeiro/RJ; Observador de Segurança nos Primeiros Jogos Mundiais dos Povos Indígenas em Palmas/TO; Representante da Força Nacional no "Venue Integration Security Operation" - Jogos Olímpicos e Paralímpicos Rio 2016; Representante Institucional da Força Nacional no Centro Integrado de Comando e Controle Setorial - Jogos Olímpicos e Paralímpicos Rio 2016.`
-    },
-    {
-        id: 's19',
-        name: 'Syllas Jadach',
-        shortRole: 'Tenente-Coronel de Polícia Militar',
-        image: '/profok/SYLLAS.png',
-        fullBio: `Tema: Estudos para aquisição de equinos para a polícia montada\n\n▪ Comandante do 2º Batalhão de Policiamento de Choque da Polícia Militar do Estado de São Paulo\n\n▪ Doutor em Ciências Policiais de Segurança e Ordem Pública pelo Centro de Altos Estudos de Segurança da Academia de Polícia Militar do Barro Branco\n\n▪ Mestre em Ciências Policiais de Segurança e Ordem Pública pelo Centro de Altos Estudos de Segurança da Academia de Polícia Militar do Barro Branco\n\n▪ Função de comando anterior: Chefe da Divisão de Finanças e Logística, responsável pelas licitações nacionais e internacionais, aquisição de cães, trajes antibomba, robôs, acessórios para snipers, embarcações, fardamentos e equipamentos de proteção individual para o Batalhão de Operações Especiais\n\n▪ Atuação em comissão técnica: Comissão Permanente de Remonta, responsável pela aprovação dos cavalos adquiridos pela Polícia Militar do Estado de São Paulo`
-    },
-    {
-        id: 's20',
-        name: 'Ana Luiza Jacoby',
-        shortRole: 'Advogada',
-        image: '/profok/analuiza.png',
-        fullBio: `Tema: Responsabilização perante os tribunais de contas\n\n▪ Doutoranda em Direito Administrativo pela Pontifícia Universidade Católica de São Paulo\n\n▪ Mestre em Direito Administrativo pela Pontifícia Universidade Católica de São Paulo\n\n▪ Especialista em Direito Administartivo pelo Instituto Brasileiro de Ensino, Desenvolvimento e Pesquisa\n\n▪ Especialista em Gestão de Empresas pela Fundação Getúlio Vargas\n\n▪ Diretora do Instituto de Direito Administrativo Sancionador Brasileiro\n\n▪ Diretora do Instituto Nacional da Contratação Pública\n\n▪ Diretora Executiva do Instituto Protege\n\n▪ Autora de livros jurídicos, dentre eles: Tribunais de Contas da União e a nova Lei de Licitações e Contratos, 1ª edição, 2024; Tratado de Licitações e Contratos Administrativos, 1ª edição, 2024; Contratação Direta sem Licitação, 11ª edição, 2021, todos publicados pela editora Fórum; As Implicações da Covid-19 no Direito Administrativo, editora Revista dos Tribunais; Contratação de Treinamento: Doutrina e Prática, 2ª edição, 2015, editora Negócios Públicos.`
     }
 ];
 

@@ -79,10 +79,10 @@ export const Location: React.FC = () => {
                         </div>
 
                         <div className="flex gap-4">
-                            <a href="https://waze.com/ul" target="_blank" rel="noopener noreferrer" className="flex-1 py-4 bg-[#ffe83e] hover:bg-[#ffe83e]/90 text-tactical-midnight rounded-lg text-center font-bold uppercase text-sm tracking-wide transition-all shadow-lg flex items-center justify-center gap-2">
+                            <a href="https://waze.com/ul?ll=-27.5458052,-48.4988775&navigate=yes" target="_blank" rel="noopener noreferrer" className="flex-1 py-4 bg-[#ffe83e] hover:bg-[#ffe83e]/90 text-tactical-midnight rounded-lg text-center font-bold uppercase text-sm tracking-wide transition-all shadow-lg flex items-center justify-center gap-2">
                                 <Navigation className="w-4 h-4" /> Waze
                             </a>
-                            <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" className="flex-1 py-4 bg-white text-tactical-midnight hover:bg-gray-200 rounded-lg text-center font-bold uppercase text-sm tracking-wide transition-all shadow-lg flex items-center justify-center gap-2">
+                            <a href="https://www.google.com/maps/search/?api=1&query=Square+SC+-+Rod.+José+Carlos+Daux,+5500+-+Saco+Grande,+Florianópolis+-+SC,+88032-005" target="_blank" rel="noopener noreferrer" className="flex-1 py-4 bg-white text-tactical-midnight hover:bg-gray-200 rounded-lg text-center font-bold uppercase text-sm tracking-wide transition-all shadow-lg flex items-center justify-center gap-2">
                                 <MapPin className="w-4 h-4" /> Maps
                             </a>
                         </div>

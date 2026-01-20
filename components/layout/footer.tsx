@@ -48,9 +48,21 @@ export function Footer() {
                     <div>
                         <h4 className="font-bold mb-4">Contato</h4>
                         <ul className="space-y-2 text-sm text-white/60">
-                            <li>(11) 97736-3640</li>
-                            <li>contato@compraseg.com.br</li>
-                            <li>@congressocompraseg</li>
+                            <li>
+                                <a href="https://api.whatsapp.com/send?phone=5511977363640" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+                                    (11) 97736-3640
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:contato@compraseg.com.br" className="hover:text-white transition-colors">
+                                    contato@compraseg.com.br
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://instagram.com/congressocompraseg" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+                                    @congressocompraseg
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
