@@ -45,8 +45,8 @@ export async function POST(request: Request) {
         // 1. Email para Admin (Empresa)
         const adminMailOptions = {
             from: process.env.EMAIL_USER,
-            to: 'pedroeicke@gmail.com', // Email solicitado
-            subject: 'Nova Inscrição - Site VG',
+            to: 'contato@compraseg.com.br', // Email solicitado
+            subject: 'COMPRASEG 2026 - Você tem uma nova Inscrição!',
             attachments: attachments,
             html: `
                 <div style="font-family: 'Segoe UI', Arial, sans-serif; max-width: 600px; margin: 0 auto; color: #1a202c;">
@@ -104,7 +104,7 @@ export async function POST(request: Request) {
         const clientMailOptions = {
             from: process.env.EMAIL_USER,
             to: email,
-            subject: 'Inscrição Recebida - VG Capacitação',
+            subject: 'Inscrição Recebida - CompraSeg',
             html: `
                 <div style="font-family: 'Segoe UI', Arial, sans-serif; max-width: 600px; margin: 0 auto; color: #1a202c;">
                     <div style="background-color: #002855; padding: 20px; border-radius: 8px 8px 0 0;">
@@ -116,7 +116,7 @@ export async function POST(request: Request) {
                         <p>Nossa equipe irá analisar os dados e entrará em contato em breve para confirmar os detalhes.</p>
                         <br>
                         <p>Atenciosamente,</p>
-                        <p><strong>Equipe VG Capacitação</strong></p>
+                        <p><strong>Equipe CompraSeg</strong></p>
                     </div>
                 </div>
             `

@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
-import { Upload } from 'lucide-react';
+import { Upload, Check } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const BRAZILIAN_STATES = [
@@ -26,6 +26,7 @@ const ORGAO_OPTIONS = [
 
 export const RegistrationForm: React.FC = () => {
     const [loading, setLoading] = useState(false);
+    const [submitted, setSubmitted] = useState(false);
     const [formData, setFormData] = useState({
         nome: '',
         email: '',
@@ -66,22 +67,9 @@ export const RegistrationForm: React.FC = () => {
                 throw new Error(result.error || 'Erro ao enviar inscrição');
             }
 
-            alert('Inscrição enviada com sucesso! Entraremos em contato em breve.');
-            // Reset form (optional, but good UX)
-            setFormData({
-                nome: '',
-                email: '',
-                telefone: '',
-                orgao: '',
-                estado: '',
-                municipio: '',
-                quantidade: '',
-                nomeInscritos: '',
-                cnpj: '',
-                endereco: '',
-                pagamento: 'pix',
-                empenho: null
-            });
+            setSubmitted(true);
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+
         } catch (error) {
             console.error('Erro no envio:', error);
             alert('Erro ao enviar inscrição. Por favor, tente novamente.');
@@ -95,6 +83,26 @@ export const RegistrationForm: React.FC = () => {
             setFormData({ ...formData, empenho: e.target.files[0] });
         }
     };
+
+    if (submitted) {
+        return (
+            <div className="flex flex-col items-center justify-center p-8 bg-white/5 border border-white/10 rounded-xl text-center animate-in fade-in zoom-in duration-500">
+                <div className="w-20 h-20 bg-[#f5dd29] rounded-full flex items-center justify-center mb-6 shadow-[0_0_20px_rgba(245,221,41,0.3)]">
+                    <Check className="w-10 h-10 text-tactical-black" strokeWidth={3} />
+                </div>
+                <h3 className="text-2xl font-bold text-white mb-2">Inscrição Enviada!</h3>
+                <p className="text-tactical-metal text-lg max-w-md">
+                    Em breve um de nossos consultores entrará em contato para confirmar sua participação.
+                </p>
+                <Button
+                    onClick={() => window.location.reload()}
+                    className="mt-8 bg-transparent border border-white/20 text-white hover:bg-white/5"
+                >
+                    Fazer nova inscrição
+                </Button>
+            </div>
+        );
+    }
 
     return (
         <form onSubmit={handleSubmit} className="space-y-6">

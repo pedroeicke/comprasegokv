@@ -1,42 +1,42 @@
-import React from 'react';
-import { Mail, Instagram, Send } from 'lucide-react';
+"use client";
 
-const WhatsappIcon = ({ className }: { className?: string }) => (
-    <svg
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        className={className}
-    >
-        <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21" />
-        <path d="M9 10a.5.5 0 0 0 1 1h4a.5.5 0 0 0 1-1v-1a.5.5 0 0 0-1-1h-4a.5.5 0 0 0-1 1v1z" stroke="none" /> {/* decorative dot not needed for simple line icon, sticking to standard shape */}
-        <path d="M9 10a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v1z" clipRule="evenodd" fillOpacity="0" stroke="none" />
-    </svg>
-);
-// Actually, let's use a better path for "Whatsapp bonitinho" - standard logo style.
-const WhatsappLogo = ({ className }: { className?: string }) => (
-    <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        className={className}
-    >
-        <circle cx="12" cy="12" r="10" />
-        <path d="M16.5 7.5l-6 6-3-3" /> {/* Wait, this is a checkmark. Let me use the actual phone path */}
-    </svg>
-);
-// Retrying with correct path data in the actual tool call below.
+import React, { useState } from 'react';
+import { Mail, Instagram, Send, Check } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 export const Contact: React.FC = () => {
+    const [loading, setLoading] = useState(false);
+    const [submitted, setSubmitted] = useState(false);
+    const [formData, setFormData] = useState({
+        nome: '',
+        email: '',
+        telefone: '',
+        instituicao: '',
+        mensagem: ''
+    });
+
+    const handleSubmit = async (e: React.FormEvent) => {
+        e.preventDefault();
+        setLoading(true);
+
+        try {
+            const response = await fetch('/api/contact', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData),
+            });
+
+            if (!response.ok) throw new Error('Erro ao enviar mensagem');
+
+            setSubmitted(true);
+        } catch (error) {
+            console.error('Erro:', error);
+            alert('Não foi possível enviar sua mensagem. Tente novamente.');
+        } finally {
+            setLoading(false);
+        }
+    };
+
     return (
         <section id="contato" className="py-24 bg-transparent relative z-10">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -75,35 +75,96 @@ export const Contact: React.FC = () => {
                         </div>
                     </div>
 
-                    <div id="contact-form" className="p-8 rounded-2xl border border-white/10 shadow-2xl bg-white/5">
-                        <h3 className="text-xl font-bold text-white mb-6 uppercase">Envie sua mensagem</h3>
-                        <form className="space-y-5">
-                            <div>
-                                <input type="text" className="w-full bg-white/5 border border-white/10 rounded-lg p-4 text-white placeholder-tactical-metal focus:border-[#00C1FF] focus:ring-1 focus:ring-[#00C1FF] outline-none transition-all" placeholder="Nome Completo" />
-                            </div>
-
-                            <div className="grid grid-cols-2 gap-5">
-                                <div>
-                                    <input type="email" className="w-full bg-white/5 border border-white/10 rounded-lg p-4 text-white placeholder-tactical-metal focus:border-[#00C1FF] focus:ring-1 focus:ring-[#00C1FF] outline-none transition-all" placeholder="E-mail" />
+                    <div id="contact-form" className="p-8 rounded-2xl border border-white/10 shadow-2xl bg-white/5 min-h-[500px] flex flex-col justify-center">
+                        {submitted ? (
+                            <div className="flex flex-col items-center justify-center text-center animate-in fade-in zoom-in duration-500">
+                                <div className="w-20 h-20 bg-[#f5dd29] rounded-full flex items-center justify-center mb-6 shadow-[0_0_20px_rgba(245,221,41,0.3)]">
+                                    <Check className="w-10 h-10 text-tactical-black" strokeWidth={3} />
                                 </div>
-                                <div>
-                                    <input type="tel" className="w-full bg-white/5 border border-white/10 rounded-lg p-4 text-white placeholder-tactical-metal focus:border-[#00C1FF] focus:ring-1 focus:ring-[#00C1FF] outline-none transition-all" placeholder="Telefone" />
-                                </div>
+                                <h3 className="text-2xl font-display font-bold text-white mb-2 uppercase">Mensagem Enviada!</h3>
+                                <p className="text-tactical-metal text-lg">
+                                    Obrigado pelo contato.<br />Responderemos sua mensagem em breve.
+                                </p>
+                                <Button
+                                    onClick={() => {
+                                        setSubmitted(false);
+                                        setFormData({ nome: '', email: '', telefone: '', instituicao: '', mensagem: '' });
+                                    }}
+                                    className="mt-8 bg-transparent border border-white/20 text-white hover:bg-white/5"
+                                >
+                                    Enviar nova mensagem
+                                </Button>
                             </div>
+                        ) : (
+                            <>
+                                <h3 className="text-xl font-bold text-white mb-6 uppercase">Envie sua mensagem</h3>
+                                <form onSubmit={handleSubmit} className="space-y-5">
+                                    <div>
+                                        <input
+                                            type="text"
+                                            required
+                                            value={formData.nome}
+                                            onChange={(e) => setFormData({ ...formData, nome: e.target.value })}
+                                            className="w-full bg-white/5 border border-white/10 rounded-lg p-4 text-white placeholder-tactical-metal focus:border-[#00C1FF] focus:ring-1 focus:ring-[#00C1FF] outline-none transition-all"
+                                            placeholder="Nome Completo"
+                                        />
+                                    </div>
 
-                            <div>
-                                <input type="text" className="w-full bg-white/5 border border-white/10 rounded-lg p-4 text-white placeholder-tactical-metal focus:border-[#00C1FF] focus:ring-1 focus:ring-[#00C1FF] outline-none transition-all" placeholder="Instituição" />
-                            </div>
+                                    <div className="grid grid-cols-2 gap-5">
+                                        <div>
+                                            <input
+                                                type="email"
+                                                required
+                                                value={formData.email}
+                                                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                                                className="w-full bg-white/5 border border-white/10 rounded-lg p-4 text-white placeholder-tactical-metal focus:border-[#00C1FF] focus:ring-1 focus:ring-[#00C1FF] outline-none transition-all"
+                                                placeholder="E-mail"
+                                            />
+                                        </div>
+                                        <div>
+                                            <input
+                                                type="tel"
+                                                required
+                                                value={formData.telefone}
+                                                onChange={(e) => setFormData({ ...formData, telefone: e.target.value })}
+                                                className="w-full bg-white/5 border border-white/10 rounded-lg p-4 text-white placeholder-tactical-metal focus:border-[#00C1FF] focus:ring-1 focus:ring-[#00C1FF] outline-none transition-all"
+                                                placeholder="Telefone"
+                                            />
+                                        </div>
+                                    </div>
 
+                                    <div>
+                                        <input
+                                            type="text"
+                                            value={formData.instituicao}
+                                            onChange={(e) => setFormData({ ...formData, instituicao: e.target.value })}
+                                            className="w-full bg-white/5 border border-white/10 rounded-lg p-4 text-white placeholder-tactical-metal focus:border-[#00C1FF] focus:ring-1 focus:ring-[#00C1FF] outline-none transition-all"
+                                            placeholder="Instituição"
+                                        />
+                                    </div>
 
-                            <div>
-                                <textarea rows={4} className="w-full bg-white/5 border border-white/10 rounded-lg p-4 text-white placeholder-tactical-metal focus:border-[#00C1FF] focus:ring-1 focus:ring-[#00C1FF] outline-none transition-all" placeholder="Mensagem"></textarea>
-                            </div>
+                                    <div>
+                                        <textarea
+                                            rows={4}
+                                            required
+                                            value={formData.mensagem}
+                                            onChange={(e) => setFormData({ ...formData, mensagem: e.target.value })}
+                                            className="w-full bg-white/5 border border-white/10 rounded-lg p-4 text-white placeholder-tactical-metal focus:border-[#00C1FF] focus:ring-1 focus:ring-[#00C1FF] outline-none transition-all"
+                                            placeholder="Mensagem"
+                                        ></textarea>
+                                    </div>
 
-                            <button type="button" className="w-full py-4 bg-white text-tactical-black hover:bg-white/90 font-bold uppercase tracking-wider rounded-lg transition-all flex items-center justify-center gap-2">
-                                Enviar <Send className="w-4 h-4" />
-                            </button>
-                        </form>
+                                    <button
+                                        type="submit"
+                                        disabled={loading}
+                                        className="w-full py-4 bg-white text-tactical-black hover:bg-white/90 font-bold uppercase tracking-wider rounded-lg transition-all flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed"
+                                    >
+                                        {loading ? 'Enviando...' : 'Enviar'}
+                                        {!loading && <Send className="w-4 h-4" />}
+                                    </button>
+                                </form>
+                            </>
+                        )}
                     </div>
 
                 </div>
