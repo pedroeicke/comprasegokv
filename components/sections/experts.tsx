@@ -145,11 +145,25 @@ const SPEAKERS = [
         fullBio: `Tema: Exigência de marcas e proibição de marcas em licitações da Segurança Pública\n\n• Doutor em Direito Administrativo pela Universidade Federal de Santa Catarina\n\n• Mestre em Direito do Estado pela Universidade Federal de Santa Catarina\n\n• Ex-Consultor da Comissão Especial de Direito Administrativo do Conselho Federal da Ordem dos Advogados do Brasil\n\n• Membro Fundador e ex-Diretor Executivo do Instituto de Direito Administrativo de Santa Catarina\n\n• Atividades docentes anteriores: Professor de Direito Administrativo da Faculdade de Direito da Universidade Bandeirante de São Paulo e do Curso de Pós-graduação em Direito Administrativo da Universidade do Oeste de Santa Catarina\n\n• Autor de livros jurídicos, dentre eles: O método de negociação de Harvard na Administração Pública consensual, editora Livraria do Advogado; Serviço Público na Constituição Federal, editora Livraria do Advogado; Aspectos polêmicos sobre a nova lei de licitações e contratos administrativos, editora Fórum.`
     },
     {
+        id: 's22',
+        name: 'Rafael Pacheco',
+        shortRole: 'Secretário de Estado da Justiça',
+        image: '/profok/rafael.png',
+        fullBio: `Tema: Cooperação internacional em segurança pública\n\n• Secretário de Justiça do Estado do Espírito Santo\n\n• Presidente do Conselho Nacional dos Secretários de Estado da Justiça, Cidadania, Direitos Humanos e Administração Penitenciária (CONSEJ)\n\n• Mestre em Políticas Públicas e Processo pela Faculdade de Campos\n\n• Especialista em Direito Penal Econômico Europeu pela Universidade de Coimbra\n\n• Especialista em Inteligência de Segurança Pública pela Universidade de Vila Velha\n\n• Funções anteriores: Subsecretário de Estado de Inteligência Prisional; Oficial de Ligação da Polícia Federal.`
+    },
+    {
         id: 's14',
         name: 'Renata Monteiro',
         shortRole: 'Coordenadora de Projetos de Defesa e Segurança do SENAI CETIQT',
         image: '/images/palestrantes/renata.jpg',
         fullBio: `Tema: Normas técnicas de fardamento: qualidade, segurança e efetividade.\n\n• Curadora da Rede de Institutos de Tecnologia Têxtil e Vestuário do Serviço Nacional de Aprendizagem Industrial – SENAI\n\n• Graduada em Engenharia Industrial Têxtil pelo Centro de Tecnologia da Indústria Química e Têxtil - SENAI CETIQT\n\n• MBA em Gestão Empresarial e de Finanças pela Universidade Tiradentes\n\n• MBA em Gestão de Projetos pelo Centro Universitário IBMR\n\n• Pós-graduanda em Política, Estratégia, Defesa Nacional e Segurança Pública pelo Instituto Venturo\n\n• Atuação profissional: desenvolvimento de produtos; programação e planejamento de produção; melhoria de processos.`
+    },
+    {
+        id: 's23',
+        name: 'Roberto Menezes',
+        shortRole: 'Coronel R1 do Exército Brasileiro',
+        image: '/profok/roberto.png',
+        fullBio: `Tema: Aquisições de produtos controlados pelo Exército\n\n• Mestre em Ciências Militares pela Escola de Aperfeiçoamento de Oficiais do Exército\n\n• MBA em Comércio Exterior pela Abracomex\n\n• Graduado em Ciências Militares pela Academia Militar das Agulhas Negras\n\n• Ex-Chefe da Divisão de Autorização da Diretoria de Fiscalização de Produtos Controlados\n\n• Atuação profissional: Chefe do Serviço de Fiscalização de Produtos Controlados da Regional do Triângulo Mineiro; Chefe do Serviço de Fiscalização de Produtos Controlados dos Estados de Rondônia, Acre e Sul do Amazonas; Comandante do Grupo de Operações de Inteligência para Fiscalização de Produtos Controlados dos Estados da Bahia e Sergipe.`
     },
     {
         id: 's19',
