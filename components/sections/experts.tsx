@@ -18,9 +18,9 @@ const COORDINATORS = [
     {
         id: 'c2',
         name: 'Murilo Frigeri',
-        shortRole: 'Chefe de Pesquisa do Centro de Material Bélico da Polícia Militar do Estado de São Paulo',
+        shortRole: 'Graduado em Ciências Policiais',
         image: '/profok/murilo.jpeg',
-        fullBio: `Tema: Requisitos de qualidade e aspectos de mercado nas compras de materiais bélicos\n\n• Chefe da Seção de Desenvolvimento e Pesquisa do Centro de Material Bélico da Polícia Militar do Estado de São Paulo\n\n• Capitão de Polícia Militar\n\n• Graduado em Ciências Policiais de Segurança e Ordem Pública pela Academia de Polícia Militar do Barro Branco\n\n• Graduando em Engenharia Mecânica pela Faculdade Estácio de São Paulo\n\n• Atuação profissional: Pesquisa, especificação, criação de Termo de Referência e métodos de controle de qualidade para compras institucionais e renovação de equipamentos da Polícia Militar do Estado de São Paulo\n\n• Atuação em grupos de trabalho: atualização da legislação de material bélico; suportes de armamentos em viaturas policiais; estudo técnico para adoção de normas para capacete balístico; adoção de veículos blindados; normas para emprego de equipamentos não letais; desenvolvimento de protocolos de teste para produtos controlados; inovação de pistolas; inovação de coletes balísticos; inovação de fuzis.`
+        fullBio: `Tema: Requisitos de qualidade e aspectos de mercado nas compras de materiais bélicos\n\n• Graduado em Ciências Policiais de Segurança e Ordem Pública pela Academia de Polícia Militar do Barro Branco\n\n• Graduando em Engenharia Mecânica pela Faculdade Estácio de São Paulo\n\n• Atuação profissional: Pesquisa, especificação, criação de Termo de Referência e métodos de controle de qualidade para compras institucionais e renovação de equipamentos da Polícia Militar do Estado de São Paulo\n\n• Atuação em grupos de trabalho: atualização da legislação de material bélico; suportes de armamentos em viaturas policiais; estudo técnico para adoção de normas para capacete balístico; adoção de veículos blindados; normas para emprego de equipamentos não letais; desenvolvimento de protocolos de teste para produtos controlados; inovação de pistolas; inovação de coletes balísticos; inovação de fuzis.`
     },
     {
         id: 'c3',
@@ -133,9 +133,9 @@ const SPEAKERS = [
     {
         id: 's12',
         name: 'Murilo Frigeri',
-        shortRole: 'Chefe de Pesquisa do Centro de Material Bélico da Polícia Militar do Estado de São Paulo',
+        shortRole: 'Graduado em Ciências Policiais',
         image: '/profok/murilo.jpeg',
-        fullBio: `Tema: Requisitos de qualidade e aspectos de mercado nas compras de materiais bélicos\n\n• Chefe da Seção de Desenvolvimento e Pesquisa do Centro de Material Bélico da Polícia Militar do Estado de São Paulo\n\n• Capitão de Polícia Militar\n\n• Graduado em Ciências Policiais de Segurança e Ordem Pública pela Academia de Polícia Militar do Barro Branco\n\n• Graduando em Engenharia Mecânica pela Faculdade Estácio de São Paulo\n\n• Atuação profissional: Pesquisa, especificação, criação de Termo de Referência e métodos de controle de qualidade para compras institucionais e renovação de equipamentos da Polícia Militar do Estado de São Paulo\n\n• Atuação em grupos de trabalho: atualização da legislação de material bélico; suportes de armamentos em viaturas policiais; estudo técnico para adoção de normas para capacete balístico; adoção de veículos blindados; normas para emprego de equipamentos não letais; desenvolvimento de protocolos de teste para produtos controlados; inovação de pistolas; inovação de coletes balísticos; inovação de fuzis.`
+        fullBio: `Tema: Requisitos de qualidade e aspectos de mercado nas compras de materiais bélicos\n\n• Graduado em Ciências Policiais de Segurança e Ordem Pública pela Academia de Polícia Militar do Barro Branco\n\n• Graduando em Engenharia Mecânica pela Faculdade Estácio de São Paulo\n\n• Atuação profissional: Pesquisa, especificação, criação de Termo de Referência e métodos de controle de qualidade para compras institucionais e renovação de equipamentos da Polícia Militar do Estado de São Paulo\n\n• Atuação em grupos de trabalho: atualização da legislação de material bélico; suportes de armamentos em viaturas policiais; estudo técnico para adoção de normas para capacete balístico; adoção de veículos blindados; normas para emprego de equipamentos não letais; desenvolvimento de protocolos de teste para produtos controlados; inovação de pistolas; inovação de coletes balísticos; inovação de fuzis.`
     },
     {
         id: 's13',
