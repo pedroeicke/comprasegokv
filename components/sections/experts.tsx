@@ -89,6 +89,13 @@ const SPEAKERS = [
         fullBio: `Tema: Licitações internacionais de equipamentos de segurança pública\n\n• Especialista em Direito Público pelo Instituto Brasileiro de Ensino, Desenvolvimento e Pesquisa\n\n• Especialista em Compliance Regulatório pela University of Pennsylvania\n\n• Ex-Assessor da Presidência da República, integrante da equipe inicial da Controladoria Geral da União\n\n• Ex-Assessor da Procuradoria Geral da República, lotado em gabinete de Subprocuradora-Geral da República com atuação em processos da Corte Especial do Superior Tribunal de Justiça\n\n• Atividade docente anterior: Professor de Direito Administrativo do Centro Universitário do Distrito Federal – UDF\n\n• Autor de livros jurídicos, dentre eles: Licitação Pública Internacional no Brasil, editora Negócios Públicos, 2010; O Planejamento das Contratações (em coautoria), editora Fórum, 2025.`
     },
     {
+        id: 's24',
+        name: 'Joselaine Branchini',
+        shortRole: 'Coordenadora de Dívidas e Cálculos da AGU',
+        image: '/profok/Joselaine.png',
+        fullBio: `Tema: Soluções de TI para a segurança pública. Contratar ou desenvolver? Como fiscalizar?\n\n• Coordenadora de Dívida e Cálculos da Advocacia Geral da União\n\n• Analista, subárea Tecnologia da Informação – Desenvolvimento de Sistemas, da carreira da Regulação Federal\n\n• Graduada em Ciência da Computação pela Universidade Estadual de Londrina, com láurea acadêmica\n\n• Mestra em Engenharia Elétrica e Computação pela Universidade Estadual de Campinas\n\n• Atuação profissional: Gestão das equipes de desenvolvimento dos módulos Dívida, Cálculo e Gestão de Devedores do Super Sapiens, na Advocacia Geral da União\n\n• Atuação anterior: Gestora de contratos de TI na Agência Nacional de Transportes Terrestres, Diretora de Desenvolvimento de Sistemas na Voran Tecnologia, Gerente de Sistemas de Relacionamento com o Cliente na Gol Linhas Aéreas, Coordenadora de projetos na área de Excelência do Atendimento do Itaú Unibanco, Coordenadora de otimização e sistemas inteligentes da CFlex Computação, Analista de otimização da Choose Technologies.`
+    },
+    {
         id: 's7',
         name: 'Juliana Mendonça',
         shortRole: 'Coronel Intendente da Força Aérea Brasileira',
