@@ -60,3 +60,20 @@
     -webkit-backdrop-filter: blur(12px);
   }
 }
+
+@keyframes scroll-logos {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll-logos {
+  animation: scroll-logos 20s linear infinite;
+}
+
+.animate-scroll-logos:hover {
+  animation-play-state: paused;
+}
