@@ -61,13 +61,6 @@ const SPEAKERS = [
         fullBio: `Tema: Projetos de equipamentos de defesa e segurança pública: dilemas entre desenvolvimento e aquisição.\n\n• Graduado em Ciências Aeronáuticas com habilitação em Aviação Militar pela Academia da Força Aérea\n\n• Pós-graduado em Estado-Maior pela Escola de Comando e Estado-Maior da Aeronáutica\n\n• Especialista em Política e Estratégia de Defesa pelo Curso de Altos Estudos de Política e Estratégia da Escola Superior de Guerra\n\n• Diplomado pelo Curso Superior de Defesa da Escola Superior de Guerra\n\n• Ex-gerente executivo do projeto do helicóptero H-60L Black Hawk e dos projetos estratégicos KC-X e KC-390\n\n• Ex-gerente adjunto do projeto estratégico F-X2\n\n• Algumas funções exercidas na Força Aérea Brasileira: Adjunto da Assessoria de Logística, Patrimônio e Finanças do Gabinete do Comandante da Aeronáutica; Coordenador-Geral das negociações de readequação da frota de aeronaves KC-390 Millennium; Chefe da Subdivisão de Planejamento e Controle; Chefe do Escritório Brasileiro de Ligação, na Base Aérea de Wright Patterson, em Dayton-OH, EUA; Chefe do Setor FMS (Foreign Military Sales).`
     },
     {
-        id: 's18',
-        name: 'Fabiano Renê',
-        shortRole: 'Tenente-Coronel de Polícia Militar',
-        image: '/profok/Fabiano.png',
-        fullBio: `Tema: Credenciamento de estandes de tiro\n\n▪ Tenente-Coronel da Polícia Militar do Estado de Santa Catarina\n\n▪ Pregoeiro\n\n▪ Especialista em Gestão em Logística pela Pontifícia Universidade Católica de Minas Gerais\n\n▪ Especialista em Segurança, Planejamento e Resposta de Emergência em Eventos de Grande Porte pela UniLeya\n\n▪ Especialista em Gestão da Ordem Pública pela Polícia Militar do Estado de Santa Catarina\n\n▪ Graduado em Segurança Pública pela Universidade do Vale do Itajaí\n\n▪ Atuação em mobilizações nacionais de segurança pública: Subcomandante da Operação Belo Monte da Força Nacional em Altamira/PA; Subcomandante da Operação Cerrado da Força Nacional em Luziânia/GO; Subcomandante da Operação Jamari da Força Nacional em Ariquemes/RO; Membro do Grupo de Trabalho Rio 2016 do Departamento da Força Nacional de Segurança Pública no Rio de Janeiro/RJ; Observador de Segurança nos Primeiros Jogos Mundiais dos Povos Indígenas em Palmas/TO; Representante da Força Nacional no "Venue Integration Security Operation" - Jogos Olímpicos e Paralímpicos Rio 2016; Representante Institucional da Força Nacional no Centro Integrado de Comando e Controle Setorial - Jogos Olímpicos e Paralímpicos Rio 2016.`
-    },
-    {
         id: 's4',
         name: 'Felipe Dalenogare',
         shortRole: 'Chefe de Divisão da Coordenação-Geral Jurídica de Licitações do Ministério da Defesa',
