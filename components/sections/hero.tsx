@@ -63,8 +63,8 @@ export function Hero() {
             </div>
 
             {/* Apoio - Logos (bottom of hero) */}
-            <div className="absolute bottom-2 md:bottom-4 left-0 right-0 z-10 flex flex-col items-center">
-                <p className="text-xs md:text-base font-semibold text-white/60 tracking-[0.3em] uppercase mb-4 md:mb-1">
+            <div className="absolute bottom-4 md:bottom-4 left-0 right-0 z-10 flex flex-col items-center">
+                <p className="text-xs md:text-base font-semibold text-white/60 tracking-[0.3em] uppercase mb-3 md:mb-1">
                     Apoio
                 </p>
                 {/* Desktop */}
