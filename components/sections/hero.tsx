@@ -1,33 +1,15 @@
-"use client";
-
 import Image from "next/image";
-import { useEffect, useState } from "react";
 
 const apoioLogos = [
     { src: "/logosapoio/1.png", alt: "APPS" },
     { src: "/logosapoio/2.png", alt: "AGEPPEN Brasil", className: "md:!h-36 lg:!h-44" },
     { src: "/logosapoio/3.png", alt: "Baratieri Advogados" },
-    { src: "/logosapoio/4.png", alt: "Piloto Policial", className: "!h-10 md:!h-12 lg:!h-14" },
+    { src: "/logosapoio/4.png", alt: "Piloto Policial", className: "!h-6 md:!h-12 lg:!h-14" },
     { src: "/logosapoio/5.png", alt: "FENEME", className: "md:!h-36 lg:!h-44" },
     { src: "/logosapoio/COP - INTERNATIONAL COM LEGENDA - HORIZONTAL_SOMBREADA.png", alt: "COP International" },
 ];
 
-// Split logos into pairs for mobile carousel
-const logoPairs = [];
-for (let i = 0; i < apoioLogos.length; i += 2) {
-    logoPairs.push(apoioLogos.slice(i, i + 2));
-}
-
 export function Hero() {
-    const [currentPair, setCurrentPair] = useState(0);
-
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrentPair((prev) => (prev + 1) % logoPairs.length);
-        }, 3000);
-        return () => clearInterval(interval);
-    }, []);
-
     return (
         <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
             {/* Background Effects */}
@@ -85,14 +67,10 @@ export function Hero() {
                 <p className="text-xs md:text-base font-semibold text-white/60 tracking-[0.3em] uppercase mb-2 md:mb-1">
                     Apoio
                 </p>
-
-                {/* Desktop: all logos in a row */}
+                {/* Desktop */}
                 <div className="hidden md:flex md:flex-wrap md:justify-center md:items-center md:gap-10 px-4 w-full max-w-7xl mx-auto">
                     {apoioLogos.map((logo, i) => (
-                        <div
-                            key={i}
-                            className="flex items-center justify-center"
-                        >
+                        <div key={i} className="flex items-center justify-center">
                             {/* eslint-disable-next-line @next/next/no-img-element */}
                             <img
                                 src={logo.src}
@@ -102,34 +80,30 @@ export function Hero() {
                         </div>
                     ))}
                 </div>
-
-                {/* Mobile: carousel 2 logos at a time */}
-                <div className="md:hidden w-full px-8">
-                    <div className="flex justify-center items-center gap-8 h-20 transition-opacity duration-500">
-                        {logoPairs[currentPair].map((logo, i) => (
-                            <div
-                                key={`${currentPair}-${i}`}
-                                className="flex items-center justify-center flex-1"
-                            >
+                {/* Mobile: row of 4 + row of 2 */}
+                <div className="md:hidden flex flex-col items-center gap-2 w-full">
+                    <div className="flex justify-center items-center gap-5">
+                        {apoioLogos.slice(0, 4).map((logo, i) => (
+                            <div key={i} className="flex items-center justify-center">
                                 {/* eslint-disable-next-line @next/next/no-img-element */}
                                 <img
                                     src={logo.src}
                                     alt={logo.alt}
-                                    className="h-16 w-auto max-w-[140px] object-contain opacity-90"
+                                    className={`h-10 w-auto object-contain opacity-80 ${logo.className?.replace(/md:\S+/g, '').replace(/lg:\S+/g, '') || ""}`}
                                 />
                             </div>
                         ))}
                     </div>
-                    {/* Dots indicator */}
-                    <div className="flex justify-center gap-2 mt-2">
-                        {logoPairs.map((_, i) => (
-                            <button
-                                key={i}
-                                onClick={() => setCurrentPair(i)}
-                                className={`w-1.5 h-1.5 rounded-full transition-all duration-300 ${
-                                    i === currentPair ? "bg-white/80 w-3" : "bg-white/30"
-                                }`}
-                            />
+                    <div className="flex justify-center items-center gap-4">
+                        {apoioLogos.slice(4).map((logo, i) => (
+                            <div key={i} className="flex items-center justify-center">
+                                {/* eslint-disable-next-line @next/next/no-img-element */}
+                                <img
+                                    src={logo.src}
+                                    alt={logo.alt}
+                                    className={`h-10 w-auto object-contain opacity-80 ${logo.className?.replace(/md:\S+/g, '').replace(/lg:\S+/g, '') || ""}`}
+                                />
+                            </div>
                         ))}
                     </div>
                 </div>
