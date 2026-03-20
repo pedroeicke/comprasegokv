@@ -63,8 +63,8 @@ export function Hero() {
             </div>
 
             {/* Apoio - Logos (bottom of hero) */}
-            <div className="absolute bottom-8 left-0 right-0 z-10 flex flex-col items-center">
-                <p className="text-sm md:text-base font-semibold text-white/60 tracking-[0.3em] uppercase mb-2">
+            <div className="absolute bottom-4 left-0 right-0 z-10 flex flex-col items-center">
+                <p className="text-sm md:text-base font-semibold text-white/60 tracking-[0.3em] uppercase mt-6 mb-1">
                     Apoio
                 </p>
                 <div className="grid grid-cols-3 md:flex md:flex-wrap justify-center items-center gap-4 md:gap-10 px-4 w-full max-w-7xl mx-auto">
