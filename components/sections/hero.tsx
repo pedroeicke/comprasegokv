@@ -89,7 +89,7 @@ export function Hero() {
                                 <img
                                     src={logo.src}
                                     alt={logo.alt}
-                                    className={`h-10 w-auto object-contain opacity-80 ${logo.className?.replace(/md:\S+/g, '').replace(/lg:\S+/g, '') || ""}`}
+                                    className={`h-14 w-auto object-contain opacity-80 ${logo.className?.replace(/md:\S+/g, '').replace(/lg:\S+/g, '') || ""}`}
                                 />
                             </div>
                         ))}
@@ -101,7 +101,7 @@ export function Hero() {
                                 <img
                                     src={logo.src}
                                     alt={logo.alt}
-                                    className={`h-10 w-auto object-contain opacity-80 ${logo.className?.replace(/md:\S+/g, '').replace(/lg:\S+/g, '') || ""}`}
+                                    className={`h-14 w-auto object-contain opacity-80 ${logo.className?.replace(/md:\S+/g, '').replace(/lg:\S+/g, '') || ""}`}
                                 />
                             </div>
                         ))}
