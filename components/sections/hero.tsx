@@ -1,12 +1,12 @@
 import Image from "next/image";
 
 const apoioLogos = [
+    { src: "/logosapoio/3.png", alt: "Baratieri Advogados" },
     { src: "/logosapoio/1.png", alt: "APPS" },
     { src: "/logosapoio/2.png", alt: "AGEPPEN Brasil", className: "md:!h-36 lg:!h-44" },
-    { src: "/logosapoio/3.png", alt: "Baratieri Advogados" },
     { src: "/logosapoio/4.png", alt: "Piloto Policial", className: "!h-6 md:!h-12 lg:!h-14" },
-    { src: "/logosapoio/5.png", alt: "FENEME", className: "md:!h-36 lg:!h-44" },
     { src: "/logosapoio/COP - INTERNATIONAL COM LEGENDA - HORIZONTAL_SOMBREADA.png", alt: "COP International" },
+    { src: "/logosapoio/5.png", alt: "FENEME", className: "md:!h-36 lg:!h-44" },
 ];
 
 export function Hero() {
