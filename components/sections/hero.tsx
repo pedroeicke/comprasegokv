@@ -2,11 +2,11 @@ import Image from "next/image";
 
 const apoioLogos = [
     { src: "/logosapoio/1.png", alt: "APPS" },
-    { src: "/logosapoio/2.png", alt: "AGEPPEN Brasil", className: "!h-28 md:!h-36 lg:!h-44" },
+    { src: "/logosapoio/2.png", alt: "AGEPPEN Brasil", className: "!h-20 md:!h-44 lg:!h-52" },
     { src: "/logosapoio/3.png", alt: "Baratieri Advogados" },
-    { src: "/logosapoio/4.png", alt: "Piloto Policial", className: "!h-8 md:!h-12 lg:!h-14" },
+    { src: "/logosapoio/4.png", alt: "Piloto Policial", className: "!h-10 md:!h-16 lg:!h-20" },
+    { src: "/logosapoio/5.png", alt: "FENEME", className: "!h-20 md:!h-44 lg:!h-52" },
     { src: "/logosapoio/COP - INTERNATIONAL COM LEGENDA - HORIZONTAL_SOMBREADA.png", alt: "COP International" },
-    { src: "/logosapoio/5.png", alt: "FENEME", className: "!h-28 md:!h-36 lg:!h-44" },
 ];
 
 export function Hero() {
@@ -67,7 +67,7 @@ export function Hero() {
                 <p className="text-sm md:text-base font-semibold text-white/60 tracking-[0.3em] uppercase mb-4">
                     Apoio
                 </p>
-                <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10 px-4 w-full max-w-7xl mx-auto">
+                <div className="grid grid-cols-3 md:flex md:flex-wrap justify-center items-center gap-4 md:gap-10 px-4 w-full max-w-7xl mx-auto">
                     {apoioLogos.map((logo, i) => (
                         <div
                             key={i}
@@ -77,7 +77,7 @@ export function Hero() {
                             <img
                                 src={logo.src}
                                 alt={logo.alt}
-                                className={`h-24 md:h-32 lg:h-40 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-300 ${logo.className || ""}`}
+                                className={`h-16 md:h-36 lg:h-44 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-300 ${logo.className || ""}`}
                             />
                         </div>
                     ))}
