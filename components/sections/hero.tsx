@@ -11,7 +11,7 @@ const apoioLogos = [
 
 export function Hero() {
     return (
-        <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+        <section className="relative min-h-screen flex flex-col overflow-hidden pt-20">
             {/* Background Effects */}
             <div className="absolute inset-0 z-0 overflow-hidden">
                 <video
@@ -37,33 +37,36 @@ export function Hero() {
                 </div>
             </div>
 
-            <div className="container mx-auto px-4 relative z-10 flex flex-col items-center justify-center text-center h-full -mt-16">
+            {/* Main content - grows to push apoio down */}
+            <div className="flex-1 flex items-center justify-center relative z-10">
+                <div className="container mx-auto px-4 flex flex-col items-center justify-center text-center">
 
-                {/* Title Section */}
-                <div className="mb-12 flex flex-col items-center">
-                    <Image
-                        src="/herocompras.png"
-                        alt="COMPRASEG 2026 CONGRESSO NACIONAL DE COMPRAS DA SEGURANÇA PÚBLICA"
-                        width={900}
-                        height={300}
-                        className="w-full max-w-5xl h-auto"
-                        priority
-                    />
-                </div>
+                    {/* Title Section */}
+                    <div className="mb-12 flex flex-col items-center">
+                        <Image
+                            src="/herocompras.png"
+                            alt="COMPRASEG 2026 CONGRESSO NACIONAL DE COMPRAS DA SEGURANÇA PÚBLICA"
+                            width={900}
+                            height={300}
+                            className="w-full max-w-5xl h-auto"
+                            priority
+                        />
+                    </div>
 
-                {/* Date and Location */}
-                <div className="mb-12 flex flex-col items-center gap-[37px]">
-                    <p className="text-3xl md:text-5xl font-bold text-white tracking-wide font-display text-center">
-                        12 A 14 DE MAIO DE 2026
-                    </p>
-                    <p className="text-[14px] md:text-[25px] font-bold text-white tracking-[0.35em] uppercase font-display text-center">
-                        FLORIANÓPOLIS - SC
-                    </p>
+                    {/* Date and Location */}
+                    <div className="mb-0 flex flex-col items-center gap-[37px]">
+                        <p className="text-3xl md:text-5xl font-bold text-white tracking-wide font-display text-center">
+                            12 A 14 DE MAIO DE 2026
+                        </p>
+                        <p className="text-[14px] md:text-[25px] font-bold text-white tracking-[0.35em] uppercase font-display text-center">
+                            FLORIANÓPOLIS - SC
+                        </p>
+                    </div>
                 </div>
             </div>
 
-            {/* Apoio - Logos (bottom of hero) */}
-            <div className="absolute bottom-4 md:bottom-4 left-0 right-0 z-10 flex flex-col items-center">
+            {/* Apoio - Logos (bottom of hero, in normal flow) */}
+            <div className="relative z-10 pb-4 flex flex-col items-center">
                 <p className="text-xs md:text-base font-semibold text-white/60 tracking-[0.3em] uppercase mb-3 md:mb-1">
                     Apoio
                 </p>
