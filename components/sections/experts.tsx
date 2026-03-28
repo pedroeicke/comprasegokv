@@ -36,7 +36,7 @@ const SPEAKERS = [
         id: 's21',
         name: 'Alex Mena Barreto',
         shortRole: 'Coronel de Polícia Militar',
-        image: '/profok/alex.png',
+        image: '/profok/alexok.png',
         fullBio: `• Doutor e Mestre em Ciências Policiais de Segurança e Ordem Pública pelo Centro de Altos Estudos de Segurança da Polícia Militar do Estado de São Paulo\n\n• Especialista em Gestão Organizacional em Segurança Pública e Justiça Criminal pelo Núcleo de Estudos da Violência da Universidade de São Paulo.\n\n• Especialista em Gestão de Segurança Pública, Gestão de Projetos e Policiamento Aéreo com aeronaves tripuladas e não tripuladas.\n\n• Habilitado como Piloto Policial de helicópteros (AS350 e AW109S), comandante de aeronave, instrutor de voo e examinador Credenciado.\n\n• Consultor técnico, editor do site Piloto Policial e organizador do Encontro Nacional de Aviação de Segurança Pública - ENAVSEG.`
     },
     {
@@ -82,6 +82,13 @@ const SPEAKERS = [
         fullBio: `Tema: Licitações internacionais de equipamentos de segurança pública\n\n• Especialista em Direito Público pelo Instituto Brasileiro de Ensino, Desenvolvimento e Pesquisa\n\n• Especialista em Compliance Regulatório pela University of Pennsylvania\n\n• Ex-Assessor da Presidência da República, integrante da equipe inicial da Controladoria Geral da União\n\n• Ex-Assessor da Procuradoria Geral da República, lotado em gabinete de Subprocuradora-Geral da República com atuação em processos da Corte Especial do Superior Tribunal de Justiça\n\n• Atividade docente anterior: Professor de Direito Administrativo do Centro Universitário do Distrito Federal – UDF\n\n• Autor de livros jurídicos, dentre eles: Licitação Pública Internacional no Brasil, editora Negócios Públicos, 2010; O Planejamento das Contratações (em coautoria), editora Fórum, 2025.`
     },
     {
+        id: 's25',
+        name: 'Juliana Lopes',
+        shortRole: 'Major PMSC',
+        image: '/profok/julianalopes.png',
+        fullBio: `Tema: Credenciamento de estandes de tiro\n\n• Graduada em Direito pela Universidade do Vale do Itajaí\n\n• Formação pelo Curso de Formação de Oficiais da Polícia Militar de Santa Catarina (PMSC)\n\n• Especialização em Cinotecnia pela Polícia Militar de Santa Catarina (PMSC)\n\n• Capacitação em Manutenção de Armamento\n\n• Capacitação no curso Shot Correction – Fundamentos Avançados e Correção de Tiro`
+    },
+    {
         id: 's24',
         name: 'Joselaine Branchini',
         shortRole: 'Coordenadora de Dívidas e Cálculos da AGU',
@@ -94,13 +101,6 @@ const SPEAKERS = [
         shortRole: 'Coronel Intendente da Força Aérea Brasileira',
         image: '/images/palestrantes/juliana.png',
         fullBio: `Tema: Ciclo de vida de materiais bélicos\n\n• Chefe da Divisão de Convênios e Instrumentos de Parceria da Diretoria de Economia e Finanças da Força Aérea Brasileira\n\n• Bacharel em Ciências da Logística pela Academia da Força Aérea\n\n• Especialista em Gestão Pública pela Universidade da Força Aérea\n\n• Especialista em Auditoria Interna em Organizações do Setor Público pela UniLeya\n\n• Curso de Comando e Estado Maior da United States Air Force: Air Command and Staff College\n\n• Cargos anteriores: Chefe da Seção de Estruturação de Operações de Crédito; Consultora de Normas Legais; Diretora de Licitações da Base Aérea de Florianópolis; Diretora de Licitações da Base Aérea de Boa Vista; Auditora Interna; Pregoeira.`
-    },
-    {
-        id: 's8',
-        name: 'Júlio Tavares',
-        shortRole: 'Coronel Aviador R1 da Força Aérea Brasileira',
-        image: '/images/palestrantes/julio.jpeg',
-        fullBio: `Tema: Inovação e transferência de tecnologia em contratos de fornecimento de materiais bélicos\n\n• Graduado em Ciências Aeronáuticas pela Academia da Força Aérea\n\n• Especialista em Política e Estratégia de Defesa pelo Curso de Altos Estudos de Política e Estratégia da Escola Superior de Guerra\n\n• Diplomado pelo Curso Superior de Defesa da Escola Superior de Guerra\n\n• Especialista em Engenharia de Produção pela Universidade Federal de Pernambuco\n\n• MBA em Gerenciamento de Projetos e Gestão Executiva pela Fundação Getúlio Vargas\n\n• Certificação como Fleks Hybrid Manager e Profissional em Gerenciamento de Projetos (Project Management Professional) PMP®\n\n• Principais funções estratégicas exercidas: Gerente do projeto estratégico FX-2 (Gripen NG); Secretário de Pesquisa e Desenvolvimento da Secretária Especial de Modernização do Estado, da Secretaria-Geral da Presidência da República.`
     },
     {
         id: 's9',

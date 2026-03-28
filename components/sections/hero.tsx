@@ -3,10 +3,11 @@ import Image from "next/image";
 const apoioLogos = [
     { src: "/logosapoio/3.png", alt: "Baratieri Advogados" },
     { src: "/logosapoio/1.png", alt: "APPS" },
-    { src: "/logosapoio/2.png", alt: "AGEPPEN Brasil", className: "md:!h-36 lg:!h-44" },
+    { src: "/logosapoio/2.png", alt: "AGEPPEN Brasil", className: "!h-16 md:!h-36 lg:!h-44" },
     { src: "/logosapoio/4.png", alt: "Piloto Policial", className: "!h-6 md:!h-12 lg:!h-14" },
     { src: "/logosapoio/COP - INTERNATIONAL COM LEGENDA - HORIZONTAL_SOMBREADA.png", alt: "COP International" },
-    { src: "/logosapoio/5.png", alt: "FENEME", className: "md:!h-36 lg:!h-44" },
+    { src: "/logosapoio/5.png", alt: "FENEME", className: "!h-16 md:!h-36 lg:!h-44" },
+    { src: "/logosapoio/senai.png", alt: "SENAI CETIQT", className: "!h-10 md:!h-20 lg:!h-24" },
 ];
 
 export function Hero() {
@@ -37,7 +38,7 @@ export function Hero() {
                 </div>
             </div>
 
-            {/* Main content - grows to push apoio down */}
+            {/* Main content */}
             <div className="flex-1 flex items-center justify-center relative z-10">
                 <div className="container mx-auto px-4 flex flex-col items-center justify-center text-center">
 
@@ -65,46 +66,32 @@ export function Hero() {
                 </div>
             </div>
 
-            {/* Apoio - Logos (bottom of hero, in normal flow) */}
-            <div className="relative z-10 pb-4 flex flex-col items-center">
-                <p className="text-xs md:text-base font-semibold text-white/60 tracking-[0.3em] uppercase mb-3 md:mb-1">
+            {/* Apoio - Infinite Scrolling Logos */}
+            <div className="relative z-10 pb-4 pt-4 md:pt-8 flex flex-col items-center">
+                <p className="text-xs md:text-base font-semibold text-white/60 tracking-[0.3em] uppercase mb-3 md:mb-4">
                     Apoio
                 </p>
-                {/* Desktop */}
-                <div className="hidden md:flex md:flex-wrap md:justify-center md:items-center md:gap-10 px-4 w-full max-w-7xl mx-auto">
-                    {apoioLogos.map((logo, i) => (
-                        <div key={i} className="flex items-center justify-center">
-                            {/* eslint-disable-next-line @next/next/no-img-element */}
-                            <img
-                                src={logo.src}
-                                alt={logo.alt}
-                                className={`h-32 lg:h-40 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-300 ${logo.className || ""}`}
-                            />
-                        </div>
-                    ))}
-                </div>
-                {/* Mobile: row of 4 + row of 2 */}
-                <div className="md:hidden flex flex-col items-center gap-2 w-full">
-                    <div className="flex justify-center items-center gap-5">
-                        {apoioLogos.slice(0, 4).map((logo, i) => (
-                            <div key={i} className="flex items-center justify-center">
+                <div className="w-full max-w-7xl mx-auto overflow-hidden" style={{ maskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)', WebkitMaskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)' }}>
+                    <div className="animate-scroll-logos flex items-center gap-6 md:gap-16 w-max">
+                        {/* First set */}
+                        {apoioLogos.map((logo, i) => (
+                            <div key={`a-${i}`} className="flex items-center justify-center shrink-0">
                                 {/* eslint-disable-next-line @next/next/no-img-element */}
                                 <img
                                     src={logo.src}
                                     alt={logo.alt}
-                                    className={`h-14 w-auto object-contain opacity-80 ${logo.className?.replace(/md:\S+/g, '').replace(/lg:\S+/g, '') || ""}`}
+                                    className={`h-16 md:h-32 lg:h-40 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-300 ${logo.className || ""}`}
                                 />
                             </div>
                         ))}
-                    </div>
-                    <div className="flex justify-center items-center gap-4">
-                        {apoioLogos.slice(4).map((logo, i) => (
-                            <div key={i} className="flex items-center justify-center">
+                        {/* Duplicate set for seamless loop */}
+                        {apoioLogos.map((logo, i) => (
+                            <div key={`b-${i}`} className="flex items-center justify-center shrink-0">
                                 {/* eslint-disable-next-line @next/next/no-img-element */}
                                 <img
                                     src={logo.src}
                                     alt={logo.alt}
-                                    className={`h-14 w-auto object-contain opacity-80 ${logo.className?.replace(/md:\S+/g, '').replace(/lg:\S+/g, '') || ""}`}
+                                    className={`h-16 md:h-32 lg:h-40 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-300 ${logo.className || ""}`}
                                 />
                             </div>
                         ))}
