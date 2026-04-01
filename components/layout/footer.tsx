@@ -49,8 +49,8 @@ export function Footer() {
                         <h4 className="font-bold mb-4">Contato</h4>
                         <ul className="space-y-2 text-sm text-white/60">
                             <li>
-                                <a href="https://api.whatsapp.com/send?phone=5511977363640" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
-                                    (11) 97736-3640
+                                <a href="https://api.whatsapp.com/send?phone=5548996547282" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+                                    (48) 99654-7282
                                 </a>
                             </li>
                             <li>
