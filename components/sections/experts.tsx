@@ -33,6 +33,13 @@ const COORDINATORS = [
 
 const SPEAKERS = [
     {
+        id: 's22',
+        name: 'Adircélio Júnior',
+        shortRole: 'Conselheiro do TCE/SC',
+        image: '/profok/Adircelio.png',
+        fullBio: `Tema: A visão do Tribunal de Contas sobre as especificidades das contratações da Segurança Pública\n\n• Conselheiro do Tribunal de Contas do Estado de Santa Catarina\n\n• Doutor e Mestre em Direito pela Universidade Federal de Santa Catarina\n\n• Pós-graduado em Contabilidade e Auditoria pela UFRGS\n\n• Graduado em Direito pela UFRGS e em Ciências Contábeis pela UFPE\n\n• Ex-presidente do TCE/SC (2019-2023)\n\n• Atualmente Corregedor-Geral do TCE/SC (2023-2025)\n\n• Vice-presidente de Relações Internacionais da Atricon (2022-2025)`
+    },
+    {
         id: 's21',
         name: 'Alex Mena Barreto',
         shortRole: 'Coronel de Polícia Militar',
@@ -143,13 +150,6 @@ const SPEAKERS = [
         shortRole: 'Advogado',
         image: '/images/palestrantes/noel.jpeg',
         fullBio: `Tema: Exigência de marcas e proibição de marcas em licitações da Segurança Pública\n\n• Doutor em Direito Administrativo pela Universidade Federal de Santa Catarina\n\n• Mestre em Direito do Estado pela Universidade Federal de Santa Catarina\n\n• Ex-Consultor da Comissão Especial de Direito Administrativo do Conselho Federal da Ordem dos Advogados do Brasil\n\n• Membro Fundador e ex-Diretor Executivo do Instituto de Direito Administrativo de Santa Catarina\n\n• Atividades docentes anteriores: Professor de Direito Administrativo da Faculdade de Direito da Universidade Bandeirante de São Paulo e do Curso de Pós-graduação em Direito Administrativo da Universidade do Oeste de Santa Catarina\n\n• Autor de livros jurídicos, dentre eles: O método de negociação de Harvard na Administração Pública consensual, editora Livraria do Advogado; Serviço Público na Constituição Federal, editora Livraria do Advogado; Aspectos polêmicos sobre a nova lei de licitações e contratos administrativos, editora Fórum.`
-    },
-    {
-        id: 's22',
-        name: 'Adircélio Júnior',
-        shortRole: 'Conselheiro do TCE/SC',
-        image: '/profok/Adircelio.png',
-        fullBio: `Tema: A visão do Tribunal de Contas sobre as especificidades das contratações da Segurança Pública\n\n• Conselheiro do Tribunal de Contas do Estado de Santa Catarina\n\n• Doutor e Mestre em Direito pela Universidade Federal de Santa Catarina\n\n• Pós-graduado em Contabilidade e Auditoria pela UFRGS\n\n• Graduado em Direito pela UFRGS e em Ciências Contábeis pela UFPE\n\n• Ex-presidente do TCE/SC (2019-2023)\n\n• Atualmente Corregedor-Geral do TCE/SC (2023-2025)\n\n• Vice-presidente de Relações Internacionais da Atricon (2022-2025)`
     },
     {
         id: 's14',
