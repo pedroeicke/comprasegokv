@@ -31,7 +31,7 @@ const SCHEDULE_DATA: DaySchedule[] = [
             { time: "9h", title: "Palestra inaugural", speaker: "A definir", type: "palestra" },
             { time: "9h30", title: "Coffee break", type: "coffee" },
             { time: "10h", title: "Realidade operacional e novos desafios para a segurança pública", speaker: "Victor dos Santos", speakerRole: "Secretário de Segurança Pública do Estado do Rio de Janeiro", speakerImage: "/profok/vitor2.png", type: "palestra" },
-            { time: "10h30", title: "Cooperação internacional em segurança pública", speaker: "Rafael Pacheco", speakerRole: "Secretário de Estado da Justiça", speakerImage: "/profok/rafael.png", type: "palestra" },
+            { time: "10h30", title: "A visão do Tribunal de Contas sobre as especificidades das contratações da Segurança Pública", speaker: "Adircélio Júnior", speakerRole: "Conselheiro do Tribunal de Contas do Estado de Santa Catarina", speakerImage: "/profok/Adircelio.png", type: "palestra" },
             { time: "11h", title: "Tema a definir", speaker: "A definir", type: "palestra" },
             { time: "11h30", title: "Debates", type: "debate" },
             { time: "12h", title: "Intervalo para o almoço", type: "almoco" },

@@ -146,10 +146,10 @@ const SPEAKERS = [
     },
     {
         id: 's22',
-        name: 'Rafael Pacheco',
-        shortRole: 'Secretário de Estado da Justiça',
-        image: '/profok/rafael.png',
-        fullBio: `Tema: Cooperação internacional em segurança pública\n\n• Secretário de Justiça do Estado do Espírito Santo\n\n• Presidente do Conselho Nacional dos Secretários de Estado da Justiça, Cidadania, Direitos Humanos e Administração Penitenciária (CONSEJ)\n\n• Mestre em Políticas Públicas e Processo pela Faculdade de Campos\n\n• Especialista em Direito Penal Econômico Europeu pela Universidade de Coimbra\n\n• Especialista em Inteligência de Segurança Pública pela Universidade de Vila Velha\n\n• Funções anteriores: Subsecretário de Estado de Inteligência Prisional; Oficial de Ligação da Polícia Federal.`
+        name: 'Adircélio Júnior',
+        shortRole: 'Conselheiro do TCE/SC',
+        image: '/profok/Adircelio.png',
+        fullBio: `Tema: A visão do Tribunal de Contas sobre as especificidades das contratações da Segurança Pública\n\n• Conselheiro do Tribunal de Contas do Estado de Santa Catarina\n\n• Doutor e Mestre em Direito pela Universidade Federal de Santa Catarina\n\n• Pós-graduado em Contabilidade e Auditoria pela UFRGS\n\n• Graduado em Direito pela UFRGS e em Ciências Contábeis pela UFPE\n\n• Ex-presidente do TCE/SC (2019-2023)\n\n• Atualmente Corregedor-Geral do TCE/SC (2023-2025)\n\n• Vice-presidente de Relações Internacionais da Atricon (2022-2025)`
     },
     {
         id: 's14',
