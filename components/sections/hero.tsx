@@ -7,7 +7,7 @@ const apoioLogos = [
     { src: "/logosapoio/4.png", alt: "Piloto Policial", className: "!h-6 md:!h-12 lg:!h-14" },
     { src: "/logosapoio/COP - INTERNATIONAL COM LEGENDA - HORIZONTAL_SOMBREADA.png", alt: "COP International" },
     { src: "/logosapoio/5.png", alt: "FENEME", className: "!h-16 md:!h-36 lg:!h-44" },
-    { src: "/logosapoio/senai.png", alt: "SENAI CETIQT", className: "!h-10 md:!h-20 lg:!h-24" },
+    { src: "/logosapoio/senai.png", alt: "SENAI CETIQT", className: "!h-6 md:!h-10 lg:!h-12" },
 ];
 
 export function Hero() {

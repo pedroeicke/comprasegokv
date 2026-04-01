@@ -30,7 +30,7 @@ const SCHEDULE_DATA: DaySchedule[] = [
             { time: "8h30", title: "Abertura", type: "abertura" },
             { time: "9h", title: "Palestra inaugural", speaker: "A definir", type: "palestra" },
             { time: "9h30", title: "Coffee break", type: "coffee" },
-            { time: "10h", title: "Realidade operacional e novos desafios para a segurança pública", speaker: "Victor Santos", type: "palestra" },
+            { time: "10h", title: "Realidade operacional e novos desafios para a segurança pública", speaker: "Victor dos Santos", speakerRole: "Secretário de Segurança Pública do Estado do Rio de Janeiro", speakerImage: "/profok/vitor2.png", type: "palestra" },
             { time: "10h30", title: "Cooperação internacional em segurança pública", speaker: "Rafael Pacheco", speakerRole: "Secretário de Estado da Justiça", speakerImage: "/profok/rafael.png", type: "palestra" },
             { time: "11h", title: "Tema a definir", speaker: "A definir", type: "palestra" },
             { time: "11h30", title: "Debates", type: "debate" },
@@ -41,7 +41,7 @@ const SCHEDULE_DATA: DaySchedule[] = [
         dateShort: "12/05",
         period: "Tarde",
         events: [
-            { time: "14h", title: "Tema a definir", speaker: "A definir", type: "palestra" },
+            { time: "14h", title: "Panorama da aviação de segurança pública", speaker: "Alex Mena Barreto", speakerRole: "Coronel de Polícia Militar", speakerImage: "/profok/alexok.png", type: "palestra" },
             { time: "14h35", title: "Projetos de equipamentos de defesa e segurança pública: dilemas entre desenvolvimento e aquisição", speaker: "Claudio Cardoso", speakerRole: "Coronel Aviador R1 da Força Aérea Brasileira", speakerImage: "/profok/claudio.jpeg", type: "palestra" },
             { time: "15h10", title: "Debates", type: "debate" },
             { time: "15h50", title: "Coffee break", type: "coffee" },
@@ -98,20 +98,14 @@ const SCHEDULE_DATA: DaySchedule[] = [
         period: "Tarde",
         events: [
             { time: "14h", title: "Ciclo de vida de materiais bélicos", speaker: "Juliana Ferreira", speakerRole: "Coronel Intendente da Força Aérea Brasileira", speakerImage: "/profok/juliana.png", type: "palestra" },
-            { time: "14h35", title: "Credenciamento de estandes de tiro", speaker: "Juliana Lopes", speakerRole: "Major PMSC", speakerImage: "/profok/julianalopes.png", type: "palestra" },
+            { time: "14h35", title: "Credenciamento de estandes de tiro", speaker: "Juliana Lopes", speakerRole: "Major de Polícia Militar", speakerImage: "/profok/julianalopes.png", type: "palestra" },
             { time: "15h10", title: "Debates", type: "debate" },
             { time: "15h50", title: "Coffee break", type: "coffee" },
             { time: "16h20", title: "Estudos para aquisição de equinos para a polícia montada", speaker: "Syllas Jadach", speakerRole: "Tenente-Coronel de Polícia Militar", speakerImage: "/profok/SYLLAS.png", type: "palestra" },
             { time: "16h55", title: "Aquisição de cães policiais", speaker: "Vitor Valle", speakerRole: "Coronel de Polícia Militar", speakerImage: "/profok/vitor.jpeg", type: "palestra" },
             { time: "17h30", title: "Debates", type: "debate" },
-            {
-                time: "18h", title: "Aviação da segurança pública", type: "aviacao",
-                subEvents: [
-                    { title: "Situação operacional da aviação de segurança pública", speaker: "Alex Mena Barreto", speakerRole: "Coronel de Polícia Militar", speakerImage: "/profok/alexok.png" },
-                    { title: "Contratação de serviços de manutenção de aeronaves de asa rotativa das polícias e corpo de bombeiros militar", speaker: "Thiago Carvalho", speakerRole: "Coordenador do Curso Técnico de Manutenção Aeronáutica do SENAI", speakerImage: "/profok/thiago.jpeg" },
-                ]
-            },
-            { time: "19h", title: "Coquetel de encerramento", type: "coquetel" },
+            { time: "18h", title: "Encerramento", type: "encerramento" },
+            { time: "18h15", title: "Coquetel de confraternização", type: "coquetel" },
         ]
     },
 ];

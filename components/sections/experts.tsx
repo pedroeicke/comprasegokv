@@ -84,7 +84,7 @@ const SPEAKERS = [
     {
         id: 's25',
         name: 'Juliana Lopes',
-        shortRole: 'Major PMSC',
+        shortRole: 'Major de Polícia Militar',
         image: '/profok/julianalopes.png',
         fullBio: `Tema: Credenciamento de estandes de tiro\n\n• Graduada em Direito pela Universidade do Vale do Itajaí\n\n• Formação pelo Curso de Formação de Oficiais da Polícia Militar de Santa Catarina (PMSC)\n\n• Especialização em Cinotecnia pela Polícia Militar de Santa Catarina (PMSC)\n\n• Capacitação em Manutenção de Armamento\n\n• Capacitação no curso Shot Correction – Fundamentos Avançados e Correção de Tiro`
     },
@@ -173,11 +173,11 @@ const SPEAKERS = [
         fullBio: `Tema: Estudos para aquisição de equinos para a polícia montada\n\n▪ Comandante do 2º Batalhão de Policiamento de Choque da Polícia Militar do Estado de São Paulo\n\n▪ Doutor em Ciências Policiais de Segurança e Ordem Pública pelo Centro de Altos Estudos de Segurança da Academia de Polícia Militar do Barro Branco\n\n▪ Mestre em Ciências Policiais de Segurança e Ordem Pública pelo Centro de Altos Estudos de Segurança da Academia de Polícia Militar do Barro Branco\n\n▪ Função de comando anterior: Chefe da Divisão de Finanças e Logística, responsável pelas licitações nacionais e internacionais, aquisição de cães, trajes antibomba, robôs, acessórios para snipers, embarcações, fardamentos e equipamentos de proteção individual para o Batalhão de Operações Especiais\n\n▪ Atuação em comissão técnica: Comissão Permanente de Remonta, responsável pela aprovação dos cavalos adquiridos pela Polícia Militar do Estado de São Paulo`
     },
     {
-        id: 's15',
-        name: 'Thiago Carvalho',
-        shortRole: 'Coordenador do Curso Técnico de Manutenção Aeronáutica do SENAI',
-        image: '/images/palestrantes/thiago.jpeg',
-        fullBio: `Tema: Contratação de serviços de manutenção de aeronaves de asa rotativa das polícias e corpo de bombeiros militar\n\n• Mestre em Matemática pela Universidade Federal de Santa Catarina\n\n• Licenciado em Matemática pela Universidade do Sul de Santa Catarina\n\n• Coordenador do Subgrupo Manutenção da Comissão Nacional de Treinamentos do Comitê Nacional de Prevenção de Acidentes Aeronáuticos\n\n• Membro do Comitê Nacional de Prevenção de Acidentes Aeronáuticos do Centro de Investigação e Prevenção de Acidentes Aeronáuticos\n\n• Coordenador do Curso Técnico em Manutenção Aeronáutica no Serviço Nacional de Aprendizagem Industrial\n\n• Responsável Técnico de Produtos Estratégicos de Defesa pela Empresa Estratégica de Defesa SENAI/SC\n\n• Expert da equipe brasileira no BRICS Competition na ocupação de Manutenção Aeronáutica\n\n• Consultor do Centro Brasileiro de Pesquisa em Avaliação e Seleção e de Promoção de Eventos\n\n• Premiações: Medalha de Ouro na Olímpiada do Conhecimento, Brasil, 2021; Medalha de Excelência na World Skills Competition, Rússia, 2019; Medalha de Ouro no BRICS Challenge, África do Sul, 2017; Medalha de Excelência na World Skills Competition, Emirados Árabes Unidos, 2017.`
+        id: 's26',
+        name: 'Victor dos Santos',
+        shortRole: 'Secretário de Segurança Pública do Estado do Rio de Janeiro',
+        image: '/profok/vitor2.png',
+        fullBio: `Tema: Realidade operacional e novos desafios para a segurança pública\n\n• Delegado de Polícia Federal\n\n• Pós-graduado em Gestão da Segurança Pública pela Academia Nacional de Polícia (ANP)\n\n• Especialização em Gerenciamento de Crises pela Secretaria Nacional de Segurança Pública`
     },
     {
         id: 's16',
