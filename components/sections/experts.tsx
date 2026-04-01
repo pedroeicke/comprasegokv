@@ -35,7 +35,7 @@ const SPEAKERS = [
     {
         id: 's22',
         name: 'Adircélio Júnior',
-        shortRole: 'Conselheiro do TCE/SC',
+        shortRole: 'Conselheiro do Tribunal de Contas do Estado de Santa Catarina',
         image: '/profok/Adircelio.png',
         fullBio: `Tema: A visão do Tribunal de Contas sobre as especificidades das contratações da Segurança Pública\n\n• Conselheiro do Tribunal de Contas do Estado de Santa Catarina\n\n• Doutor e Mestre em Direito pela Universidade Federal de Santa Catarina\n\n• Pós-graduado em Contabilidade e Auditoria pela UFRGS\n\n• Graduado em Direito pela UFRGS e em Ciências Contábeis pela UFPE\n\n• Ex-presidente do TCE/SC (2019-2023)\n\n• Atualmente Corregedor-Geral do TCE/SC (2023-2025)\n\n• Vice-presidente de Relações Internacionais da Atricon (2022-2025)`
     },
