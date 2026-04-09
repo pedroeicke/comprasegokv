@@ -98,7 +98,7 @@ const SCHEDULE_DATA: DaySchedule[] = [
         period: "Tarde",
         events: [
             { time: "14h", title: "Ciclo de vida de materiais bélicos", speaker: "Juliana Ferreira", speakerRole: "Coronel Intendente da Força Aérea Brasileira", speakerImage: "/profok/juliana.png", type: "palestra" },
-            { time: "14h35", title: "Credenciamento de estandes de tiro", speaker: "Juliana Lopes", speakerRole: "Major de Polícia Militar", speakerImage: "/profok/julianalopes.png", type: "palestra" },
+            { time: "14h35", title: "Tema a definir", speaker: "A definir", type: "palestra" },
             { time: "15h10", title: "Debates", type: "debate" },
             { time: "15h50", title: "Coffee break", type: "coffee" },
             { time: "16h20", title: "Estudos para aquisição de equinos para a polícia montada", speaker: "Syllas Jadach", speakerRole: "Tenente-Coronel de Polícia Militar", speakerImage: "/profok/SYLLAS.png", type: "palestra" },

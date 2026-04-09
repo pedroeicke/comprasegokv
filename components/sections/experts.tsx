@@ -89,13 +89,6 @@ const SPEAKERS = [
         fullBio: `Tema: Licitações internacionais de equipamentos de segurança pública\n\n• Especialista em Direito Público pelo Instituto Brasileiro de Ensino, Desenvolvimento e Pesquisa\n\n• Especialista em Compliance Regulatório pela University of Pennsylvania\n\n• Ex-Assessor da Presidência da República, integrante da equipe inicial da Controladoria Geral da União\n\n• Ex-Assessor da Procuradoria Geral da República, lotado em gabinete de Subprocuradora-Geral da República com atuação em processos da Corte Especial do Superior Tribunal de Justiça\n\n• Atividade docente anterior: Professor de Direito Administrativo do Centro Universitário do Distrito Federal – UDF\n\n• Autor de livros jurídicos, dentre eles: Licitação Pública Internacional no Brasil, editora Negócios Públicos, 2010; O Planejamento das Contratações (em coautoria), editora Fórum, 2025.`
     },
     {
-        id: 's25',
-        name: 'Juliana Lopes',
-        shortRole: 'Major de Polícia Militar',
-        image: '/profok/julianalopes.png',
-        fullBio: `Tema: Credenciamento de estandes de tiro\n\n• Graduada em Direito pela Universidade do Vale do Itajaí\n\n• Formação pelo Curso de Formação de Oficiais da Polícia Militar de Santa Catarina (PMSC)\n\n• Especialização em Cinotecnia pela Polícia Militar de Santa Catarina (PMSC)\n\n• Capacitação em Manutenção de Armamento\n\n• Capacitação no curso Shot Correction – Fundamentos Avançados e Correção de Tiro`
-    },
-    {
         id: 's24',
         name: 'Joselaine Branchini',
         shortRole: 'Coordenadora de Dívidas e Cálculos da AGU',
