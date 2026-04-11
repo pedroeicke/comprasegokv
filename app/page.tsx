@@ -4,6 +4,7 @@ import { About } from "@/components/sections/about";
 import { TargetAudience } from "@/components/sections/target-audience";
 import { GalleryCarousel } from "@/components/sections/gallery-carousel";
 import { Reasons } from "@/components/sections/reasons";
+import { Sponsors } from "@/components/sections/sponsors";
 import Experts from "@/components/sections/experts";
 import { Schedule } from "@/components/sections/schedule";
 
@@ -25,6 +26,7 @@ export default function Home() {
       <TargetAudience />
       <GalleryCarousel />
       <Reasons />
+      <Sponsors />
       <Experts />
       <Schedule />
 
