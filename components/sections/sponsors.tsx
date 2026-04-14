@@ -4,9 +4,10 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const sponsors = [
-    { src: "/patrocinadores/4de02490-4a10-4532-9d3a-8342a783c4a5.jpg", alt: "ABVO - Associação Barriga Verde dos Oficiais Militares Estaduais" },
-    { src: "/patrocinadores/WhatsApp Image 2026-04-09 at 18.57.28.jpeg", alt: "Militar Defense", className: "!h-32 md:!h-30 lg:!h-36" },
     { src: "/patrocinadores/WhatsApp Image 2026-04-09 at 18.57.38.jpeg", alt: "Protecop" },
+    { src: "/patrocinadores/WhatsApp Image 2026-04-09 at 18.57.28.jpeg", alt: "Militar Defense", className: "!h-32 md:!h-30 lg:!h-36" },
+    { src: "/patrocinadores/4de02490-4a10-4532-9d3a-8342a783c4a5.jpg", alt: "ABVO - Associação Barriga Verde dos Oficiais Militares Estaduais" },
+    { src: "/patrocinadores/onecine.png", alt: "One Cine", className: "!h-52 md:!h-52 lg:!h-60" },
 ];
 
 export const Sponsors: React.FC = () => {
@@ -22,7 +23,7 @@ export const Sponsors: React.FC = () => {
                     className="text-center mb-16"
                 >
                     <p className="text-sm font-semibold tracking-[0.3em] uppercase text-gray-400 mb-3">
-                        Empresas que acreditam no evento
+                        Parceiros que investiram no COMPRASEG
                     </p>
                     <h2 className="text-3xl md:text-5xl font-display font-bold text-gray-900">
                         Patrocinadores

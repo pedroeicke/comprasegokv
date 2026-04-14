@@ -9,6 +9,7 @@ const apoioLogos = [
     { src: "/logosapoio/5.png", alt: "FENEME", className: "!h-16 md:!h-36 lg:!h-44" },
     { src: "/logosapoio/senai.png", alt: "SENAI CETIQT", className: "!h-6 md:!h-10 lg:!h-12" },
     { src: "/logosapoio/acors.png", alt: "ACORS", className: "!h-12 md:!h-28 lg:!h-32" },
+    { src: "/logosapoio/habitus.png", alt: "Habitus", className: "!h-8 md:!h-16 lg:!h-20" },
 ];
 
 export function Hero() {
