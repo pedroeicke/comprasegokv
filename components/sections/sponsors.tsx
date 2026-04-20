@@ -6,6 +6,8 @@ import { motion } from 'framer-motion';
 const sponsors = [
     { src: "/patrocinadores/WhatsApp Image 2026-04-09 at 18.57.38.jpeg", alt: "Protecop" },
     { src: "/patrocinadores/WhatsApp Image 2026-04-09 at 18.57.28.jpeg", alt: "Militar Defense", className: "!h-32 md:!h-30 lg:!h-36" },
+    { src: "/patrocinadores/Logo Nobel com fabricas - 3.png", alt: "Nobel Precision" },
+    { src: "/patrocinadores/funcionalatt.png", alt: "Funcional Tech & Tactical" },
     { src: "/patrocinadores/4de02490-4a10-4532-9d3a-8342a783c4a5.jpg", alt: "ABVO - Associação Barriga Verde dos Oficiais Militares Estaduais" },
     { src: "/patrocinadores/onecine.png", alt: "One Cine", className: "!h-52 md:!h-52 lg:!h-60" },
 ];
@@ -31,8 +33,8 @@ export const Sponsors: React.FC = () => {
                     <div className="w-20 h-1 bg-[#00C1FF] mx-auto mt-6"></div>
                 </motion.div>
 
-                {/* Logos Grid */}
-                <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-16">
+                {/* Logos Grid - 3 em cima, 3 embaixo */}
+                <div className="grid grid-cols-1 md:grid-cols-3 justify-items-center items-center gap-8 md:gap-12">
                     {sponsors.map((sponsor, i) => (
                         <motion.div
                             key={i}

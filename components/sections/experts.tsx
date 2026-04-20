@@ -75,6 +75,13 @@ const SPEAKERS = [
         fullBio: `Tema: Obtenções por aquisições complexas de produtos de defesa e segurança\n\n• Chefe de Divisão na Coordenação-Geral Jurídica de Licitações, Contratos, Convênios e Parcerias da Consultoria Jurídica do Ministério da Defesa\n\n• Pós-doutor em Direito pela Università di Bologna\n\n• Doutor e Mestre em Direito pela Universidade de Santa Cruz do Sul\n\n• Especialista em Direito Público pela Universidade Cândido Mendes\n\n• Especialista em Direito Administrativo pela Faculdade Dom Alberto\n\n• Especialista em Direito Militar pela Faculdade Futura\n\n• Coordenador do Curso de Pós-Graduação em Direito Militar e da Pós-Graduação em Direito Constitucional e Administrativo da Universidade de Santa Cruz do Sul\n\n• Coordenador do Curso de Pós-Graduação em Licitações e Contratos e da Pós-Graduação em Gestão Pública e Direito Administrativo da Escola Mineira de Direito\n\n• Autor de livros jurídicos, dentre eles: Manual de Licitações e Contratos Administrativos, editora Saraiva; Manual de Direito Administrativo, editora Saraiva.`
     },
     {
+        id: 's27',
+        name: 'Flávio Rogério Pereira Graff',
+        shortRole: 'Secretário de Estado da Segurança Pública de Santa Catarina',
+        image: '/profok/flaviograff.png',
+        fullBio: `Tema: Segurança Pública em Santa Catarina (Palestra inaugural)\n\n• Coronel do Corpo de Bombeiros do Estado de Santa Catarina\n\n• Especialista em Atividade Física e Qualidade de Vida pela Universidade Federal de Santa Catarina\n\n• Especialista em Administração de Segurança Pública pela Universidade do Sul de Santa Catarina\n\n• Especialista em Gestão Estratégica de Segurança Pública pela Universidade do Sul de Santa Catarina\n\n• Algumas funções de comando exercidas: Comandante do Centro de Ensino Bombeiro Militar; Comandante do 1º Batalhão de Bombeiro Militar; Subcomandante-Geral do Corpo de Bombeiros Militar do Estado de Santa Catarina; Diretor-Geral da Secretaria de Estado de Segurança Pública de Santa Catarina; Secretário Adjunto da Proteção e Defesa Civil do Estado de Santa Catarina.`
+    },
+    {
         id: 's5',
         name: 'Gisele Novo',
         shortRole: 'Policial Rodoviária Federal',
