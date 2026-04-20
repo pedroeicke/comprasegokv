@@ -11,6 +11,7 @@ interface ScheduleEvent {
     speaker?: string;
     speakerRole?: string;
     speakerImage?: string;
+    coSpeakers?: { name: string; role?: string; image: string }[];
     type: EventType;
     subEvents?: { title: string; speaker: string; speakerRole?: string; speakerImage?: string }[];
 }
@@ -98,7 +99,7 @@ const SCHEDULE_DATA: DaySchedule[] = [
         period: "Tarde",
         events: [
             { time: "14h", title: "Ciclo de vida de materiais bélicos", speaker: "Juliana Ferreira", speakerRole: "Coronel Intendente da Força Aérea Brasileira", speakerImage: "/profok/juliana.png", type: "palestra" },
-            { time: "14h35", title: "Termo de Licitação Especial para as aquisições da Segurança Pública", speaker: "Álvaro Capagio e Murilo Frigeri", type: "palestra" },
+            { time: "14h35", title: "Termo de Licitação Especial para as aquisições da Segurança Pública", speaker: "Álvaro Capagio", speakerRole: "Regulador Federal", speakerImage: "/profok/alvaro.jpeg", coSpeakers: [{ name: "Murilo Frigeri", role: "Graduado em Ciências Policiais", image: "/profok/murilo.jpeg" }], type: "palestra" },
             { time: "15h10", title: "Debates", type: "debate" },
             { time: "15h50", title: "Coffee break", type: "coffee" },
             { time: "16h20", title: "Certificações de materiais bélicos", speaker: "Álvaro Capagio", speakerRole: "Regulador Federal", speakerImage: "/profok/alvaro.jpeg", type: "palestra" },
@@ -219,17 +220,33 @@ export const Schedule: React.FC = () => {
                                                             {event.title}
                                                         </p>
                                                         {event.speakerImage ? (
-                                                            <div className="flex items-center gap-3 mt-3">
-                                                                {/* eslint-disable-next-line @next/next/no-img-element */}
-                                                                <img
-                                                                    src={event.speakerImage}
-                                                                    alt={event.speaker || ''}
-                                                                    className="w-10 h-10 md:w-14 md:h-14 rounded-full object-cover object-top border-2 border-gray-200 shrink-0"
-                                                                />
-                                                                <div>
-                                                                    <p className="text-gray-700 text-sm font-medium">{event.speaker}</p>
-                                                                    {event.speakerRole && <p className="text-gray-400 text-xs">{event.speakerRole}</p>}
+                                                            <div className="flex flex-wrap items-center gap-x-6 gap-y-3 mt-3">
+                                                                <div className="flex items-center gap-3">
+                                                                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                                                                    <img
+                                                                        src={event.speakerImage}
+                                                                        alt={event.speaker || ''}
+                                                                        className="w-10 h-10 md:w-14 md:h-14 rounded-full object-cover object-top border-2 border-gray-200 shrink-0"
+                                                                    />
+                                                                    <div>
+                                                                        <p className="text-gray-700 text-sm font-medium">{event.speaker}</p>
+                                                                        {event.speakerRole && <p className="text-gray-400 text-xs">{event.speakerRole}</p>}
+                                                                    </div>
                                                                 </div>
+                                                                {event.coSpeakers?.map((co, cIdx) => (
+                                                                    <div key={cIdx} className="flex items-center gap-3">
+                                                                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                                                                        <img
+                                                                            src={co.image}
+                                                                            alt={co.name}
+                                                                            className="w-10 h-10 md:w-14 md:h-14 rounded-full object-cover object-top border-2 border-gray-200 shrink-0"
+                                                                        />
+                                                                        <div>
+                                                                            <p className="text-gray-700 text-sm font-medium">{co.name}</p>
+                                                                            {co.role && <p className="text-gray-400 text-xs">{co.role}</p>}
+                                                                        </div>
+                                                                    </div>
+                                                                ))}
                                                             </div>
                                                         ) : event.speaker ? (
                                                             <p className="text-gray-500 text-sm mt-1">{event.speaker}</p>
