@@ -7,11 +7,11 @@ const sponsors = [
     { src: "/patrocinadores/WhatsApp Image 2026-04-09 at 18.57.38.jpeg", alt: "Protecop" },
     { src: "/patrocinadores/WhatsApp Image 2026-04-09 at 18.57.28.jpeg", alt: "Militar Defense", className: "!h-32 md:!h-30 lg:!h-36" },
     { src: "/patrocinadores/Logo Nobel com fabricas - 3.png", alt: "Nobel Precision" },
+    { src: "/patrocinadores/IAG_logo_Vector.pdf.png", alt: "IAG - International Armored Group", className: "!h-20 md:!h-24 lg:!h-28" },
     { src: "/patrocinadores/funcionalatt.png", alt: "Funcional Tech & Tactical" },
     { src: "/patrocinadores/4de02490-4a10-4532-9d3a-8342a783c4a5.jpg", alt: "ABVO - Associação Barriga Verde dos Oficiais Militares Estaduais" },
     { src: "/patrocinadores/onecine.png", alt: "One Cine", className: "!h-52 md:!h-52 lg:!h-60" },
     { src: "/patrocinadores/flash.png", alt: "Flash Engenharia", className: "!h-24 md:!h-28 lg:!h-32" },
-    { src: "/patrocinadores/IAG_logo_Vector.pdf.png", alt: "IAG - International Armored Group", className: "!h-20 md:!h-24 lg:!h-28" },
 ];
 
 export const Sponsors: React.FC = () => {
