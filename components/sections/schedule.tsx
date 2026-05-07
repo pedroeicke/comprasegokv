@@ -31,9 +31,9 @@ const SCHEDULE_DATA: DaySchedule[] = [
             { time: "8h30", title: "Abertura", type: "abertura" },
             { time: "9h", title: "Palestra inaugural – Segurança Pública em Santa Catarina", speaker: "Flávio Rogério Pereira Graff", speakerRole: "Secretário de Estado da Segurança Pública de Santa Catarina", speakerImage: "/profok/flaviograff.png", type: "palestra" },
             { time: "9h30", title: "Coffee break", type: "coffee" },
-            { time: "10h", title: "Realidade operacional e novos desafios para a segurança pública", speaker: "Victor dos Santos", speakerRole: "Secretário de Segurança Pública do Estado do Rio de Janeiro", speakerImage: "/profok/vitor2.png", type: "palestra" },
+            { time: "10h", title: "Lançamento do livro Temas de Contratações da Segurança Pública", type: "palestra" },
             { time: "10h30", title: "A visão do Tribunal de Contas sobre as especificidades das contratações da Segurança Pública", speaker: "Adircélio Júnior", speakerRole: "Conselheiro do Tribunal de Contas do Estado de Santa Catarina", speakerImage: "/profok/Adircelio.png", type: "palestra" },
-            { time: "11h", title: "Tema a definir", speaker: "A definir", type: "palestra" },
+            { time: "11h", title: "Controle externo como garante das contratações de segurança pública", speaker: "Diogo Roberto Ringenberg", type: "palestra" },
             { time: "11h30", title: "Debates", type: "debate" },
             { time: "12h", title: "Intervalo para o almoço", type: "almoco" },
         ]
@@ -47,7 +47,7 @@ const SCHEDULE_DATA: DaySchedule[] = [
             { time: "15h10", title: "Debates", type: "debate" },
             { time: "15h50", title: "Coffee break", type: "coffee" },
             { time: "16h20", title: "Soluções de TI para a segurança pública. Contratar ou desenvolver? Como fiscalizar?", speaker: "Joselaine Branchini", speakerRole: "Coordenadora de Dívidas e Cálculos da AGU", speakerImage: "/profok/Joselaine.png", type: "palestra" },
-            { time: "16h55", title: "Pressupostos necessários para a centralização de compras da segurança pública", speaker: "Lara Brainer", speakerRole: "Coordenadora Geral de Governança Estratégica da AGU", speakerImage: "/profok/lara.png", type: "palestra" },
+            { time: "16h55", title: "Pressupostos necessários para a centralização de compras da segurança pública", speaker: "Marfisa Castro", type: "palestra" },
             { time: "17h30", title: "Debates", type: "debate" },
             { time: "18h", title: "Encerramento", type: "encerramento" },
         ]
