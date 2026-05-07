@@ -68,6 +68,13 @@ const SPEAKERS = [
         fullBio: `Tema: Projetos de equipamentos de defesa e segurança pública: dilemas entre desenvolvimento e aquisição.\n\n• Graduado em Ciências Aeronáuticas com habilitação em Aviação Militar pela Academia da Força Aérea\n\n• Pós-graduado em Estado-Maior pela Escola de Comando e Estado-Maior da Aeronáutica\n\n• Especialista em Política e Estratégia de Defesa pelo Curso de Altos Estudos de Política e Estratégia da Escola Superior de Guerra\n\n• Diplomado pelo Curso Superior de Defesa da Escola Superior de Guerra\n\n• Ex-gerente executivo do projeto do helicóptero H-60L Black Hawk e dos projetos estratégicos KC-X e KC-390\n\n• Ex-gerente adjunto do projeto estratégico F-X2\n\n• Algumas funções exercidas na Força Aérea Brasileira: Adjunto da Assessoria de Logística, Patrimônio e Finanças do Gabinete do Comandante da Aeronáutica; Coordenador-Geral das negociações de readequação da frota de aeronaves KC-390 Millennium; Chefe da Subdivisão de Planejamento e Controle; Chefe do Escritório Brasileiro de Ligação, na Base Aérea de Wright Patterson, em Dayton-OH, EUA; Chefe do Setor FMS (Foreign Military Sales).`
     },
     {
+        id: 's26',
+        name: 'Diogo Roberto Ringenberg',
+        shortRole: 'Procurador do Ministério Público de Contas do Estado de Santa Catarina',
+        image: '/profok/diogo.png',
+        fullBio: `Tema: Controle externo como garante das contratações de segurança pública\n\n• Procurador-Corregedor do Ministério Público de Contas do Estado de Santa Catarina\n\n• Pós-graduado em Auditoria Pública pela Universidade do Estado de Santa Catarina\n\n• Pós-graduado em Direito Constitucional pela Universidade Anhanguera\n\n• Graduado em Direito pela Universidade do Vale do Itajaí\n\n• Graduado em Administração de Empresas pela Universidade Regional de Blumenau\n\n• Diretor Adjunto e Diretor Jurídico da Associação Nacional do Ministério Público de Contas`
+    },
+    {
         id: 's4',
         name: 'Felipe Dalenogare',
         shortRole: 'Chefe de Divisão da Coordenação-Geral Jurídica de Licitações do Ministério da Defesa',
@@ -110,18 +117,18 @@ const SPEAKERS = [
         fullBio: `Tema: Ciclo de vida de materiais bélicos\n\n• Chefe da Divisão de Convênios e Instrumentos de Parceria da Diretoria de Economia e Finanças da Força Aérea Brasileira\n\n• Bacharel em Ciências da Logística pela Academia da Força Aérea\n\n• Especialista em Gestão Pública pela Universidade da Força Aérea\n\n• Especialista em Auditoria Interna em Organizações do Setor Público pela UniLeya\n\n• Curso de Comando e Estado Maior da United States Air Force: Air Command and Staff College\n\n• Cargos anteriores: Chefe da Seção de Estruturação de Operações de Crédito; Consultora de Normas Legais; Diretora de Licitações da Base Aérea de Florianópolis; Diretora de Licitações da Base Aérea de Boa Vista; Auditora Interna; Pregoeira.`
     },
     {
-        id: 's9',
-        name: 'Lara Brainer',
-        shortRole: 'Coordenadora Geral de Governança Estratégica da Advocacia-Geral da União',
-        image: '/profok/lara.png',
-        fullBio: `Tema: Pressupostos necessários para a centralização de compras da segurança pública\n\n• Pós-graduada em Direito Administrativo, com ênfase em terceirização no serviço público e em Relações entre Empresas e Poder Público pela Faculdade Única​\n\n• Diplomada pelo Curso de Altos Estudos em Defesa da Escola Superior de Defesa\n\n• Consultora do Banco Mundial\n\n• Ex-Diretora da Central de Compras do Ministério da Gestão e da Inovação em Serviços Públicos.`
-    },
-    {
         id: 's10',
         name: 'Lucian Fidelis',
         shortRole: 'Perito Criminal Federal',
         image: '/images/palestrantes/lucian.jpeg',
         fullBio: `Tema: Estratégias em licitações internacionais: O disruptivo processo de aquisição de fuzis da Polícia Federal\n\n• Coordenador de Planejamento e Controle da Logística Policial do Departamento de Polícia Federal\n\n• Especialista em Gestão Pública pela Faculdade Fortium\n\n• Engenheiro Agrônomo pela Universidade de Brasília\n\n• Cargos exercidos no Departamento de Polícia Federal: Chefe da Divisão de Gestão Estratégica, Chefe da Divisão de Material; Chefe do Serviço de Controle da Logística Policial; Chefe do Setor de Administração e Logística da Superintendência Regional do Maranhão\n\n• Atuação na gestão de projetos estratégicos e aquisições internacionais: pistolas, fuzis, metralhadoras, coletes, placas balísticas, plate carriers, veículos blindados nível IIIA, munições, uniformes, armas de incapacitação neuromuscular, granadas e espargidores\n\n• Atuação em grupos de trabalho e normatização: controle e gestão de armas e munições; padronização de pistolas; definição do quadro de dotação de produto controlado na Polícia Federal; planejamento estratégico institucional de produto controlado.`
+    },
+    {
+        id: 's27',
+        name: 'Marfisa Carla Castro',
+        shortRole: 'Diretora da Central de Compras do Ministério da Gestão e da Inovação em Serviços Públicos',
+        image: '/profok/marfisa.png',
+        fullBio: `Tema: Pressupostos necessários para a centralização de compras da segurança pública\n\n• Diretora da Central de Compras da Secretaria de Gestão e Inovação do Ministério da Gestão e da Inovação em Serviços Públicos\n\n• Bacharela em Administração pela Universidade de Fortaleza\n\n• Mestre em Administração de Empresas pela Universidade de Fortaleza\n\n• Especialista em Gestão de Pessoas pela Universidade Veiga de Almeida\n\n• Especialista em Altos Estudos de Defesa pela Escola Superior de Defesa`
     },
     {
         id: 's17',
@@ -171,13 +178,6 @@ const SPEAKERS = [
         shortRole: 'Tenente-Coronel de Polícia Militar',
         image: '/profok/SYLLAS.png',
         fullBio: `Tema: Estudos para aquisição de equinos para a polícia montada\n\n▪ Comandante do 2º Batalhão de Policiamento de Choque da Polícia Militar do Estado de São Paulo\n\n▪ Doutor em Ciências Policiais de Segurança e Ordem Pública pelo Centro de Altos Estudos de Segurança da Academia de Polícia Militar do Barro Branco\n\n▪ Mestre em Ciências Policiais de Segurança e Ordem Pública pelo Centro de Altos Estudos de Segurança da Academia de Polícia Militar do Barro Branco\n\n▪ Função de comando anterior: Chefe da Divisão de Finanças e Logística, responsável pelas licitações nacionais e internacionais, aquisição de cães, trajes antibomba, robôs, acessórios para snipers, embarcações, fardamentos e equipamentos de proteção individual para o Batalhão de Operações Especiais\n\n▪ Atuação em comissão técnica: Comissão Permanente de Remonta, responsável pela aprovação dos cavalos adquiridos pela Polícia Militar do Estado de São Paulo`
-    },
-    {
-        id: 's26',
-        name: 'Victor dos Santos',
-        shortRole: 'Secretário de Segurança Pública do Estado do Rio de Janeiro',
-        image: '/profok/vitor2.png',
-        fullBio: `Tema: Realidade operacional e novos desafios para a segurança pública\n\n• Delegado de Polícia Federal\n\n• Pós-graduado em Gestão da Segurança Pública pela Academia Nacional de Polícia (ANP)\n\n• Especialização em Gerenciamento de Crises pela Secretaria Nacional de Segurança Pública`
     },
     {
         id: 's16',
