@@ -33,7 +33,7 @@ const SCHEDULE_DATA: DaySchedule[] = [
             { time: "9h30", title: "Coffee break", type: "coffee" },
             { time: "10h", title: "Lançamento do livro Temas de Contratações da Segurança Pública", type: "palestra" },
             { time: "10h30", title: "A visão do Tribunal de Contas sobre as especificidades das contratações da Segurança Pública", speaker: "Adircélio Júnior", speakerRole: "Conselheiro do Tribunal de Contas do Estado de Santa Catarina", speakerImage: "/profok/Adircelio.png", type: "palestra" },
-            { time: "11h", title: "Controle externo como garante das contratações de segurança pública", speaker: "Diogo Roberto Ringenberg", type: "palestra" },
+            { time: "11h", title: "Controle externo como garante das contratações de segurança pública", speaker: "Diogo Roberto Ringenberg", speakerRole: "Procurador do Ministério Público de Contas do Estado de Santa Catarina", speakerImage: "/profok/diogo.png", type: "palestra" },
             { time: "11h30", title: "Debates", type: "debate" },
             { time: "12h", title: "Intervalo para o almoço", type: "almoco" },
         ]
@@ -47,7 +47,7 @@ const SCHEDULE_DATA: DaySchedule[] = [
             { time: "15h10", title: "Debates", type: "debate" },
             { time: "15h50", title: "Coffee break", type: "coffee" },
             { time: "16h20", title: "Soluções de TI para a segurança pública. Contratar ou desenvolver? Como fiscalizar?", speaker: "Joselaine Branchini", speakerRole: "Coordenadora de Dívidas e Cálculos da AGU", speakerImage: "/profok/Joselaine.png", type: "palestra" },
-            { time: "16h55", title: "Pressupostos necessários para a centralização de compras da segurança pública", speaker: "Marfisa Castro", type: "palestra" },
+            { time: "16h55", title: "Pressupostos necessários para a centralização de compras da segurança pública", speaker: "Marfisa Carla Castro", speakerRole: "Diretora da Central de Compras do Ministério da Gestão e da Inovação em Serviços Públicos", speakerImage: "/profok/marfisa.png", type: "palestra" },
             { time: "17h30", title: "Debates", type: "debate" },
             { time: "18h", title: "Encerramento", type: "encerramento" },
         ]
