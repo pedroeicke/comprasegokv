@@ -124,7 +124,7 @@ const SPEAKERS = [
         fullBio: `Tema: Estratégias em licitações internacionais: O disruptivo processo de aquisição de fuzis da Polícia Federal\n\n• Coordenador de Planejamento e Controle da Logística Policial do Departamento de Polícia Federal\n\n• Especialista em Gestão Pública pela Faculdade Fortium\n\n• Engenheiro Agrônomo pela Universidade de Brasília\n\n• Cargos exercidos no Departamento de Polícia Federal: Chefe da Divisão de Gestão Estratégica, Chefe da Divisão de Material; Chefe do Serviço de Controle da Logística Policial; Chefe do Setor de Administração e Logística da Superintendência Regional do Maranhão\n\n• Atuação na gestão de projetos estratégicos e aquisições internacionais: pistolas, fuzis, metralhadoras, coletes, placas balísticas, plate carriers, veículos blindados nível IIIA, munições, uniformes, armas de incapacitação neuromuscular, granadas e espargidores\n\n• Atuação em grupos de trabalho e normatização: controle e gestão de armas e munições; padronização de pistolas; definição do quadro de dotação de produto controlado na Polícia Federal; planejamento estratégico institucional de produto controlado.`
     },
     {
-        id: 's27',
+        id: 's28',
         name: 'Marfisa Carla Castro',
         shortRole: 'Diretora da Central de Compras do Ministério da Gestão e da Inovação em Serviços Públicos',
         image: '/profok/marfisa.png',
