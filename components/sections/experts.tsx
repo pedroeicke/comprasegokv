@@ -145,13 +145,6 @@ const SPEAKERS = [
         fullBio: `Tema: Requisitos de qualidade e aspectos de mercado nas compras de materiais bélicos\n\n• Graduado em Ciências Policiais de Segurança e Ordem Pública pela Academia de Polícia Militar do Barro Branco\n\n• Graduando em Engenharia Mecânica pela Faculdade Estácio de São Paulo\n\n• Atuação profissional: Pesquisa, especificação, criação de Termo de Referência e métodos de controle de qualidade para compras institucionais e renovação de equipamentos da Polícia Militar do Estado de São Paulo\n\n• Atuação em grupos de trabalho: atualização da legislação de material bélico; suportes de armamentos em viaturas policiais; estudo técnico para adoção de normas para capacete balístico; adoção de veículos blindados; normas para emprego de equipamentos não letais; desenvolvimento de protocolos de teste para produtos controlados; inovação de pistolas; inovação de coletes balísticos; inovação de fuzis.`
     },
     {
-        id: 's13',
-        name: 'Noel Baratieri',
-        shortRole: 'Advogado',
-        image: '/images/palestrantes/noel.jpeg',
-        fullBio: `Tema: Exigência de marcas e proibição de marcas em licitações da Segurança Pública\n\n• Doutor em Direito Administrativo pela Universidade Federal de Santa Catarina\n\n• Mestre em Direito do Estado pela Universidade Federal de Santa Catarina\n\n• Ex-Consultor da Comissão Especial de Direito Administrativo do Conselho Federal da Ordem dos Advogados do Brasil\n\n• Membro Fundador e ex-Diretor Executivo do Instituto de Direito Administrativo de Santa Catarina\n\n• Atividades docentes anteriores: Professor de Direito Administrativo da Faculdade de Direito da Universidade Bandeirante de São Paulo e do Curso de Pós-graduação em Direito Administrativo da Universidade do Oeste de Santa Catarina\n\n• Autor de livros jurídicos, dentre eles: O método de negociação de Harvard na Administração Pública consensual, editora Livraria do Advogado; Serviço Público na Constituição Federal, editora Livraria do Advogado; Aspectos polêmicos sobre a nova lei de licitações e contratos administrativos, editora Fórum.`
-    },
-    {
         id: 's14',
         name: 'Renata Monteiro',
         shortRole: 'Coordenadora de Projetos de Defesa e Segurança do SENAI CETIQT',
@@ -221,8 +214,7 @@ export default function Experts() {
                                     className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-102"
                                     style={{
                                         objectPosition:
-                                            coord.name === 'Murilo Frigeri' ? '50% 40%' :
-                                                coord.name === 'Noel Baratieri' ? '50% 22%' : '50% 0%',
+                                            coord.name === 'Murilo Frigeri' ? '50% 40%' : '50% 0%',
                                         transform:
                                             coord.name === 'Álvaro Capagio' ? 'none' :
                                                 coord.name === 'Murilo Frigeri' ? 'scale(1.08)' : 'none'

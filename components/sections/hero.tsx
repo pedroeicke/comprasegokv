@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 const apoioLogos = [
-    { src: "/logosapoio/3.png", alt: "Baratieri Advogados" },
+    { src: "/logosapoio/solvy.png", alt: "Solvy", className: "!h-8 md:!h-16 lg:!h-20" },
     { src: "/logosapoio/1.png", alt: "APPS" },
     { src: "/logosapoio/2.png", alt: "AGEPPEN Brasil", className: "!h-16 md:!h-36 lg:!h-44" },
     { src: "/logosapoio/4.png", alt: "Piloto Policial", className: "!h-6 md:!h-12 lg:!h-14" },
@@ -14,7 +14,7 @@ const apoioLogos = [
 
 export function Hero() {
     return (
-        <section className="relative min-h-screen flex flex-col overflow-hidden pt-20">
+        <section className="relative min-h-screen flex flex-col overflow-hidden pt-32 md:pt-44">
             {/* Background Effects */}
             <div className="absolute inset-0 z-0 overflow-hidden">
                 <video
@@ -31,40 +31,59 @@ export function Hero() {
                 <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-brand-blue/20 rounded-full blur-[120px] mix-blend-screen animate-pulse" />
                 <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-tactical-gold/10 rounded-full blur-[120px] mix-blend-screen animate-pulse delay-1000" />
 
-                {/* Watermark Text Effect */}
-                <div className="absolute top-1/3 left-0 -translate-y-1/2 -translate-x-1/4 select-none pointer-events-none">
-                    <span className="text-[20vw] font-black text-white/5 leading-none">COMPRA</span>
-                </div>
-                <div className="absolute top-1/3 right-0 -translate-y-1/2 translate-x-1/4 select-none pointer-events-none">
-                    <span className="text-[20vw] font-black text-white/5 leading-none">SEG</span>
-                </div>
             </div>
 
             {/* Main content */}
             <div className="flex-1 flex items-center justify-center relative z-10">
                 <div className="container mx-auto px-4 flex flex-col items-center justify-center text-center">
 
-                    {/* Title Section */}
-                    <div className="mb-12 flex flex-col items-center">
-                        <Image
-                            src="/herocompras.png"
-                            alt="COMPRASEG 2026 CONGRESSO NACIONAL DE COMPRAS DA SEGURANÇA PÚBLICA"
-                            width={900}
-                            height={300}
-                            className="w-full max-w-5xl h-auto"
-                            priority
-                        />
+                    {/* Em breve */}
+                    <div className="mb-10 md:mb-14 flex items-center gap-4">
+                        <span className="h-px w-8 md:w-16 bg-gradient-to-r from-transparent to-tactical-cyan/70" />
+                        <span className="text-[11px] md:text-sm font-bold uppercase tracking-[0.5em] text-tactical-cyan">
+                            Em breve
+                        </span>
+                        <span className="h-px w-8 md:w-16 bg-gradient-to-l from-transparent to-tactical-cyan/70" />
                     </div>
 
-                    {/* Date and Location */}
-                    <div className="mb-0 flex flex-col items-center gap-[37px]">
-                        <p className="text-3xl md:text-5xl font-bold text-white tracking-wide font-display text-center">
-                            12 A 14 DE MAIO DE 2026
-                        </p>
-                        <p className="text-[14px] md:text-[25px] font-bold text-white tracking-[0.35em] uppercase font-display text-center">
-                            FLORIANÓPOLIS - SC
-                        </p>
-                    </div>
+                    {/* Logo COMPRASEG 2027 */}
+                    <h1 className="w-full max-w-5xl">
+                        <Image
+                            src="/compraseg2027.png"
+                            alt="COMPRASEG 2027 — Congresso Nacional de Compras da Segurança Pública"
+                            width={2062}
+                            height={298}
+                            className="w-full h-auto"
+                            priority
+                        />
+                    </h1>
+
+                    {/* Separador */}
+                    <div className="mt-7 md:mt-9 h-px w-40 md:w-64 bg-gradient-to-r from-transparent via-white/25 to-transparent" />
+
+                    {/* Retrospectiva 2026 */}
+                    <a
+                        href="#sobre"
+                        className="group mt-6 md:mt-7 inline-flex items-center gap-3 rounded-full border border-white/20 bg-white/[0.04] px-6 py-3 md:px-8 md:py-4 backdrop-blur-sm transition-all duration-300 hover:border-tactical-cyan/70 hover:bg-tactical-cyan/10"
+                    >
+                        <span className="text-sm md:text-lg font-semibold text-white/90 transition-colors group-hover:text-white">
+                            Confira como foi o evento de 2026
+                        </span>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            className="h-4 w-4 md:h-5 md:w-5 text-tactical-cyan transition-transform duration-300 group-hover:translate-x-1"
+                            aria-hidden="true"
+                        >
+                            <path d="M5 12h14" />
+                            <path d="m12 5 7 7-7 7" />
+                        </svg>
+                    </a>
                 </div>
             </div>
 
